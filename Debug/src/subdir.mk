@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Raspberry.cpp 
+../src/Raspberry.cpp \
+../src/gpio_class.cpp 
 
 OBJS += \
-./src/Raspberry.o 
+./src/Raspberry.o \
+./src/gpio_class.o 
 
 CPP_DEPS += \
-./src/Raspberry.d 
+./src/Raspberry.d \
+./src/gpio_class.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
