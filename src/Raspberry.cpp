@@ -17,7 +17,7 @@
 
 using namespace std;
 int main() {
-	cout << "!!!Hello World2!!!" << endl; // prints !!!Hello World!!!
+	cout << "!!!Hello World3!!!" << endl; // prints !!!Hello World!!!
 
 	string inputstate;
 	GPIOClass* gpio4 = new GPIOClass("4"); //create new GPIO object to be attached to  GPIO4
@@ -38,8 +38,12 @@ int main() {
 		timespec t;
 		t.tv_nsec = 0;
 		t.tv_sec = 1;
+		gpio4->setval_gpio("0"); // turn LED OFF
 		nanosleep(&t, &t);  // wait for 0.5 seconds
-		gpio17->getval_gpio(inputstate); //read state of GPIO17 input pin
+		gpio4->setval_gpio("1"); // turn LED ON
+		nanosleep(&t, &t);
+
+		/*gpio17->getval_gpio(inputstate); //read state of GPIO17 input pin
 		cout << "Current input pin state is " << inputstate  <<endl;
 		if(inputstate == "0") // if input pin is at state "0" i.e. button pressed
 		{
@@ -66,7 +70,7 @@ int main() {
 				cout << "input pin state is definitely \"UnPressed\". That was just noise." <<endl;
 
 		}
-		gpio4->setval_gpio("0");
+		gpio4->setval_gpio("0");*/
 
 	}
 	cout << "Exiting....." << endl;
