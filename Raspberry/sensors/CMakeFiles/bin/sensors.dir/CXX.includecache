@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wojtek/src/Raspberry/Raspberry/sensors/sensors_api.cpp
+iostream
+-
+sensors/sensors_api.h
+-
+
+interface/sensors/sensors_api.h
+iostream
+-
+

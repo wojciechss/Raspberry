@@ -1,0 +1,1 @@
+/usr/bin/g++       CMakeFiles/Raspberry.dir/main.cpp.o  -o Raspberry  -L/home/wojtek/src/Raspberry/Raspberry/sensors  -L/home/wojtek/src/Raspberry/Raspberry/startup -rdynamic ../sensors/libsensors.a -Wl,-rpath,/home/wojtek/src/Raspberry/Raspberry/sensors:/home/wojtek/src/Raspberry/Raspberry/startup 
