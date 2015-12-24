@@ -1,2 +1,0 @@
-/usr/bin/ar cr libbin/sensors.a  CMakeFiles/bin/sensors.dir/sensors_api.cpp.o
-/usr/bin/ranlib libbin/sensors.a

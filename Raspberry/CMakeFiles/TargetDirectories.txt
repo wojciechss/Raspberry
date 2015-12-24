@@ -1,2 +1,0 @@
-/home/wojtek/src/Raspberry/Raspberry/startup/CMakeFiles/Raspberry.dir
-/home/wojtek/src/Raspberry/Raspberry/sensors/CMakeFiles/sensors.dir
