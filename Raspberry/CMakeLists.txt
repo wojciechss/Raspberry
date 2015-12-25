@@ -11,4 +11,5 @@ project (Raspberry)
 
 add_subdirectory(startup)
 add_subdirectory(sensors)
+add_subdirectory(display)
 add_subdirectory(hardware)
