@@ -1,7 +1,8 @@
-#ifndef SENSOR_API
-#define SENSOR_API
+#ifndef SENSORS_API
+#define SENSORS_API
 
-#include <iostream>
+namespace robot {
+namespace sensors {
 
 class sensors_api {
 
@@ -9,4 +10,7 @@ class sensors_api {
         void fun();
 };
 
-#endif
+} // sensors
+} // robot
+
+#endif // SENSORS_API
