@@ -1,5 +1,5 @@
-#ifndef HARDWARE_API
-#define HARDWARE_API
+#ifndef HARDWARE_API_H
+#define HARDWARE_API_H
 
 namespace robot {
 namespace hardware {
@@ -13,4 +13,4 @@ class hardware_api {
 } // hardware
 } // robot
 
-#endif // HARDWARE_API
+#endif // HARDWARE_API_H

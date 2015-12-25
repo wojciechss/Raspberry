@@ -1,5 +1,5 @@
-#ifndef SENSORS_API
-#define SENSORS_API
+#ifndef SENSORS_API_H
+#define SENSORS_API_H
 
 namespace robot {
 namespace sensors {
@@ -13,4 +13,4 @@ class sensors_api {
 } // sensors
 } // robot
 
-#endif // SENSORS_API
+#endif // SENSORS_API_H

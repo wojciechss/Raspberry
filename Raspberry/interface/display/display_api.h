@@ -1,5 +1,5 @@
-#ifndef DISPLAY_API
-#define DISPLAY_API
+#ifndef DISPLAY_API_H
+#define DISPLAY_API_H
 
 namespace robot {
 namespace display {
@@ -13,4 +13,4 @@ class display_api {
 } // display
 } // robot
 
-#endif // DISPLAY_API
+#endif // DISPLAY_API_H
