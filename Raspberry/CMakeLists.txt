@@ -9,8 +9,8 @@ add_definitions(-std=c++11)
 
 project (Raspberry)
 
+add_subdirectory(hardware)
 add_subdirectory(startup)
 add_subdirectory(control)
 add_subdirectory(sensors)
 add_subdirectory(display)
-add_subdirectory(hardware)

@@ -1,5 +1,6 @@
-#include <iostream>
 #include <display/display_api.h>
+#include <iostream>
+#include <hardware/gpio.h>
 
 namespace robot {
 namespace display {

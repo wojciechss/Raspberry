@@ -34,7 +34,7 @@ bool signal_handler::was_ctrl_c_pressed()
 
 void sig_handler(int sig)
 {
-    write(0, "nCtrl^C pressed in sig handlern", 32);
+    write(0, "\nCtrl^C pressed in sig handler\n", 32);
     ctrl_c_pressed = true;
 }
 

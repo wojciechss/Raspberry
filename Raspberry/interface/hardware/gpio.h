@@ -1,7 +1,10 @@
-#ifndef GPIO_H
-#define GPIO_H
+#ifndef GPIO_H_
+#define GPIO_H_
 
 #include <string>
+
+namespace robot {
+namespace hardware {
 
 /* GPIO Class
  * Purpose: Each object instantiated from this class will control a GPIO pin
@@ -20,4 +23,7 @@ private:
     std::string gpionum; // GPIO number associated with the instance of an object
 };
 
-#endif // GPIO_H
+} // hardware
+} // robot
+
+#endif /* GPIO_H_ */

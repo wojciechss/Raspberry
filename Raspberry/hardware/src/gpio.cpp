@@ -1,8 +1,11 @@
+#include <hardware/gpio.h>
 #include <fstream>
 #include <string>
 #include <iostream>
 #include <sstream>
-#include "gpio.h"
+
+namespace robot {
+namespace hardware {
 
 gpio::gpio(const std::string& gnum)
 {
@@ -90,3 +93,6 @@ std::string gpio::get_gpionum()
 {
 	return gpionum;
 }
+
+} // hardware
+} // robot

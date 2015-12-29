@@ -1,7 +1,4 @@
 include_directories(${Raspberry_SOURCE_DIR}/interface)
-include_directories(${Raspberry_SOURCE_DIR}/interface/sensors)
-include_directories(${Raspberry_SOURCE_DIR}/interface/hardware)
-include_directories(${Raspberry_SOURCE_DIR}/interface/display)
 
 file(GLOB SOURCES "src/*.cpp")
 
