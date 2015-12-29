@@ -1,4 +1,7 @@
 include_directories(${Raspberry_SOURCE_DIR}/interface)
 include_directories(${Raspberry_SOURCE_DIR}/interface/display)
 
-add_library(display src/display_api.cpp)
+file(GLOB SOURCES "src/*.cpp")
+
+#add_library(display SHARED ${SOURCES})
+add_library(display ${SOURCES})

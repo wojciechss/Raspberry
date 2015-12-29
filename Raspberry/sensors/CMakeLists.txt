@@ -1,4 +1,7 @@
 include_directories(${Raspberry_SOURCE_DIR}/interface)
 include_directories(${Raspberry_SOURCE_DIR}/interface/sensors)
 
-add_library(sensors src/sensors_api.cpp)
+file(GLOB SOURCES "src/*.cpp")
+
+#add_library(sensors SHARED ${SOURCES})
+add_library(sensors ${SOURCES})
