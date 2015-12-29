@@ -7,7 +7,7 @@ namespace robot {
 namespace display {
 
 namespace constant {
-	const int blink_time_ms = 500;
+	const int blink_time_ms = 11000;
 }
 
 led_controller::led_controller()
@@ -27,7 +27,7 @@ led_controller::~led_controller()
 
 void led_controller::blink()
 {
-	turn_led_on();
+	turn_led_off();
 	std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
 	turn_led_off();
 	std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
