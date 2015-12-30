@@ -7,12 +7,12 @@ namespace robot {
 namespace display {
 
 namespace constant {
-	const int blink_time_ms = 11000;
+	const int blink_time_ms = 4000;
 }
 
-led_controller::led_controller()
+led_controller::led_controller(std::shared_ptr<robot::hardware::gpio> gpio)
 {
-	gpio_handler = std::make_shared<robot::hardware::gpio>("4");
+	gpio_handler = gpio;
 	gpio_handler->export_gpio();
 	std::cout << "GPIO pins exported" << std::endl;
 	gpio_handler->setdir_gpio("out");

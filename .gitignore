@@ -27,9 +27,18 @@
 *.out
 *.app
 
+# gtest gmock
+gtest
+gmock
+
+# Testing
+Testing
+
 # CMake files
+*.cmake
 CMakeCache.txt
 CMakeFiles
+CTestTestfile
 CMakeScripts
 Makefile
 cmake_install.cmake
