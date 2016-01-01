@@ -7,7 +7,7 @@ namespace robot {
 namespace display {
 
 namespace constant {
-	const int blink_time_ms = 4000;
+	const int blink_time_ms = 1000;
 }
 
 led_controller::led_controller(std::shared_ptr<robot::hardware::gpio> gpio)
@@ -27,7 +27,7 @@ led_controller::~led_controller()
 
 void led_controller::blink()
 {
-	turn_led_off();
+	turn_led_on();
 	std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
 	turn_led_off();
 	std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
