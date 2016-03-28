@@ -68,8 +68,8 @@ int gpio::setval_gpio(const std::string& val)
 	return 0;
 }
 
-int gpio::getval_gpio(std::string& val){
-
+int gpio::getval_gpio(std::string& val)
+{
     std::string getval_str = "/sys/class/gpio/gpio" + gpionum + "/value";
     std::ifstream getvalgpio(getval_str.c_str());// open value file for gpio
     if (getvalgpio < 0) {

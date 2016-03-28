@@ -17,4 +17,4 @@ add_subdirectory(control)
 add_subdirectory(sensors)
 add_subdirectory(display)
 
-add_subdirectory(test)
+#add_subdirectory(test)

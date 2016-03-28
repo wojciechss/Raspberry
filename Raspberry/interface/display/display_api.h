@@ -7,7 +7,8 @@ namespace display {
 class display_api {
 
 public:
-	void fun();
+	void turn_led_on();
+	void turn_led_off();
 };
 
 } // display

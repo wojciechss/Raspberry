@@ -7,7 +7,7 @@ namespace sensors {
 class sensors_api {
 
 public:
-	void fun();
+	double read_ultrasonic();
 };
 
 } // sensors

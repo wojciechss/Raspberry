@@ -10,5 +10,4 @@ target_link_libraries(display_test
     libgmock
 )
 
-add_test(NAME display_test
-         COMMAND display_test)
+add_test(NAME display_test COMMAND display_test)

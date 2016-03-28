@@ -1,12 +1,17 @@
-#include <iostream>
 #include <sensors/sensors_api.h>
+#include <hardware/mini_driver_hw.h>
+#include <stdlib.h>
+
+#include <iostream>
 
 namespace robot {
 namespace sensors {
 
-void sensors_api::fun()
+double sensors_api::read_ultrasonic()
 {
-    std::cout << "hello sensor" << std::endl;
+	hardware::mini_driver_hw mini_driver_holder;
+	std::string value = mini_driver_holder.read_line();
+	return atof(value.c_str());
 }
 
 } // sensors

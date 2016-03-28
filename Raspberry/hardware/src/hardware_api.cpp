@@ -1,5 +1,5 @@
-#include <iostream>
 #include <hardware/hardware_api.h>
+#include <iostream>
 
 namespace robot {
 namespace hardware {
