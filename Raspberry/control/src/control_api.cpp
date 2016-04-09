@@ -18,6 +18,7 @@ void control_api::run()
 
 		if (sig_handler.was_ctrl_c_pressed()) {
 			std::cout << "Ctrl^C Pressed" << std::endl;
+			disp.stop();
 			break;
 		}
 	}
@@ -30,7 +31,7 @@ void control_api::handle_mini_board()
 	if (value == 0) {
 		return;
 	}
-	if (value > 0 && value < 10) {
+	if (value > 0 && value < 20) {
 		disp.turn_led_on();
 	} else {
 		disp.turn_led_off();

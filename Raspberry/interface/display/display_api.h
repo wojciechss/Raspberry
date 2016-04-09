@@ -9,6 +9,7 @@ class display_api {
 public:
 	void turn_led_on();
 	void turn_led_off();
+	void stop();
 };
 
 } // display
