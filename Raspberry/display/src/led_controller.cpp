@@ -28,9 +28,9 @@ led_controller::~led_controller()
 void led_controller::blink()
 {
 	turn_led_on();
-	std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
+    //std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
 	turn_led_off();
-	std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
+	///std::this_thread::sleep_for(std::chrono::milliseconds(constant::blink_time_ms));
 }
 
 void led_controller::turn_led_on()

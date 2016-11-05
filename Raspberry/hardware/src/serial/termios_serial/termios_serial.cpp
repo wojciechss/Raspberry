@@ -1,4 +1,4 @@
-#include "serial.h"
+#include "termios_serial.h"
 
 #include <stdio.h>
 #include <cstring>
@@ -13,15 +13,17 @@ namespace constant {
 	const static std::string device_name = "/dev/ttyUSB0";
 }
 
-serial::serial()
+termios_serial::termios_serial()
 {
+	begin_connection();
 }
 
-serial::~serial()
+termios_serial::~termios_serial()
 {
+	close_connection();
 }
 
-bool serial::begin_connection()
+bool termios_serial::begin_connection()
 {
 	//OPEN THE UART
 	//The flags (defined in fcntl.h):
@@ -48,7 +50,7 @@ bool serial::begin_connection()
 	//	CLOCAL - Ignore modem status lines
 	//	CREAD - Enable receiver
 	//	IGNPAR = Ignore characters with parity errors
-	//	ICRNL - Map CR to NL on input (Use for ASCII comms where you want to auto correct end of line characters - don't use for bianry comms!)
+	//	ICRNL - Map CR to NL on input (Use for ASCII commas where you want to auto correct end of line characters - don't use for bianry comms!)
 	//	PARENB - Parity enable
 	//	PARODD - Odd parity (else even)
 	struct termios options;
@@ -64,24 +66,24 @@ bool serial::begin_connection()
 	return true;
 }
 
-void serial::close_connection()
+void termios_serial::close_connection()
 {
 	std::cout << "UART connection closed" << std::endl;
 	//----- CLOSE THE UART -----
 	close(uart0_filestream);
 }
 
-bool serial::write_data(const std::string& data)
+int termios_serial::write_data(const std::string& data)
 {
 	int bytes_sent = write(uart0_filestream, data.c_str(), std::strlen(data.c_str()));
 	if (bytes_sent < 0) {
 		std::cout << "Error [serial_communcation]: write" << std::endl;;
-		return false;
+		return -1;
 	}
-	return true;
+	return bytes_sent;
 }
 
-std::string serial::read_line()
+std::string termios_serial::read_line()
 {
 	char rx_buffer[255];
 	int pos = 0;
@@ -98,14 +100,14 @@ std::string serial::read_line()
 	return std::string(rx_buffer);
 }
 
-char serial::read_byte()
+char termios_serial::read_byte()
 {
 	char result = 0;
 	if (uart0_filestream != -1) {
 		char rx_buffer[1];
 		int rx_length = read(uart0_filestream, rx_buffer, 1);
 		if (rx_length < 0) {
-			//An error occured (will occur if there are no bytes)
+			//An error occurred (will occur if there are no bytes)
 		} else if (rx_length == 0) {
 			//No data waiting
 		} else if (rx_length == 1) {

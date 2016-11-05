@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.8.9)
+
 add_definitions(-std=c++11)
 
 # Target operating system name.
@@ -9,7 +10,7 @@ add_definitions(-std=c++11)
 
 project (Raspberry)
 
-enable_testing()
+#enable_testing()
 
 add_subdirectory(hardware)
 add_subdirectory(startup)

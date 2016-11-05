@@ -1,5 +1,5 @@
 #include <hardware/mini_driver_hw.h>
-#include "serial_singleton.h"
+#include "serial/serial_singleton.h"
 
 namespace robot {
 namespace hardware {

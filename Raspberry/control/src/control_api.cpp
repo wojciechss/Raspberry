@@ -13,7 +13,7 @@ void control_api::run()
 	signal_handler sig_handler;
 
 	while (true) {
-		std::this_thread::sleep_for(std::chrono::milliseconds(2));
+		//std::this_thread::sleep_for(std::chrono::milliseconds(2));
 		handle_mini_board();
 
 		if (sig_handler.was_ctrl_c_pressed()) {
