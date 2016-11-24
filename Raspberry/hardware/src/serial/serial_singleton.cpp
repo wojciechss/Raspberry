@@ -1,5 +1,5 @@
 #include "serial_singleton.h"
-//#include "termios_serial/termios_serial.h"
+#include "termios_serial/termios_serial.h"
 #include "boost_serial/boost_serial.h"
 
 namespace robot {
