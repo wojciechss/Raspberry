@@ -128,20 +128,24 @@ void raspberry() {
   if (stringComplete) {
     if (inputString == "on") {
       turnLedOn();
-      turnBack();
-      turnLedOff();
+      //turnBack();
+      //turnLedOff();
     } else if (inputString == "off") {
       turnLedOff();
-      driveForward();
+      //driveForward();
     } else if (inputString == "stop") {
       stopDriving();
+    } else if (inputString == "read") {
+      sendPing();
     }
 
     // clear the string:
     inputString = "";
     stringComplete = false;
   }
-  
+}
+
+void sendPing() {
   // send a ping
   float dist = ping();
   Serial.println(dist);
