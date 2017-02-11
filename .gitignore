@@ -43,3 +43,16 @@ CMakeScripts
 Makefile
 cmake_install.cmake
 install_manifest.txt
+
+# Intellij
+.idea/
+**/.idea/
+
+# Python
+**/__pycache__/
+*.pyc
+
+# Web
+**/bower_components/
+**/node_modules/
+

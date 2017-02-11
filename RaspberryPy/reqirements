@@ -1,0 +1,14 @@
+ sudo apt install python3-pip
+
+ pip3 install --upgrade pip
+
+ sudo pip3 install -U setuptools
+
+--------------------------------
+ pip3 install serial
+ sudo pip3 install pyserial
+ python -m pip install pyserial
+
+
+--------------------------------
+ pip3 install flask
