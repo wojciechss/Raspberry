@@ -21,12 +21,12 @@ app = Flask(__name__)
 controller = Controller()
 
 
-@app.route('/ledon')
+@app.route('/led_on')
 def led_on():
     controller.led_on()
     return 'on\n'
 
-@app.route('/ledoff')
+@app.route('/led_off')
 def led_off():
     controller.led_off()
     return 'off\n'
