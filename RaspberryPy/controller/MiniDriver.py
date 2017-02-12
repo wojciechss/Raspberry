@@ -16,22 +16,27 @@ class MiniDriver:
         self.__wait_for_connection()
 
     def led_on(self):
-        self._write(b'on;')
+        self._write('led:on;')
 
     def led_off(self):
-        self._write(b'off;')
+        self._write('led:off;')
+
+    def drive(self, left_speed, right_speed):
+        data = 'motor' + ':' + str(left_speed) + ':' + str(right_speed) + ';'
+        self._write(data)
 
     def get_distance_request(self):
-        self._write(b'read;')
+        self._write('ultrasonic;')
 
     def read_distance(self):
         x = self._readline()
         val = str(x, 'ascii')
         if self.__isfloat(val):
             return self.__parseFloat(val)
+        return 0
 
     def _write(self, data):
-        self.ser.write(data)
+        self.ser.write(data.encode('utf-8'))
 
     def _readline(self):
         return self.ser.readline()
