@@ -1,6 +1,10 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
+/**
+ * Main AngularJS Web Application
+ */
 angular.module('raspberryApp', [
-  'raspberry'
+  'ngRoute',
+  'raspberry',
+  'led'
 ]);
