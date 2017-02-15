@@ -1,14 +1,14 @@
 'use strict';
 
-// Register `phoneList` component, along with its associated controller and template
+// Register `raspberry-controller` component, along with its associated controller and template
 angular.
   module('raspberry').
   component('raspberry', {
-    templateUrl: 'raspberry/raspberry.template.html',
+    templateUrl: 'raspberry-controller/raspberry-controller.template.html',
     controller: ['$http', '$interval', function RaspberryController($http, $interval) {
 
         var ledOn = false;
-        this.distance = 0
+        this.distance = 230
         this.ledStatus = 'led on';
 
         var self = this;

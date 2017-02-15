@@ -1,0 +1,31 @@
+<div class="section">
+  <div class="container">
+
+    <div class="row"></div>
+
+      <div class="col-md-10">
+        <img class="img-responsive" src="/pictures/750x450.png">
+      </div>
+
+
+    <div class="col-md-2">
+      <div class="row">
+        <div class="page-header">
+          <h3>Distance {{$ctrl.distance}}</h3>
+        </div>
+
+       <div class="row">
+         <div class="col-md-1"></div>
+          <div class="col-md-">
+         </div>
+
+          <button class="btn btn-default btn-block" ng-click="$ctrl.blinkLed()" ng-init="count=0">
+            {{$ctrl.ledStatus}}
+          </button>
+       </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

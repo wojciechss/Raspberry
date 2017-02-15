@@ -7,13 +7,10 @@ angular.
 
       $routeProvider.
         when('/', {
-            templateUrl: 'partials/home.html'
-            }).
-        when('/raspberry', {
             template: '<raspberry></raspberry>'
             }).
-        when('/led', {
-            template: '<led></led>'
+        when('/about', {
+            templateUrl: 'partials/about.html'
             }).
         when('/404', {
             templateUrl: 'partials/404.html'

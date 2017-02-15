@@ -5,6 +5,5 @@
  */
 angular.module('raspberryApp', [
   'ngRoute',
-  'raspberry',
-  'led'
+  'raspberry'
 ]);
