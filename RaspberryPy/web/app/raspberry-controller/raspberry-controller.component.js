@@ -31,6 +31,22 @@ angular.
             //});
         }
 
+        this.buttonUp = function() {
+            console.log("Up")
+        }
+
+        this.buttonLeft = function() {
+            console.log("Left")
+        }
+
+        this.buttonDown = function() {
+            console.log("Down")
+        }
+
+        this.buttonRight = function() {
+            console.log("Right")
+        }
+
         this.getDistancePeriodically = $interval(this.getDistance, 500);
     }]
   });
