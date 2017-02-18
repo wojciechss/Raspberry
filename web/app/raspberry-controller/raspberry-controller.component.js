@@ -60,6 +60,12 @@ angular.
             this.status = "UpDown"
             var leftSpeed = this.baseSpeed + this.leftSpeedOffset
             var rightSpeed = this.baseSpeed + this.rightSpeedOffset
+            if (leftSpeed > 250) {
+                leftSpeed = 250
+            }
+            if (rightSpeed > 250) {
+                rightSpeed = 250
+            }
             this.sendSpeed(leftSpeed, rightSpeed)
         }
 
@@ -67,6 +73,9 @@ angular.
             this.status = "LeftDown"
             var leftSpeed = 0
             var rightSpeed = this.baseSpeed + this.rightSpeedOffset
+            if (rightSpeed > 250) {
+                rightSpeed = 250
+            }
             this.sendSpeed(leftSpeed, rightSpeed)
         }
 
@@ -74,6 +83,12 @@ angular.
             this.status = "DownDown"
             var leftSpeed = -this.baseSpeed - this.leftSpeedOffset
             var rightSpeed = -this.baseSpeed - this.rightSpeedOffset
+            if (leftSpeed < -250) {
+                leftSpeed = -250
+            }
+            if (rightSpeed < -250) {
+                rightSpeed = -250
+            }
             this.sendSpeed(leftSpeed, rightSpeed)
         }
 
@@ -81,6 +96,9 @@ angular.
             this.status = "RightDown"
             var leftSpeed = this.baseSpeed + this.leftSpeedOffset
             var rightSpeed = 0
+            if (leftSpeed > 250) {
+                leftSpeed = 250
+            }
             this.sendSpeed(leftSpeed, rightSpeed)
         }
 
