@@ -5,5 +5,6 @@
  */
 angular.module('raspberryApp', [
   'ngRoute',
+  'ngTouch',
   'raspberry'
 ]);

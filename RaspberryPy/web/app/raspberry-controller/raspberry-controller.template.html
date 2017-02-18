@@ -9,32 +9,40 @@
         <div class="col-xs-5">
             <div class="row">
                 <div class="text-center">
-                  <h3>Distance {{$ctrl.distance}}</h3>
+                    <h3>Distance</h3>
+                    <h3 class="text-danger" ng-show="$ctrl.danger">{{$ctrl.distance}}</h3>
+                    <h3 ng-show="!$ctrl.danger">{{$ctrl.distance}}</h3>
                 </div>
             </div>
+            <div class="text-center" ng-bind="$ctrl.status"></div>
             <br>
             <div class="row">
-                <button class="btn btn-default center-block" ng-click="$ctrl.blinkLed()" ng-init="count=0" ng-bind="$ctrl.ledStatus">
+                <button class="btn btn-default center-block" onclick="this.blur();" ng-click="$ctrl.blinkLed()"
+                        ng-bind="$ctrl.ledStatus">
                 </button>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br>
             <div class="row">
                 <div class="text-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-default" ng-click="$ctrl.buttonUp()">
+                      <button type="button" class="btn btn-primary" onclick="this.blur();"
+                                ng-mousedown="$ctrl.buttonUpDown()" ng-mouseup="$ctrl.buttonUp()">
                            <span class="glyphicon glyphicon-arrow-up"></span>
                       </button>
                     </div>
                 </div>
                 <div class="text-center">
                 <div class="btn-group">
-                      <button type="button" class="btn btn-default" ng-click="$ctrl.buttonLeft()">
+                      <button type="button" class="btn btn-primary" onclick="this.blur();"
+                                ng-mousedown="$ctrl.buttonLeftDown()" ng-mouseup="$ctrl.buttonUp()">
                            <span class="glyphicon glyphicon-arrow-left"></span>
                       </button>
-                      <button type="button" class="btn btn-default" ng-click="$ctrl.buttonDown()">
+                      <button type="button" class="btn btn-primary" onclick="this.blur();"
+                                ng-mousedown="$ctrl.buttonDownDown()" ng-mouseup="$ctrl.buttonUp()">
                            <span class="glyphicon glyphicon-arrow-down"></span>
                       </button>
-                      <button type="button" class="btn btn-default" ng-click="$ctrl.buttonRight()">
+                      <button type="button" class="btn btn-primary" onclick="this.blur();"
+                                ng-mousedown="$ctrl.buttonRightDown()" ng-mouseup="$ctrl.buttonUp()">
                            <span class="glyphicon glyphicon-arrow-right"></span>
                       </button>
                 </div>

@@ -46,7 +46,9 @@ def led_off():
 def drive():
     left = request.args.get('left')
     right = request.args.get('right')
-    controller.drive(left, right)
+    print(left)
+    print(right)
+    #controller.drive(left, right)
     return 'drive\n'
 
 @app.route('/controller/ultrasonic')
@@ -57,5 +59,5 @@ def read_distance():
     return dumps(data)
 
 if __name__ == '__main__':
-    controller.run()
+    #controller.run()
     app.run()

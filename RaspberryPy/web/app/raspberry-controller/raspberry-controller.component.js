@@ -8,10 +8,17 @@ angular.
     controller: ['$http', '$interval', function RaspberryController($http, $interval) {
 
         var ledOn = false;
+        var self = this;
         this.distance = 230
         this.ledStatus = 'led on';
+        this.status = 'Stop';
+        this.danger = false;
 
-        var self = this;
+        this.leftSpeedOffset = 10;
+        this.rightSpeedOffset = 10;
+
+        this.touched = false;
+
         this.blinkLed = function() {
             if (ledOn) {
                 ledOn = false;
@@ -31,20 +38,70 @@ angular.
             //});
         }
 
+        this.sendSpeed = function(leftSpeed, rightSpeed) {
+            var req = {
+                 method: 'GET',
+                 url: '/controller/drive',
+                 params: {
+                    left: leftSpeed,
+                    right: rightSpeed
+                 }
+            }
+            $http(req)
+        }
+
+        this.buttonUpDown = function() {
+            this.status = "UpDown"
+            if (!this.touched) {
+                this.touched = true;
+                console.log("UpDown")
+                var leftSpeed = 100 + this.leftSpeedOffset
+                var rightSpeed = 100 + this.rightSpeedOffset
+                this.sendSpeed(leftSpeed, rightSpeed)
+            }
+        }
+
+        this.buttonLeftDown = function() {
+            if (!this.touched) {
+                this.touched = true;
+                this.status = "LeftDown"
+                console.log("LeftDown")
+                var leftSpeed = 0
+                var rightSpeed = 100 + this.rightSpeedOffset
+                this.sendSpeed(leftSpeed, rightSpeed)
+            }
+        }
+
+        this.buttonDownDown = function() {
+            if (!this.touched) {
+                this.touched = true;
+                this.status = "DownDown"
+                console.log("DownDown")
+                var leftSpeed = -100 - this.leftSpeedOffset
+                var rightSpeed = -100 - this.rightSpeedOffset
+                this.sendSpeed(leftSpeed, rightSpeed)
+
+            }
+        }
+
+        this.buttonRightDown = function() {
+            if (!this.touched) {
+                this.touched = true;
+                this.status = "RightDown"
+                console.log("RightDown")
+                var leftSpeed = 100 + this.leftSpeedOffset
+                var rightSpeed = 0
+                this.sendSpeed(leftSpeed, rightSpeed)
+            }
+        }
+
         this.buttonUp = function() {
-            console.log("Up")
-        }
-
-        this.buttonLeft = function() {
-            console.log("Left")
-        }
-
-        this.buttonDown = function() {
-            console.log("Down")
-        }
-
-        this.buttonRight = function() {
-            console.log("Right")
+            if (this.touched) {
+                this.touched = false;
+                this.status = "Stop"
+                console.log("Stop")
+                this.sendSpeed(0, 0)
+            }
         }
 
         this.getDistancePeriodically = $interval(this.getDistance, 500);
