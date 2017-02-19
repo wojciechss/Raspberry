@@ -4,7 +4,9 @@
  * Main AngularJS Web Application
  */
 angular.module('raspberryApp', [
-  'ngRoute',
-  'ngTouch',
-  'raspberry'
+    'constants',
+    'ngRoute',
+    'ngTouch',
+    'raspberry',
+    'settings'
 ]);

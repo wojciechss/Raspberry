@@ -9,6 +9,9 @@ angular.
         when('/', {
             template: '<raspberry></raspberry>'
             }).
+        when('/settings', {
+            template: '<settings></settings>'
+            }).
         when('/about', {
             templateUrl: 'partials/about.html'
             }).

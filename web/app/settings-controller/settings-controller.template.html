@@ -1,0 +1,37 @@
+<div class="section">
+  <div class="container-fluid">
+
+    <div class="row">
+        <button class="btn btn-default" onclick="this.blur();" ng-click="$ctrl.saveInitialData()">Save
+        </button>
+    </div>
+      <div class="row">
+
+        <div class="col-xs-6">
+            <h1 class="page-header">Settings</h1>
+            <ol class="breadcrumb">
+                <li><a href="#/">Home</a> </li>
+                <li class="active">About</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-1"></div>
+
+        <div class="col-xs-2">
+            <br>
+            <div>Forward speed: <input type="number" ng-model="$ctrl.controllerData.forwardSpeed"></div>
+            <div>Back speed: <input type="number" ng-model="$ctrl.controllerData.backSpeed"></div>
+            <div>Left offset: <input type="number" ng-model="$ctrl.controllerData.leftOffset"></div>
+            <div>Right offset: <input type="number" ng-model="$ctrl.controllerData.rightOffset"></div>
+            <br>
+            <button class="btn btn-default" onclick="this.blur();" ng-click="$ctrl.blinkLed()"
+                    ng-bind="$ctrl.ledStatus">
+            </button>
+
+        </div>
+    </div>
+  </div>
+</div>

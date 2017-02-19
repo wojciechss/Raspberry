@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+import json
 from MiniDriver import MiniDriver
 from flask import Flask, url_for
 from flask import request
 from flask.json import dumps, JSONEncoder
+
 
 class Controller():
 
@@ -27,6 +29,17 @@ class Controller():
 
     def drive(self, left_speed, right_speed):
         self.minidriver.drive(left_speed, right_speed)
+
+    @classmethod
+    def get_initial_data(cls):
+        with open('init_data.json') as data_file:
+            initial_data = json.load(data_file)
+        return initial_data
+
+    @classmethod
+    def save_initial_data(cls, data):
+        with open('init_data.json', 'w') as outfile:
+            json.dump(data, outfile)
 
 app = Flask(__name__)
 controller = Controller()
@@ -57,6 +70,16 @@ def read_distance():
     distance = controller.read_distance()
     data = dict(distance=distance)
     return dumps(data)
+
+@app.route('/controller/init_data', methods=['GET', 'POST'])
+def get_init_data():
+    if request.method == 'GET':
+        return dumps(Controller.get_initial_data())
+    if request.method == 'POST':
+        content = request.get_json()
+        Controller.save_initial_data(content)
+        return 'OK'
+
 
 if __name__ == '__main__':
     controller.run()

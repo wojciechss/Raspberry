@@ -5,35 +5,21 @@ angular.
   module('raspberry').
   component('raspberry', {
     templateUrl: 'raspberry-controller/raspberry-controller.template.html',
-    controller: ['$http', '$interval', function RaspberryController($http, $interval) {
+    controller: ['$http', '$interval', 'Path', function RaspberryController($http, $interval, Path) {
 
-        var ledOn = false;
-        var self = this;
-        this.distance = 0
-        this.ledStatus = 'led off';
-        this.status = 'Stop';
-        this.danger = false;
-
-        this.leftSpeedOffset = 10;
-        this.rightSpeedOffset = 10;
-        this.baseSpeed = 100;
-
-        this.touched = false;
-
-        this.blinkLed = function() {
-            if (!ledOn) {
-                ledOn = true;
-                $http.get('/controller/led_on');
-                this.ledStatus = 'led on';
-            } else {
-                ledOn = false;
-                $http.get('/controller/led_off');
-                this.ledStatus = 'led off';
-            }
+        this.controllerData = {
+            forwardSpeed: 0,
+            backSpeed: 0,
+            leftOffset: 0,
+            rightOffset: 0,
         }
+        var self = this
+        var maxSpeed = 250
+        this.distance = 0
+        this.danger = false
 
         this.getDistance = function() {
-            $http.get('/controller/ultrasonic').then(function(response) {
+            $http.get(Path.DISTANCE).then(function(response) {
                 var data = response.data;
                 self.distance = data.distance
                 if (self.distance <= 20) {
@@ -47,7 +33,7 @@ angular.
         this.sendSpeed = function(leftSpeed, rightSpeed) {
             var req = {
                  method: 'GET',
-                 url: '/controller/drive',
+                 url: Path.DRIVE,
                  params: {
                     left: leftSpeed,
                     right: rightSpeed
@@ -57,56 +43,65 @@ angular.
         }
 
         this.buttonUpDown = function() {
-            this.status = "UpDown"
-            var leftSpeed = this.baseSpeed + this.leftSpeedOffset
-            var rightSpeed = this.baseSpeed + this.rightSpeedOffset
-            if (leftSpeed > 250) {
-                leftSpeed = 250
-            }
-            if (rightSpeed > 250) {
-                rightSpeed = 250
-            }
-            this.sendSpeed(leftSpeed, rightSpeed)
+            this.sendSpeed(getLeftSpeed(), getRightSpeed())
         }
 
         this.buttonLeftDown = function() {
-            this.status = "LeftDown"
-            var leftSpeed = this.baseSpeed + this.leftSpeedOffset
-            var rightSpeed = 0
-            if (leftSpeed > 250) {
-                leftSpeed = 250
-            }
-            this.sendSpeed(leftSpeed, rightSpeed)
+            this.sendSpeed(getLeftSpeed(), 0)
         }
 
         this.buttonDownDown = function() {
-            this.status = "DownDown"
-            var leftSpeed = -this.baseSpeed - this.leftSpeedOffset
-            var rightSpeed = -this.baseSpeed - this.rightSpeedOffset
-            if (leftSpeed < -250) {
-                leftSpeed = -250
-            }
-            if (rightSpeed < -250) {
-                rightSpeed = -250
-            }
-            this.sendSpeed(leftSpeed, rightSpeed)
+            this.sendSpeed(getBackLeftSpeed(), getBackRightSpeed())
         }
 
         this.buttonRightDown = function() {
-            this.status = "RightDown"
-            var leftSpeed = 0
-            var rightSpeed = this.baseSpeed + this.rightSpeedOffset
-            if (rightSpeed > 250) {
-                rightSpeed = 250
-            }
-            this.sendSpeed(leftSpeed, rightSpeed)
+            this.sendSpeed(0, getRightSpeed())
         }
 
         this.buttonUp = function() {
-            this.status = "Stop"
             this.sendSpeed(0, 0)
         }
 
         this.getDistancePeriodically = $interval(this.getDistance, 500);
+
+        var getLeftSpeed = function() {
+            var leftSpeed = self.controllerData.forwardSpeed + self.controllerData.leftOffset
+            if (leftSpeed > maxSpeed) {
+                leftSpeed = maxSpeed
+            }
+            return leftSpeed
+        }
+
+        var getRightSpeed = function() {
+            var rightSpeed = self.controllerData.forwardSpeed + self.controllerData.rightOffset
+            if (rightSpeed > maxSpeed) {
+                rightSpeed = maxSpeed
+            }
+            return rightSpeed
+        }
+
+        var getBackLeftSpeed = function() {
+            var leftSpeed = - self.controllerData.backSpeed - self.controllerData.leftOffset
+            if (leftSpeed < -maxSpeed) {
+                leftSpeed = -maxSpeed
+            }
+            return leftSpeed
+        }
+
+        var getBackRightSpeed = function() {
+            var rightSpeed = - self.controllerData.backSpeed - self.controllerData.rightOffset
+            if (rightSpeed < -maxSpeed) {
+                rightSpeed = -maxSpeed
+            }
+            return rightSpeed
+        }
+
+        var getInitialData = function() {
+            $http.get(Path.INIT_DATA).then(function(response) {
+                self.controllerData = response.data
+            });
+        }
+
+        getInitialData()
     }]
   });

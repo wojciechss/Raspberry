@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('raspberry', []);
+angular.module('raspberry', ['constants']);
