@@ -6,7 +6,6 @@ angular.
     return {
       controller: function ($scope, $element, $attrs) {
         $element.bind('touchstart', onTouchStart);
-        $element.bind('mousedown', onTouchStart);
 
         function onTouchStart(event) {
           var method = $element.attr('ng-touchstart');
@@ -20,7 +19,6 @@ angular.
     return {
       controller: function ($scope, $element, $attrs) {
         $element.bind('touchend', onTouchEnd);
-        //$element.bind('mouseup', onTouchEnd);
 
         function onTouchEnd(event) {
           var method = $element.attr('ng-touchend');
