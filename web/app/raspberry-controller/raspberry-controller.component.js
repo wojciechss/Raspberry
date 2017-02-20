@@ -5,7 +5,8 @@ angular.
   module('raspberry').
   component('raspberry', {
     templateUrl: 'raspberry-controller/raspberry-controller.template.html',
-    controller: ['$http', '$interval', 'Path', function RaspberryController($http, $interval, Path) {
+    controller: ['$http', '$interval', 'Path', 'MobileDetector',
+            function RaspberryController($http, $interval, Path, MobileDetector) {
 
         this.controllerData = {
             forwardSpeed: 0,
@@ -31,7 +32,9 @@ angular.
             });*/
         }
 
-
+        this.isMobile = function() {
+            return MobileDetector.isMobile()
+        }
 
         this.blinkLed = function() {
             if (!ledOn) {
@@ -117,4 +120,14 @@ angular.
 
         getInitialData()
     }]
+  }).
+  directive('controlButtons', function() {
+    return {
+        templateUrl: 'raspberry-controller/control-buttons.html'
+    };
+  }).
+  directive('mobileControlButtons', function() {
+    return {
+        templateUrl: 'raspberry-controller/mobile-control-buttons.html'
+    };
   });

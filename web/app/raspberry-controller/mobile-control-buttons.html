@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="text-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg" onclick="this.blur();"
+                    ng-touchstart="$ctrl.buttonUpDown()" ng-touchend="$ctrl.buttonUp()">
+               <span class="glyphicon glyphicon-arrow-up"></span>
+          </button>
+        </div>
+    </div>
+    <div class="text-center">
+    <div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg" onclick="this.blur();"
+                    ng-touchstart="$ctrl.buttonLeftDown()" ng-touchend="$ctrl.buttonUp()">
+               <span class="glyphicon glyphicon-arrow-left"></span>
+          </button>
+          <button type="button" class="btn btn-default btn-lg" onclick="this.blur();"
+                    ng-touchstart="$ctrl.buttonDownDown()" ng-touchend="$ctrl.buttonUp()">
+               <span class="glyphicon glyphicon-arrow-down"></span>
+          </button>
+          <button type="button" class="btn btn-default btn-lg" onclick="this.blur();"
+                    ng-touchstart="$ctrl.buttonRightDown()" ng-touchend="$ctrl.buttonUp()">
+               <span class="glyphicon glyphicon-arrow-right"></span>
+          </button>
+    </div>
+    </div>
+</div>
