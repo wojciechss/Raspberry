@@ -17,21 +17,65 @@
 
     </div>
 
-    <div class="row">
-        <div class="col-xs-1"></div>
-
-        <div class="col-xs-2">
-            <br>
-            <div>Forward speed: <input type="number" ng-model="$ctrl.controllerData.forwardSpeed"></div>
-            <div>Back speed: <input type="number" ng-model="$ctrl.controllerData.backSpeed"></div>
-            <div>Left offset: <input type="number" ng-model="$ctrl.controllerData.leftOffset"></div>
-            <div>Right offset: <input type="number" ng-model="$ctrl.controllerData.rightOffset"></div>
-            <br>
-            <button class="btn btn-default" onclick="this.blur();" ng-click="$ctrl.blinkLed()"
-                    ng-bind="$ctrl.ledStatus">
-            </button>
-
+    <form name="settingsForm">
+        <div class="row">
+            <div class="col-xs-1">
+                Forward speed
+            </div>
+            <div class="col-xs-5 input-required form-group"
+                 ng-class="{'has-error' : settingsForm.forwardSpeed.$invalid && !settingsForm.forwardSpeed.$pristine }">
+                <input class="form-control n-inputfield"
+                       name="forwardSpeed"
+                       type="text"
+                       ng-minlength="3"
+                       ng-model="$ctrl.controllerData.forwardSpeed">
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-xs-1">
+                Back speed
+            </div>
+            <div class="col-xs-5 input-required form-group"
+                 ng-class="{'has-error' : settingsForm.backSpeed.$invalid && !settingsForm.backSpeed.$pristine }">
+                <input class="form-control n-inputfield"
+                       name="backSpeed"
+                       type="text"
+                       ng-minlength="3"
+                       ng-model="$ctrl.controllerData.backSpeed">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                Left offset
+            </div>
+            <div class="col-xs-5 input-required form-group"
+                 ng-class="{'has-error' : settingsForm.leftOffset.$invalid && !settingsForm.leftOffset.$pristine }">
+                <input class="form-control n-inputfield"
+                       name="leftOffset"
+                       type="text"
+                       ng-minlength="3"
+                       ng-model="$ctrl.controllerData.leftOffset">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                Right offset
+            </div>
+            <div class="col-xs-5 input-required form-group"
+                 ng-class="{'has-error' : settingsForm.rightOffset.$invalid && !settingsForm.rightOffset.$pristine }">
+                <input class="form-control n-inputfield"
+                       name="rightOffset"
+                       type="text"
+                       ng-minlength="3"
+                       ng-model="$ctrl.controllerData.rightOffset">
+            </div>
+        </div>
+
+    </form>
+
+    <button class="btn btn-default" onclick="this.blur();" ng-click="$ctrl.blinkLed()"
+            ng-bind="$ctrl.ledStatus">
+    </button>
+
   </div>
 </div>
