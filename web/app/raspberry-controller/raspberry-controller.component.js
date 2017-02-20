@@ -17,9 +17,10 @@ angular.
         var maxSpeed = 250
         this.distance = 0
         this.danger = false
+        var ledOn = false
 
         this.getDistance = function() {
-            $http.get(Path.DISTANCE).then(function(response) {
+            /*$http.get(Path.DISTANCE).then(function(response) {
                 var data = response.data;
                 self.distance = data.distance
                 if (self.distance <= 20) {
@@ -27,7 +28,19 @@ angular.
                 } else {
                     self.danger = false;
                 }
-            });
+            });*/
+        }
+
+
+
+        this.blinkLed = function() {
+            if (!ledOn) {
+                ledOn = true;
+                $http.get(Path.LED_ON);
+            } else {
+                ledOn = false;
+                $http.get(Path.LED_OFF);
+            }
         }
 
         this.sendSpeed = function(leftSpeed, rightSpeed) {

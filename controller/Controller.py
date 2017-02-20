@@ -82,5 +82,5 @@ def get_init_data():
 
 
 if __name__ == '__main__':
-    controller.run()
+    #controller.run()
     app.run()

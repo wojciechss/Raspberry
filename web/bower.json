@@ -10,6 +10,7 @@
     "angular-route": "~1.5.0",
     "angular-touch": "~1.5.0",
     "angular-loader": "~1.5.0",
-    "angular-mocks": "~1.5.0"
+    "angular-mocks": "~1.5.0",
+    "angular-bootstrap-toggle": "0.1.2"
   }
 }

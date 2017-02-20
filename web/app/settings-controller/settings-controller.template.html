@@ -1,24 +1,12 @@
-<div class="section">
-  <div class="container-fluid">
-
+ <div class="container">
     <div class="row">
-        <button class="btn btn-default" onclick="this.blur();" ng-click="$ctrl.saveInitialData()">Save
-        </button>
-    </div>
-      <div class="row">
-
-        <div class="col-xs-6">
+        <div class="col-xs-4">
             <h1 class="page-header">Settings</h1>
-            <ol class="breadcrumb">
-                <li><a href="#/">Home</a> </li>
-                <li class="active">About</li>
-            </ol>
         </div>
-
     </div>
-
     <form name="settingsForm">
         <div class="row">
+            <div class="col-xs-3"></div>
             <div class="col-xs-1">
                 Forward speed
             </div>
@@ -26,12 +14,17 @@
                  ng-class="{'has-error' : settingsForm.forwardSpeed.$invalid && !settingsForm.forwardSpeed.$pristine }">
                 <input class="form-control n-inputfield"
                        name="forwardSpeed"
-                       type="text"
-                       ng-minlength="3"
-                       ng-model="$ctrl.controllerData.forwardSpeed">
+                       type="number"
+                       min="-250"
+                       max="250"
+                       ng-minlength="1"
+                       ng-model="$ctrl.controllerData.forwardSpeed"
+                       required>
+
             </div>
         </div>
         <div class="row">
+            <div class="col-xs-3"></div>
             <div class="col-xs-1">
                 Back speed
             </div>
@@ -39,12 +32,16 @@
                  ng-class="{'has-error' : settingsForm.backSpeed.$invalid && !settingsForm.backSpeed.$pristine }">
                 <input class="form-control n-inputfield"
                        name="backSpeed"
-                       type="text"
-                       ng-minlength="3"
-                       ng-model="$ctrl.controllerData.backSpeed">
+                       type="number"
+                       min="-250"
+                       max="250"
+                       ng-minlength="1"
+                       ng-model="$ctrl.controllerData.backSpeed"
+                       required>
             </div>
         </div>
         <div class="row">
+            <div class="col-xs-3"></div>
             <div class="col-xs-1">
                 Left offset
             </div>
@@ -52,12 +49,16 @@
                  ng-class="{'has-error' : settingsForm.leftOffset.$invalid && !settingsForm.leftOffset.$pristine }">
                 <input class="form-control n-inputfield"
                        name="leftOffset"
-                       type="text"
-                       ng-minlength="3"
-                       ng-model="$ctrl.controllerData.leftOffset">
+                       type="number"
+                       min="-250"
+                       max="250"
+                       ng-minlength="1"
+                       ng-model="$ctrl.controllerData.leftOffset"
+                       required>
             </div>
         </div>
         <div class="row">
+            <div class="col-xs-3"></div>
             <div class="col-xs-1">
                 Right offset
             </div>
@@ -65,17 +66,27 @@
                  ng-class="{'has-error' : settingsForm.rightOffset.$invalid && !settingsForm.rightOffset.$pristine }">
                 <input class="form-control n-inputfield"
                        name="rightOffset"
-                       type="text"
-                       ng-minlength="3"
-                       ng-model="$ctrl.controllerData.rightOffset">
+                       type="number"
+                       min="-250"
+                       max="250"
+                       ng-minlength="1"
+                       ng-model="$ctrl.controllerData.rightOffset"
+                       required>
             </div>
         </div>
-
+        <br>
     </form>
-
-    <button class="btn btn-default" onclick="this.blur();" ng-click="$ctrl.blinkLed()"
-            ng-bind="$ctrl.ledStatus">
-    </button>
-
+    <div class="row">
+        <div class="col-xs-12">
+            <ol class="breadcrumb">
+                 <button class="btn btn-default"
+                        ng-disabled="settingsForm.forwardSpeed.$invalid ||
+                                        settingsForm.backSpeed.$invalid ||
+                                        settingsForm.leftOffset.$invalid ||
+                                        settingsForm.rightOffset.$invalid"
+                        onclick="this.blur();" ng-click="$ctrl.saveInitialData()">Save
+                </button>
+            </ol>
+        </div>
+    </div>
   </div>
-</div>

@@ -13,22 +13,7 @@ angular.
             forwardSpeed: 0,
             backSpeed: 0,
             leftOffset: 0,
-            rightOffset: 0,
-        }
-        var ledOn = false;
-
-        this.ledStatus = 'led off';
-
-        this.blinkLed = function() {
-            if (!ledOn) {
-                ledOn = true;
-                $http.get(Path.LED_ON);
-                this.ledStatus = 'led on';
-            } else {
-                ledOn = false;
-                $http.get(Path.LED_OFF);
-                this.ledStatus = 'led off';
-            }
+            rightOffset: 0
         }
 
         this.saveInitialData = function() {
