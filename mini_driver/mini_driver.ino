@@ -134,7 +134,17 @@ void drive(int dirPin, int pwmPin, int power) {
      pinLevel = HIGH;
   }
   digitalWrite(dirPin, pinLevel);
-  analogWrite(pwmPin, power);
+  analogWrite(pwmPin, limitPower(power));
+}
+
+int limitPower(int power) {
+  if (power > 250) {
+    return 250;
+  } else if (power < -250) {
+    return -250;
+  } else {
+    return power;
+  }
 }
 
 // ------------------------------------ led------------------------------------------
