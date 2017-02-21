@@ -15,5 +15,5 @@
 
 
 
- cp controller /etc/init.d/controller
+ sudo cp controller /etc/init.d/controller
  sudo update-rc.d controller defaults
