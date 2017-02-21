@@ -12,3 +12,8 @@
 
 --------------------------------
  pip3 install flask
+
+
+
+ cp controller /etc/init.d/controller
+ sudo update-rc.d controller defaults

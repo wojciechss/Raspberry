@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:
+# Provides:          Wojtek Jozwiak
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
@@ -14,9 +14,9 @@ cmd="./Controller.py"
 user="pi"
 
 name=`basename $0`
-pid_file="/var/run/$name.pid"
-stdout_log="/var/log/$name.log"
-stderr_log="/var/log/$name.err"
+pid_file="$dir/run/$name.pid"
+stdout_log="$dir/log/$name.log"
+stderr_log="$dir/log/$name.err"
 
 get_pid() {
     cat "$pid_file"
