@@ -1,5 +1,4 @@
 1. Logi do kontrolera
-2. automatyczne uruchamianie
 3. dockeryzacja serwisów
 4. level 0 omijanie przeszkód
 5. level 1 losowe poruszanie sie
@@ -11,3 +10,8 @@
 11. ssl
 12. baza danych
 13. oauth
+14. połączenie z telefonem
+15. statyczny ip
+
+Done:
+2. automatyczne uruchamianie
