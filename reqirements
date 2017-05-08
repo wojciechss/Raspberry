@@ -17,3 +17,7 @@
 
  sudo cp controller /etc/init.d/controller
  sudo update-rc.d controller defaults
+
+ipv6:
+https://bneijt.nl/blog/post/enable-ipv6-on-your-raspberry-pi/ //nok
+https://www.bitpi.co/2015/08/04/how-to-set-up-an-nginx-server-on-a-raspberry-pi/
