@@ -80,7 +80,12 @@ def get_init_data():
         Controller.save_initial_data(content)
         return 'OK'
 
+def https_app():
+    import ssl
+    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+    context.load_cert_chain('server.crt', 'server.key')
+    app.run(ssl_context=context)
 
 if __name__ == '__main__':
     controller.run()
-    app.run()
+    https_app()
