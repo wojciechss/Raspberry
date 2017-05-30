@@ -165,3 +165,34 @@ footer {
         /* increases the carousel height so it looks good on phones */
     }
 }
+
+.zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+}
+
+#center {
+    position: absolute;
+    left: 31%;
+    top: 40%;
+    width: 40%;
+}
+
+#right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+}

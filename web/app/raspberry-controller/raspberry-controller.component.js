@@ -20,6 +20,9 @@ angular.
         this.danger = false
         var ledOn = false
 
+        var forwardSpeed = 0;
+        var sidewaysSpeed = 0;
+
         this.getDistance = function() {
             /*$http.get(Path.DISTANCE).then(function(response) {
                 var data = response.data;
@@ -56,26 +59,6 @@ angular.
                  }
             }
             $http(req)
-        }
-
-        this.buttonUpDown = function() {
-            this.sendSpeed(getLeftSpeed(), getRightSpeed())
-        }
-
-        this.buttonLeftDown = function() {
-            this.sendSpeed(getLeftSpeed(), 0)
-        }
-
-        this.buttonDownDown = function() {
-            this.sendSpeed(getBackLeftSpeed(), getBackRightSpeed())
-        }
-
-        this.buttonRightDown = function() {
-            this.sendSpeed(0, getRightSpeed())
-        }
-
-        this.buttonUp = function() {
-            this.sendSpeed(0, 0)
         }
 
         this.getDistancePeriodically = $interval(this.getDistance, 500);
@@ -118,16 +101,41 @@ angular.
             });
         }
 
+
+        var joystickL = nipplejs.create({
+            zone: document.getElementById('left'),
+            mode: 'dynamic',
+            color: 'black',
+            threshold: 0.9,
+            size: 100
+        });
+
+        joystickL.on('removed', function (evt, nipple) {
+            nipple.off('start move end dir plain');
+                console.log("off");
+        }).on('move', function (evt, data) {
+                // DO EVERYTHING
+                var x = Math.cos(data.angle.radian) * data.distance * 4;
+                var y = Math.sin(data.angle.radian) * data.distance * 4;
+                //console.log(x + ' ' + y)
+                if (Math.abs(forwardSpeed - x) > 20) {
+                    forwardSpeed = x;
+                    console.log('x: ' + x);
+                }
+                if (Math.abs(sidewaysSpeed - y) > 20) {
+                    sidewaysSpeed = y;
+                    console.log('y: ' + y);
+                }
+
+        });
+
+        var joystickR = nipplejs.create({
+            zone: document.getElementById('right'),
+            mode: 'dynamic',
+            color: 'black',
+            size: 100
+        });
+
         getInitialData()
     }]
-  }).
-  directive('controlButtons', function() {
-    return {
-        templateUrl: 'raspberry-controller/control-buttons.html'
-    };
-  }).
-  directive('mobileControlButtons', function() {
-    return {
-        templateUrl: 'raspberry-controller/mobile-control-buttons.html'
-    };
   });
