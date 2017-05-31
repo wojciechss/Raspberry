@@ -3,10 +3,10 @@ int pinTrigger = 2;
 int pinEcho = 4;
 int pinLed = 13;
 
-const int leftMotorDirPin = 7;
-const int leftMotorPwmPin = 9;
-const int rightMotorDirPin = 8;
-const int rightMotorPwmPin = 10;
+const int leftMotorDirPin = 8;
+const int leftMotorPwmPin = 10;
+const int rightMotorDirPin = 7;
+const int rightMotorPwmPin = 9;
 
 // ------------------------------------ main ------------------------------------------
 
