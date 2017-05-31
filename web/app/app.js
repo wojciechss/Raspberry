@@ -8,7 +8,6 @@ angular.module('raspberryApp', [
     'ngRoute',
     'ui.toggle',
     'ngTouch',
-    'mobileDetectorApp',
     'raspberry',
     'settings'
 ]);
