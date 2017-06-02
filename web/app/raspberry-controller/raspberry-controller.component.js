@@ -5,7 +5,12 @@ angular.
   module('raspberry').
   component('raspberry', {
     templateUrl: 'raspberry-controller/raspberry-controller.template.html',
-    controller: ['SpeedConverter', 'Engine', function RaspberryController(SpeedConverter, Engine) {
+    controller: ['SpeedConverter', 'Engine', 'MobileDetector',
+        function RaspberryController(SpeedConverter, Engine, MobileDetector) {
+
+        this.isMobile = function() {
+            return MobileDetector.isMobile();
+        }
 
         var drive = function(data) {
             var speed = SpeedConverter.convertSpeed(data);

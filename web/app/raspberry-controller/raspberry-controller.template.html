@@ -1,7 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <h3 class="page-header">Home <small>Tap to drive</small></h3>
+            <h3 class="page-header">
+                <span ng-if="!$ctrl.isMobile()">Click </span>
+                <span ng-if="$ctrl.isMobile()">Tap </span>
+
+                <small>to drive</small></h3>
         </div>
     </div>
 
