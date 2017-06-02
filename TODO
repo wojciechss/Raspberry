@@ -7,11 +7,14 @@
 8. testy do pythona
 9. testy do js
 10. sterowanie servo
-11. ssl - ok
 12. baza danych
 13. oauth
 14. połączenie z telefonem
-15. statyczny ip
+15. REJECTED | statyczny ip
+16. proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+17. install_requirements
+18. install.sh
 
 Done:
 2. automatyczne uruchamianie
+11. ssl
