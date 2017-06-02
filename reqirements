@@ -11,8 +11,9 @@
 
 
 --------------------------------
- pip3 install flask
-
+pip3 install flask
+pip3 install falcon
+pip3 install gunicorn
 
 
  sudo cp controller /etc/init.d/controller

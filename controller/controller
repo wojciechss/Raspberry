@@ -10,7 +10,7 @@
 ### END INIT INFO
 
 dir="/home/pi/src/Raspberry/controller"
-cmd="./Controller.py"
+cmd="./run.sh"
 user="pi"
 
 name=`basename $0`

@@ -3,6 +3,7 @@
 import serial
 import time
 
+
 class MiniDriver:
 
     portName = '/dev/ttyUSB0'
