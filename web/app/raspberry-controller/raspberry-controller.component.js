@@ -26,14 +26,17 @@ angular.
             mode: 'dynamic',
             color: 'black',
             threshold: 0.9,
-            size: 100
+            fadeTime: 0,
+            size: 120
         });
 
         var joystickR = nipplejs.create({
             zone: document.getElementById('right'),
             mode: 'dynamic',
             color: 'black',
-            size: 100
+            threshold: 0.9,
+            fadeTime: 0,
+            size: 120
         });
 
         joystickR.on('removed', function (evt, nipple) {

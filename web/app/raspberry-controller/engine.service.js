@@ -32,7 +32,7 @@ angular.
             changed = true;
         }
         if (changed) {
-            this.sendSpeed(speed.left, speed.right);
+            this.sendSpeed(Math.floor(speed.left), Math.floor(speed.right));
         }
     };
   }]);
