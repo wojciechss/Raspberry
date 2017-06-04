@@ -25,18 +25,9 @@ angular.
                 speed.left = 0;
             }
             speed.right = acceleration;
-        } else if (data.angle.degree > 180 && data.angle.degree <= 270) {
-            speed.left = (-acceleration - x) / 2;
-            if (speed.left > 0) {
-                speed.left = 0;
-            }
-            speed.right = (-acceleration) / 2;
-        } else if (data.angle.degree > 270 && data.angle.degree <= 360) {
-            speed.left = (-acceleration) / 2;
-            speed.right = (-acceleration + x) / 2;
-            if (speed.right > 0) {
-                speed.right = 0;
-            }
+        } else if (data.angle.degree > 180 && data.angle.degree <= 360) {
+            speed.left = -100
+            speed.right = -100;
         }
         return speed;
     }
