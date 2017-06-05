@@ -19,14 +19,17 @@ class Controller:
     def led_off(self):
         self.minidriver.led_off()
 
+    def drive(self, left_speed, right_speed):
+        self.minidriver.drive(left_speed, right_speed)
+
     def get_distance_request(self):
         self.minidriver.get_distance_request()
 
     def read_distance(self):
         return self.minidriver.read_distance()
 
-    def drive(self, left_speed, right_speed):
-        self.minidriver.drive(left_speed, right_speed)
+    def set_servo_position(self, position):
+        self.minidriver.set_servo_position(position)
 
     @classmethod
     def get_initial_data(cls):

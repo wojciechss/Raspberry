@@ -9,6 +9,7 @@ angular.
         DRIVE: controller + '/drive',
         DISTANCE: controller + '/ultrasonic',
         LED_ON: controller + '/led_on',
-        LED_OFF: controller + '/led_off'
+        LED_OFF: controller + '/led_off',
+        SERVO: controller + '/servo'
     }
 }]);

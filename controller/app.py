@@ -46,6 +46,14 @@ class ReadDistance(object):
 api.add_route('/controller/ultrasonic', ReadDistance())
 
 
+class SetServoPosition(object):
+    def on_get(self, req, resp):
+        position = req.get_param('position')
+        controller.set_servo_position(position)
+        resp.status = falcon.HTTP_200
+
+api.add_route('/controller/servo', SetServoPosition())
+
 class InitData(object):
     def on_get(self, req, resp):
         """Handles GET requests"""

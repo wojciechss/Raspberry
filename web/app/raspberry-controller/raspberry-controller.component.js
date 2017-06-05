@@ -5,11 +5,16 @@ angular.
   module('raspberry').
   component('raspberry', {
     templateUrl: 'raspberry-controller/raspberry-controller.template.html',
-    controller: ['SpeedConverter', 'Engine', 'MobileDetector',
-        function RaspberryController(SpeedConverter, Engine, MobileDetector) {
+    controller: ['Engine', 'SpeedConverter', 'Servo', 'ServoPositionConverter', 'MobileDetector',
+        function RaspberryController(Engine, SpeedConverter, Servo, ServoPositionConverter, MobileDetector) {
 
         this.isMobile = function() {
             return MobileDetector.isMobile();
+        }
+
+        var setServoPosition = function(data) {
+            var position = ServoPositionConverter.convertPosition(data);
+            Servo.setServoPosition(position);
         }
 
         var drive = function(data) {
@@ -37,6 +42,10 @@ angular.
             threshold: 0.9,
             fadeTime: 0,
             size: 120
+        });
+
+        joystickL.on('plain', function (evt, data) {
+            setServoPosition(data);
         });
 
         joystickR.on('removed', function (evt, nipple) {

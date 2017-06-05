@@ -16,6 +16,7 @@ class MiniDriver:
         )
         self.__wait_for_connection()
         self._blink_led()
+        self.set_servo_position(180)
 
     def led_on(self):
         self._write('led:on;')
@@ -36,6 +37,10 @@ class MiniDriver:
         if self.__isfloat(val):
             return self.__parseFloat(val)
         return 0
+
+    def set_servo_position(self, position):
+        data = 'servo' + ':' + str(position)
+        self._write(data)
 
     def _write(self, data):
         self.ser.write(data.encode('utf-8'))

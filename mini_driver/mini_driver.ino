@@ -1,12 +1,18 @@
 
-int pinTrigger = 2;
-int pinEcho = 4;
-int pinLed = 13;
+#include <Servo.h>  // servo library
+
+const int pinTrigger = 2;
+const int pinEcho = 4;
+const int pinLed = 13;
 
 const int leftMotorDirPin = 8;
 const int leftMotorPwmPin = 10;
 const int rightMotorDirPin = 7;
 const int rightMotorPwmPin = 9;
+
+const int servoPin = 12;
+
+Servo servo1;  // servo control object
 
 // ------------------------------------ main ------------------------------------------
 
@@ -19,22 +25,25 @@ void loop() {
 // Led:         'led:on/off;'
 // Motor:       'motor:{left_speed}:{right_speed};'
 // Ultrasonic:  'ultrasonic;'
+// Servo:       'servo:{position}'
 void readData() {
-  String data = Serial.readStringUntil(';');
+  const String data = Serial.readStringUntil(';');
   if (data != "") {
-    String device = getValue(data, ':', 0);
+    const String device = getValue(data, ':', 0);
     if (device == "led") {
-      process_led(data);
+      processLed(data);
     } else if (device == "motor") {
-      process_motor(data);
+      processMotor(data);
     } else if (device == "ultrasonic") {
-      process_ultrasonic_sensor();
+      processUltrasonicSensor();
+    } else if (device == "servo") {
+      processServo(data);
     }
   }
 }
 
-void process_led(String data) {
-  String command = getValue(data, ':', 1);
+void processLed(const String& data) {
+  const String command = getValue(data, ':', 1);
   if (command == "on") {
     turnLedOn();
   } else if (command == "off") {
@@ -42,18 +51,23 @@ void process_led(String data) {
   }
 }
 
-void process_motor(String data) {
-  String left = getValue(data, ':', 1);
-  String right = getValue(data, ':', 2);
-  driveLeft(left.toInt());
-  driveRight(right.toInt());
+void processMotor(const String& data) {
+  const String left = getValue(data, ':', 1);
+  const String right = getValue(data, ':', 2);
+  setLeftEngineSpeed(left.toInt());
+  setRightEngineSpeed(right.toInt());
 }
 
-void process_ultrasonic_sensor() {
+void processUltrasonicSensor() {
   sendUltrasonicDistance();
 }
 
-String getValue(String data, char separator, int index) {
+void processServo(const String& data) {
+  const String servoPosition = getValue(data, ':', 1);
+  setServoPosition(servoPosition.toInt());
+}
+
+String getValue(const String& data, char separator, int index) {
   int found = 0;
   int strIndex[] = {0, -1};
   int maxIndex = data.length() - 1;
@@ -84,6 +98,9 @@ void setup() {
   pinMode(leftMotorPwmPin, OUTPUT);
   pinMode(rightMotorDirPin, OUTPUT);
   pinMode(rightMotorPwmPin, OUTPUT);
+
+  // set up servo pin
+  servo1.attach(servoPin);
 
   // initialize serial communication at 9600 bits per second:
   Serial.begin(9600);
@@ -120,15 +137,15 @@ float getUltrasonicDistance() {
 
 // ------------------------------------ motor ------------------------------------------
 
-void driveLeft(int power) {
-  drive(leftMotorDirPin, leftMotorPwmPin, power);
+void setLeftEngineSpeed(int power) {
+  setEngineSpeed(leftMotorDirPin, leftMotorPwmPin, power);
 }
 
-void driveRight(int power) {
-  drive(rightMotorDirPin, rightMotorPwmPin, power);
+void setRightEngineSpeed(int power) {
+  setEngineSpeed(rightMotorDirPin, rightMotorPwmPin, power);
 }
 
-void drive(int dirPin, int pwmPin, int power) {
+void setEngineSpeed(int dirPin, int pwmPin, int power) {
   int pinLevel = LOW;
   if (power < 0) {
      pinLevel = HIGH;
@@ -138,10 +155,10 @@ void drive(int dirPin, int pwmPin, int power) {
 }
 
 int limitPower(int power) {
-  if (power > 250) {
-    return 250;
-  } else if (power < -250) {
-    return -250;
+  if (power > 245) {
+    return 245;
+  } else if (power < -245) {
+    return -245;
   } else {
     return power;
   }
@@ -155,5 +172,11 @@ void turnLedOn() {
 
 void turnLedOff() {
   digitalWrite(pinLed, LOW);    // turn the LED off by making the voltage LOW  
+}
+
+// ------------------------------------ servo------------------------------------------
+
+void setServoPosition(int servoPosition) {
+  servo1.write(servoPosition);
 }
 
