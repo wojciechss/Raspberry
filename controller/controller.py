@@ -13,6 +13,7 @@ class Controller:
     def __init__(self):
         self.mini_driver = MiniDriver()
         self.pan_servo = ServoPWM(PAN_PWM_PIN, (45.0, 1850), (90.0, 1400), (135.0, 1000.0))
+        self.pan_servo.init_channel()
 
     def run(self):
         self.mini_driver.connect()
@@ -33,7 +34,7 @@ class Controller:
         return self.mini_driver.read_distance()
 
     def set_servo_position(self, position):
-        self.pan_servo.set_angle(position)
+        self.pan_servo.set_angle(int(position))
 
     @classmethod
     def get_initial_data(cls):

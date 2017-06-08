@@ -4,6 +4,8 @@ import RPIO
 import RPIO.PWM
 
 PWM_DMA_CHANNEL = 0
+PWM_SUBCYLCLE_TIME_US = 20000
+PWM_PULSE_INCREMENT_US = 10
 
 ABSOLUTE_MIN_PULSE_WIDTH_US = 500
 ABSOLUTE_MAX_PULSE_WIDTH_US = 2500
@@ -25,6 +27,14 @@ class ServoPWM:
         self.mid_angle_pulse_width_pair = mid_angle_pulse_width_pair
         self.max_angle_pulse_width_pair = max_angle_pulse_width_pair
         self.last_pulse_width_set = None
+
+    @staticmethod
+    def init_channel():
+        # Setup RPIO, and prepare for PWM signals
+        RPIO.setmode(RPIO.BCM)
+
+        RPIO.PWM.setup(pulse_incr_us=PWM_PULSE_INCREMENT_US)
+        RPIO.PWM.init_channel(PWM_DMA_CHANNEL, PWM_SUBCYLCLE_TIME_US)
 
     def set_pulse_width(self, pulse_width):
         # Constrain the pulse width
