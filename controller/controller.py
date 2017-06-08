@@ -3,33 +3,37 @@
 import json
 
 from mini_driver import MiniDriver
+from pan_tilt import ServoPWM
+
+PAN_PWM_PIN = 23
 
 
 class Controller:
 
     def __init__(self):
-        self.minidriver = MiniDriver()
+        self.mini_driver = MiniDriver()
+        self.pan_servo = ServoPWM(PAN_PWM_PIN, (45.0, 1850), (90.0, 1400), (135.0, 1000.0))
 
     def run(self):
-        self.minidriver.connect()
+        self.mini_driver.connect()
 
     def led_on(self):
-        self.minidriver.led_on()
+        self.mini_driver.led_on()
 
     def led_off(self):
-        self.minidriver.led_off()
+        self.mini_driver.led_off()
 
     def drive(self, left_speed, right_speed):
-        self.minidriver.drive(left_speed, right_speed)
+        self.mini_driver.drive(left_speed, right_speed)
 
     def get_distance_request(self):
-        self.minidriver.get_distance_request()
+        self.mini_driver.get_distance_request()
 
     def read_distance(self):
-        return self.minidriver.read_distance()
+        return self.mini_driver.read_distance()
 
     def set_servo_position(self, position):
-        self.minidriver.set_servo_position(position)
+        self.pan_servo.set_angle(position)
 
     @classmethod
     def get_initial_data(cls):

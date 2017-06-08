@@ -4,6 +4,11 @@ import serial
 import time
 
 
+# Input:       'device:device_specific_data;'
+# Led:         '0:{state};' on - 1, off - 0
+# Motor:       '1:{left_speed}:{right_speed};'
+# Ultrasonic:  '2;'
+# Servo:       '3:{position}'
 class MiniDriver:
 
     portName = '/dev/ttyUSB0'
@@ -19,27 +24,27 @@ class MiniDriver:
         self.set_servo_position(180)
 
     def led_on(self):
-        self._write('led:on;')
+        self._write('0:1;')
 
     def led_off(self):
-        self._write('led:off;')
+        self._write('0:0;')
 
     def drive(self, left_speed, right_speed):
-        data = 'motor' + ':' + str(left_speed) + ':' + str(right_speed) + ';'
+        data = '1' + ':' + str(left_speed) + ':' + str(right_speed) + ';'
         self._write(data)
 
     def get_distance_request(self):
-        self._write('ultrasonic;')
+        self._write('2;')
 
     def read_distance(self):
         x = self._read_line()
         val = str(x, 'ascii')
-        if self.__isfloat(val):
-            return self.__parseFloat(val)
+        if self.__isInt(val):
+            return self.__parseInt(val)
         return 0
 
     def set_servo_position(self, position):
-        data = 'servo' + ':' + str(position)
+        data = '3' + ':' + str(position) + ';'
         self._write(data)
 
     def _write(self, data):
@@ -64,16 +69,16 @@ class MiniDriver:
         print('Connected')
 
     @classmethod
-    def __parseFloat(cls, input):
+    def __parseInt(cls, input):
         try:
-            return float(input)
+            return int(input)
         except ValueError:
             pass
 
     @classmethod
-    def __isfloat(cls, value):
+    def __isInt(cls, value):
         try:
-            float(value)
+            int(value)
             return True
         except:
             return False

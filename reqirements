@@ -15,9 +15,12 @@ pip3 install falcon
 pip3 install gunicorn
 
 
- sudo cp controller /etc/init.d/controller
- sudo update-rc.d controller defaults
+sudo cp controller /etc/init.d/controller
+sudo update-rc.d controller defaults
 
-ipv6:
-https://bneijt.nl/blog/post/enable-ipv6-on-your-raspberry-pi/ //nok
-https://www.bitpi.co/2015/08/04/how-to-set-up-an-nginx-server-on-a-raspberry-pi/
+//pantilt:
+
+sudo apt-get install python-dev python-pip
+git clone https://github.com/metachris/RPIO.git --branch v2 --single-branch
+cd RPIO/
+sudo python3 setup.py install
