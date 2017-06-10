@@ -9,7 +9,7 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
-dir="/home/pi/src/Raspberry/controller"
+dir="/home/pi/src/Raspberry/mini_driver_service"
 cmd="./run.sh"
 user="pi"
 

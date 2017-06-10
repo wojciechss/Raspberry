@@ -36,6 +36,15 @@ class ServoPWM:
         RPIO.PWM.setup(pulse_incr_us=PWM_PULSE_INCREMENT_US)
         RPIO.PWM.init_channel(PWM_DMA_CHANNEL, PWM_SUBCYLCLE_TIME_US)
 
+    @staticmethod
+    def clear_pwm(pan):
+        RPIO.PWM.clear_channel_gpio(PWM_DMA_CHANNEL, pan.pwmPin)
+        RPIO.PWM.cleanup()
+
+    @staticmethod
+    def cleanup():
+        RPIO.cleanup()
+
     def set_pulse_width(self, pulse_width):
         # Constrain the pulse width
         if pulse_width < ABSOLUTE_MIN_PULSE_WIDTH_US:
