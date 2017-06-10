@@ -15,8 +15,8 @@ pip3 install falcon
 pip3 install gunicorn
 
 
-sudo cp controller /etc/init.d/controller
-sudo update-rc.d controller defaults
+sudo cp mini_driver_service /etc/init.d/mini_driver_service
+sudo update-rc.d mini_driver_service defaults
 
 //pantilt:
 

@@ -17,7 +17,7 @@ class LedOn(object):
         logger.info('Led on')
         resp.status = falcon.HTTP_200
 
-api.add_route('/controller/led_on', LedOn())
+api.add_route('/mini_driver/led_on', LedOn())
 
 
 class LedOff(object):
@@ -26,7 +26,7 @@ class LedOff(object):
         logger.info('Led off')
         resp.status = falcon.HTTP_200
 
-api.add_route('/controller/led_off', LedOff())
+api.add_route('/mini_driver/led_off', LedOff())
 
 
 class Drive(object):
@@ -37,7 +37,7 @@ class Drive(object):
         logger.info('Drive: ' + left + ':' + right)
         resp.status = falcon.HTTP_200
 
-api.add_route('/controller/drive', Drive())
+api.add_route('/mini_driver/drive', Drive())
 
 
 class ReadDistance(object):
@@ -49,7 +49,7 @@ class ReadDistance(object):
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(data)
 
-api.add_route('/controller/ultrasonic', ReadDistance())
+api.add_route('/mini_driver/ultrasonic', ReadDistance())
 
 
 mini_driver.connect()
