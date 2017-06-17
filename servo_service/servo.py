@@ -8,6 +8,7 @@ TILT_PWM_PIN = 24
 
 class Servo:
     def __init__(self):
+        ServoPWM.init_channel()
         self.pan = ServoPWM(PAN_PWM_PIN, (45.0, 1850), (90.0, 1400), (135.0, 1000.0))
         self.tilt = ServoPWM(TILT_PWM_PIN, (45.0, 1850), (90.0, 1400), (135.0, 1000.0))
 

@@ -28,8 +28,6 @@ class ServoPWM:
         self.max_angle_pulse_width_pair = max_angle_pulse_width_pair
         self.last_pulse_width_set = None
 
-        self.init_channel()
-
     @staticmethod
     def init_channel():
         # Setup RPIO, and prepare for PWM signals
