@@ -24,3 +24,5 @@ sudo apt-get install python-dev python-pip
 git clone https://github.com/metachris/RPIO.git --branch v2 --single-branch
 cd RPIO/
 sudo python3 setup.py install
+
+    sudo apt-get install rpi.gpio

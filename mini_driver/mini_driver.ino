@@ -1,6 +1,6 @@
 
-const int pinTrigger = 2;
-const int pinEcho = 4;
+const int pinTrigger = 11;
+const int pinEcho = 12;
 const int pinLed = 13;
 
 const int leftMotorDirPin = 8;
@@ -154,3 +154,4 @@ int getUltrasonicDistance() {
 
   return (int)dist;
 }
+
