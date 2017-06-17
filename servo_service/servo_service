@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          Wojtek Jozwiak
+# Provides:          Servo
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
@@ -10,8 +10,8 @@
 ### END INIT INFO
 
 dir="/home/pi/src/Raspberry/servo_service"
-cmd="sudo ./run.sh"
-user="pi"
+cmd="./run.sh"
+user="root"
 
 name=`basename $0`
 pid_file="$dir/run/$name.pid"
