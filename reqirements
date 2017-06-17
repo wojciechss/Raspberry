@@ -18,6 +18,9 @@ pip3 install gunicorn
 sudo cp mini_driver_service /etc/init.d/mini_driver_service
 sudo update-rc.d mini_driver_service defaults
 
+sudo cp servo_service /etc/init.d/servo_service
+sudo update-rc.d servo_service defaults
+
 //pantilt:
 
 sudo apt-get install python-dev python-pip
