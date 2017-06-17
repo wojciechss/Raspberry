@@ -27,4 +27,4 @@ class SetTiltPosition(object):
         #print('Servo: ' + position)
         resp.status = falcon.HTTP_200
 
-api.add_route('/servo/tilt', SetPanPosition())
+api.add_route('/servo/tilt', SetTiltPosition())
