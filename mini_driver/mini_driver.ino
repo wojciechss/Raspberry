@@ -74,7 +74,7 @@ void setup() {
   pinMode(rightMotorPwmPin, OUTPUT);
 }
 
-// ------------------------------------ led------------------------------------------
+// ------------------------------------ led ------------------------------------------
 
 void turnLedOn() {
   digitalWrite(pinLed, HIGH);   // turn the LED on (HIGH is the voltage level)

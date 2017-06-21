@@ -1,7 +1,15 @@
 
+#include <Servo.h>  // servo library
+
 const int pinTrigger = 11;
 const int pinEcho = 12;
 const int pinLed = 13;
+
+const int pinPan = 3;
+const int pinTilt = 5;
+
+Servo pan;
+Servo tilt;
 
 // ------------------------------------ main ------------------------------------------
 
@@ -13,6 +21,8 @@ void loop() {
 // Input:       'device:device_specific_data;'
 // Led:         '0:{state};' on - 1, off - 0
 // Ultrasonic:  '1;'
+// Pan:         '2;{position}'
+// Tilt:        '3;{position}'
 void readData() {
   const String data = Serial.readStringUntil(';');
    if (data != "") {
@@ -24,6 +34,12 @@ void readData() {
         case 1:
           processUltrasonicSensor();
           break;
+        case 2:
+          processPan(data);
+          break;
+        case 3:
+          processTilt(data);
+          break;
       }
    }
 }
@@ -34,6 +50,14 @@ void processLed(const String& data) {
 
 void processUltrasonicSensor() {
   sendUltrasonicDistance();
+}
+
+void processPan(const String& data) {
+  setPanPosition(getValue(data, ':', 1));
+}
+
+void processTilt(const String& data) {
+  setTiltPosition(getValue(data, ':', 1));
 }
 
 int getValue(const String& data, char separator, int index) {
@@ -66,9 +90,15 @@ void setup() {
   // set up ultrasonic sensor pins
   pinMode(pinTrigger, OUTPUT);
   pinMode(pinEcho, INPUT);
+
+  // set up pan pin
+  pan.attach(pinPan);
+
+  // set up tilt pin
+  tilt.attach(pinTilt);
 }
 
-// ------------------------------------ led------------------------------------------
+// ------------------------------------ led ------------------------------------------
 
 void turnLedOn() {
   digitalWrite(pinLed, HIGH);   // turn the LED on (HIGH is the voltage level)
@@ -105,4 +135,17 @@ int getUltrasonicDistance() {
 
   return (int)dist;
 }
+
+// ------------------------------------ pan ------------------------------------------
+
+void setPanPosition(int panPosition) {
+  pan.write(panPosition);
+}
+
+// ------------------------------------ tilt ------------------------------------------
+
+void setTiltPosition(int tiltPosition) {
+  tilt.write(tiltPosition);
+}
+
 

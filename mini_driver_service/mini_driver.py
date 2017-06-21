@@ -9,7 +9,7 @@ import time
 # Motor:       '1:{left_speed}:{right_speed};'
 class MiniDriver:
 
-    portName = '/dev/ttyUSB0'
+    portName = '/dev/miniDriver'
 
     def connect(self):
         self.ser = serial.Serial(

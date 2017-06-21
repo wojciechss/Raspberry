@@ -19,21 +19,21 @@ sudo cp mini_driver_service /etc/init.d/mini_driver_service
 sudo chmod 755 /etc/init.d/mini_driver_service
 sudo update-rc.d mini_driver_service defaults
 
-sudo cp servo_service /etc/init.d/servo_service
-sudo chmod 755 /etc/init.d/servo_service
-sudo update-rc.d servo_service defaults
+sudo cp nano_service /etc/init.d/nano_service
+sudo chmod 755 /etc/init.d/nano_service
+sudo update-rc.d nano_service defaults
 
-//pantilt:
-
-sudo apt-get install python-dev python-pip
-git clone https://github.com/metachris/RPIO.git --branch v2 --single-branch
-cd RPIO/
-sudo python3 setup.py install
-
-    sudo apt-get install rpi.gpio
 
 ---------------------------------------------------------------------------------
 accelerometr
 
 https://learn.sparkfun.com/tutorials/lis3dh-hookup-guide
 
+
+---------------------------------------------------------------------------------
+
+USB devices
+
+http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/
+
+sudo cp mini_driver/mini-driver-usb-serial.rules /etc/udev/rules.d
