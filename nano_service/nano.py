@@ -11,7 +11,7 @@ import time
 # Tilt Servo:  '3:{position}'
 class Nano:
 
-    portName = '/dev/nano'
+    portName = '/dev/nanoBoard'
 
     def connect(self):
         self.ser = serial.Serial(
