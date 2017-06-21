@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          Servo
+# Provides:          Nano
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
@@ -9,9 +9,9 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
-dir="/home/pi/src/Raspberry/servo_service"
+dir="/home/pi/src/Raspberry/nano_service"
 cmd="./run.sh"
-user="root"
+user="pi"
 
 name=`basename $0`
 pid_file="$dir/run/$name.pid"

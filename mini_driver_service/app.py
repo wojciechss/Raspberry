@@ -40,16 +40,4 @@ class Drive(object):
 api.add_route('/mini_driver/drive', Drive())
 
 
-class ReadDistance(object):
-    def on_get(self, req, resp):
-        mini_driver.get_distance_request()
-        distance = mini_driver.read_distance()
-        logger.info('Distance: ' + str(distance))
-        data = dict(distance=distance)
-        resp.status = falcon.HTTP_200
-        resp.body = json.dumps(data)
-
-api.add_route('/mini_driver/ultrasonic', ReadDistance())
-
-
 mini_driver.connect()

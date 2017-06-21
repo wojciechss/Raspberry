@@ -31,3 +31,9 @@ cd RPIO/
 sudo python3 setup.py install
 
     sudo apt-get install rpi.gpio
+
+---------------------------------------------------------------------------------
+accelerometr
+
+https://learn.sparkfun.com/tutorials/lis3dh-hookup-guide
+

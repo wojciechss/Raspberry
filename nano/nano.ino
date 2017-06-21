@@ -1,10 +1,7 @@
 
+const int pinTrigger = 11;
+const int pinEcho = 12;
 const int pinLed = 13;
-
-const int leftMotorDirPin = 8;
-const int leftMotorPwmPin = 10;
-const int rightMotorDirPin = 7;
-const int rightMotorPwmPin = 9;
 
 // ------------------------------------ main ------------------------------------------
 
@@ -15,7 +12,7 @@ void loop() {
 
 // Input:       'device:device_specific_data;'
 // Led:         '0:{state};' on - 1, off - 0
-// Motor:       '1:{left_speed}:{right_speed};'
+// Ultrasonic:  '1;'
 void readData() {
   const String data = Serial.readStringUntil(';');
    if (data != "") {
@@ -25,7 +22,7 @@ void readData() {
           processLed(data);
           break;
         case 1:
-          processMotor(data);
+          processUltrasonicSensor();
           break;
       }
    }
@@ -35,9 +32,8 @@ void processLed(const String& data) {
   getValue(data, ':', 1) ? turnLedOn() : turnLedOff();
 }
 
-void processMotor(const String& data) {
-  setLeftEngineSpeed(getValue(data, ':', 1));
-  setRightEngineSpeed(getValue(data, ':', 2));
+void processUltrasonicSensor() {
+  sendUltrasonicDistance();
 }
 
 int getValue(const String& data, char separator, int index) {
@@ -67,11 +63,9 @@ void setup() {
   // initialize digital pin 13 as an output.
   pinMode(pinLed, OUTPUT);
 
-  // set up motor pins 
-  pinMode(leftMotorDirPin, OUTPUT);
-  pinMode(leftMotorPwmPin, OUTPUT);
-  pinMode(rightMotorDirPin, OUTPUT);
-  pinMode(rightMotorPwmPin, OUTPUT);
+  // set up ultrasonic sensor pins
+  pinMode(pinTrigger, OUTPUT);
+  pinMode(pinEcho, INPUT);
 }
 
 // ------------------------------------ led------------------------------------------
@@ -84,32 +78,31 @@ void turnLedOff() {
   digitalWrite(pinLed, LOW);    // turn the LED off by making the voltage LOW
 }
 
-// ------------------------------------ motor ------------------------------------------
+// ------------------------------------ ultrasonic sensor HC-SR04 ------------------------------------------
 
-void setLeftEngineSpeed(int power) {
-  setEngineSpeed(leftMotorDirPin, leftMotorPwmPin, power);
+void sendUltrasonicDistance() {
+  int dist = getUltrasonicDistance();
+  Serial.println(dist);
 }
 
-void setRightEngineSpeed(int power) {
-  setEngineSpeed(rightMotorDirPin, rightMotorPwmPin, power);
-}
+// send a ping from ultrasonic sensor HC-SR04 and return distance in cm
+int getUltrasonicDistance() {
+  // send a 10us+ pulse
+  digitalWrite(pinTrigger, LOW);
+  delayMicroseconds(20);
+  digitalWrite(pinTrigger, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(pinTrigger, LOW);
+  delayMicroseconds(20);
 
-void setEngineSpeed(int dirPin, int pwmPin, int power) {
-  int pinLevel = LOW;
-  if (power < 0) {
-    pinLevel = HIGH;
-  }
-  digitalWrite(dirPin, pinLevel);
-  analogWrite(pwmPin, limitPower(power));
-}
+  //  read duration of echo
+  int duration = pulseIn(pinEcho, HIGH);
 
-int limitPower(int power) {
-  if (power > 245) {
-    return 245;
-  } else if (power < -245) {
-    return -245;
-  } else {
-    return power;
-  }
+  // dist = duration * speed of sound * 1/2
+  // dist in cm = duration in us * 1 x 10^{-6} * 340.26 * 100 * 1/2
+  // =  0.017*duration
+  float dist = 0.017 * duration;
+
+  return (int)dist;
 }
 
