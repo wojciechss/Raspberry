@@ -13,8 +13,11 @@ angular.
         }
 
         var setServoPosition = function(data) {
-            var position = ServoPositionConverter.convertPosition(data);
-            Servo.setServoPosition(position);
+            var panPosition = ServoPositionConverter.convertPanPosition(data);
+            var tiltPosition = ServoPositionConverter.convertTiltPosition(data);
+
+            Servo.setPanPosition(panPosition);
+            Servo.setTiltPosition(tiltPosition);
         }
 
         var drive = function(data) {

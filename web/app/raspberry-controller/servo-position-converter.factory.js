@@ -4,7 +4,7 @@ angular.
   module('raspberry').
   factory('ServoPositionConverter', function() {
 
-    var _convertPosition = function (data) {
+    var _convertPanPosition = function (data) {
         if (data.direction.y === 'up') {
             return 130;
         } else if (data.direction.y === 'down') {
@@ -12,7 +12,16 @@ angular.
         }
     }
 
+    var _convertTiltPosition = function (data) {
+        if (data.direction.x === 'left') {
+            return 120;
+        } else if (data.direction.x === 'right') {
+            return 60;
+        }
+    }
+
     return {
-        convertPosition: _convertPosition
+        convertPanPosition: _convertPanPosition,
+        convertTiltPosition: _convertTiltPosition
     }
   });

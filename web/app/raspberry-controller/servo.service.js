@@ -5,10 +5,21 @@ angular.
   module('raspberry').
   service('Servo', ['$http', 'Path', function($http, Path) {
 
-    this.setServoPosition = function(position) {
+    this.setPanPosition = function(position) {
         var req = {
              method: 'GET',
-             url: Path.SERVO,
+             url: Path.PAN,
+             params: {
+                position: position,
+             }
+        }
+        $http(req)
+    }
+
+    this.setTiltPosition = function(position) {
+        var req = {
+             method: 'GET',
+             url: Path.TILT,
              params: {
                 position: position,
              }

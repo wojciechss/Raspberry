@@ -28,10 +28,10 @@ void loop() {
    readData();
 }
 
-// Input:        'device:device_specific_data;'
-// Led:          '0:{state};' on - 1, off - 0
-// Ultrasonic:   '1;'
-// Servo:        '2;{device};{position}' pan - 0, tilt - 1
+// Input:         'device:device_specific_data;'
+// Led:           '0:{state};' on - 1, off - 0
+// Ultrasonic:    '1;'
+// Servo:         '2;{device}:{position}' pan - 0, tilt - 1
 // Accelerometer: '3;
 void readData() {
   const String data = Serial.readStringUntil(';');
