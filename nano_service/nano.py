@@ -21,8 +21,8 @@ class Nano:
         )
         self.__wait_for_connection()
         self._blink_led()
-        self.set_pan_position(90)
-        self.set_tilt_position(90)
+        self.set_pan_position(160)
+        self.set_tilt_position(100)
 
     def led_on(self):
         self._write('0:1;')
@@ -41,12 +41,21 @@ class Nano:
         return 0
 
     def set_pan_position(self, position):
-        data = '2' + ':' + str(position) + ';'
+        data = '2:0:' + str(position) + ';'
         self._write(data)
 
     def set_tilt_position(self, position):
-        data = '3' + ':' + str(position) + ';'
+        data = '2:1:' + str(position) + ';'
         self._write(data)
+
+    def get_accelerometer_data_request(self):
+        self._write('3;')
+
+    def read_accelerometer_data(self):
+        x = self._read_line()
+        val = str(x, 'ascii')
+        print(val)
+        return val
 
     def _write(self, data):
         self.ser.write(data.encode('utf-8'))

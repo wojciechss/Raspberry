@@ -1,15 +1,25 @@
 
 #include <Servo.h>  // servo library
+#include "SparkFunLIS3DH.h"
+#include "Wire.h"
+#include "SPI.h"
 
 const int pinTrigger = 11;
 const int pinEcho = 12;
 const int pinLed = 13;
 
 const int pinPan = 3;
-const int pinTilt = 5;
+const int pinTilt = 4;
 
 Servo pan;
 Servo tilt;
+
+LIS3DH myIMU; //Default constructor is I2C, addr 0x19.
+
+// LIS3DH Hardware connections:
+// Connect I2C SDA line to A4
+// Connect I2C SCL line to A5
+// Connect GND and 3.3v power to the IMU
 
 // ------------------------------------ main ------------------------------------------
 
@@ -18,11 +28,11 @@ void loop() {
    readData();
 }
 
-// Input:       'device:device_specific_data;'
-// Led:         '0:{state};' on - 1, off - 0
-// Ultrasonic:  '1;'
-// Pan:         '2;{position}'
-// Tilt:        '3;{position}'
+// Input:        'device:device_specific_data;'
+// Led:          '0:{state};' on - 1, off - 0
+// Ultrasonic:   '1;'
+// Servo:        '2;{device};{position}' pan - 0, tilt - 1
+// Accelerometer: '3;
 void readData() {
   const String data = Serial.readStringUntil(';');
    if (data != "") {
@@ -35,10 +45,10 @@ void readData() {
           processUltrasonicSensor();
           break;
         case 2:
-          processPan(data);
+          processServo(data);
           break;
         case 3:
-          processTilt(data);
+          processAccelerometer();
           break;
       }
    }
@@ -52,12 +62,20 @@ void processUltrasonicSensor() {
   sendUltrasonicDistance();
 }
 
+void processServo(const String& data) {
+  getValue(data, ':', 1) ? processPan(data) : processTilt(data);
+}
+
 void processPan(const String& data) {
-  setPanPosition(getValue(data, ':', 1));
+  setPanPosition(getValue(data, ':', 2));
 }
 
 void processTilt(const String& data) {
-  setTiltPosition(getValue(data, ':', 1));
+  setTiltPosition(getValue(data, ':', 2));
+}
+
+void processAccelerometer() {
+  sendAccelerometerData();
 }
 
 int getValue(const String& data, char separator, int index) {
@@ -96,6 +114,9 @@ void setup() {
 
   // set up tilt pin
   tilt.attach(pinTilt);
+
+  // set up LIS3DH
+  myIMU.begin();
 }
 
 // ------------------------------------ led ------------------------------------------
@@ -148,4 +169,14 @@ void setTiltPosition(int tiltPosition) {
   tilt.write(tiltPosition);
 }
 
+// ------------------------------------ accelerometer LIS3DH ------------------------------------------
+
+void sendAccelerometerData() {
+  String data = getAccelerometerData();
+  Serial.println(data);
+}
+
+String getAccelerometerData() {
+  return String(myIMU.readFloatAccelX()) + ";" + String(myIMU.readFloatAccelY()) + ";" + String(myIMU.readFloatAccelZ());
+}
 

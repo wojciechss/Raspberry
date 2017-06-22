@@ -61,4 +61,15 @@ class SetTiltPosition(object):
 api.add_route('/nano/tilt', SetTiltPosition())
 
 
+class ReadAccelerometer(object):
+    def on_get(self, req, resp):
+        nano.get_accelerometer_data_request()
+        acc_data = nano.read_accelerometer_data()
+        logger.info('Accelerometer: ' + str(acc_data))
+        data = dict(data=acc_data)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(data)
+
+api.add_route('/nano/accelerometer', ReadAccelerometer())
+
 nano.connect()
