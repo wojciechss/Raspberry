@@ -5,7 +5,10 @@ angular.
   module('raspberry').
   service('Servo', ['$http', 'Path', function($http, Path) {
 
-    this.setPanPosition = function(position) {
+    var lastTiltPosition = 0;
+    var lastPanPosition = 0;
+
+    this.sendPanPosition = function(position) {
         var req = {
              method: 'GET',
              url: Path.PAN,
@@ -16,7 +19,7 @@ angular.
         $http(req)
     }
 
-    this.setTiltPosition = function(position) {
+    this.sendTiltPosition = function(position) {
         var req = {
              method: 'GET',
              url: Path.TILT,
@@ -25,5 +28,16 @@ angular.
              }
         }
         $http(req)
+    }
+
+    this.setPanPosition = function (position) {
+        this.sendPanPosition(position);
+    }
+
+    this.setTiltPosition = function(position) {
+        if (lastTiltPosition != position) {
+            lastTiltPosition = position;
+            this.sendTiltPosition(position);
+        }
     }
   }]);

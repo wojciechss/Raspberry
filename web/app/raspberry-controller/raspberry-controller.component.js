@@ -12,11 +12,13 @@ angular.
             return MobileDetector.isMobile();
         }
 
-        var setServoPosition = function(data) {
+        var setPanPosition = function(data) {
             var panPosition = ServoPositionConverter.convertPanPosition(data);
-            var tiltPosition = ServoPositionConverter.convertTiltPosition(data);
-
             Servo.setPanPosition(panPosition);
+        }
+
+        var setTiltPosition = function(data) {
+            var tiltPosition = ServoPositionConverter.convertTiltPosition(data);
             Servo.setTiltPosition(tiltPosition);
         }
 
@@ -48,7 +50,11 @@ angular.
         });
 
         joystickL.on('plain', function (evt, data) {
-            setServoPosition(data);
+            setPanPosition(data);
+        });
+
+        joystickL.on('move', function (evt, data) {
+            setTiltPosition(data);
         });
 
         joystickR.on('removed', function (evt, nipple) {
