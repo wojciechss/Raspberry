@@ -38,3 +38,12 @@ http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/
 
 sudo cp mini_driver/mini-driver-usb-serial.rules /etc/udev/rules.d
 sudo cp nano/nano-usb-serial.rules /etc/udev/rules.d
+
+------------------------------------------------------------------------------
+
+Camera
+
+http://www.instructables.com/id/Raspberry-Pi-remote-webcam/
+
+modprobe bcm2835-v4l2 in /etc/rc.local to make it run on every boot automatically.
+sudo chmod 777 /var/lib/motion
