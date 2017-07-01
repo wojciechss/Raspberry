@@ -7,7 +7,7 @@ import logging
 from mini_driver import MiniDriver
 
 logger = logging.getLogger('Mini driver service')
-logging.basicConfig(stream=sys.stdout, level=logging.DEBUG, level=logging.INFO)
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 api = falcon.API()
 mini_driver = MiniDriver()
 
