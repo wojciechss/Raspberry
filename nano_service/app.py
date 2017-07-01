@@ -72,4 +72,15 @@ class ReadAccelerometer(object):
 
 api.add_route('/nano/accelerometer', ReadAccelerometer())
 
+class ReadKtir(object):
+    def on_get(self, req, resp):
+        nano.get_ktir_data_request()
+        ktir_data = nano.read_ktir_data()
+        logger.info('Ktir: ' + str(ktir_data))
+        data = dict(data=ktir_data)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(data)
+
+api.add_route('/nano/ktir', ReadKtir())
+
 nano.connect()

@@ -34,8 +34,7 @@ class Nano:
         self._write('1;')
 
     def read_distance(self):
-        x = self._read_line()
-        val = str(x, 'ascii')
+        val = str(self._read_line(), 'ascii')
         if self.__is_int(val):
             return self.__parse_int(val)
         return 0
@@ -52,10 +51,13 @@ class Nano:
         self._write('3;')
 
     def read_accelerometer_data(self):
-        x = self._read_line()
-        val = str(x, 'ascii')
-        print(val)
-        return val
+        return str(self._read_line(), 'ascii')
+
+    def get_ktir_data_request(self):
+        self._write('4;')
+
+    def read_ktir_data(self):
+        return str(self._read_line(), 'ascii')
 
     def _write(self, data):
         self.ser.write(data.encode('utf-8'))

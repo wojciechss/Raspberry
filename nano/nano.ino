@@ -11,6 +11,10 @@ const int pinLed = 13;
 const int pinPan = 3;
 const int pinTilt = 4;
 
+const int ktir1 = A3;
+const int ktir2 = A6;
+const int ktir3 = A7;
+
 Servo pan;
 Servo tilt;
 
@@ -32,7 +36,8 @@ void loop() {
 // Led:           '0:{state};' on - 1, off - 0
 // Ultrasonic:    '1;'
 // Servo:         '2;{device}:{position}' pan - 0, tilt - 1
-// Accelerometer: '3;
+// Accelerometer: '3;'
+// ktir:          '4;'
 void readData() {
   const String data = Serial.readStringUntil(';');
    if (data != "") {
@@ -49,6 +54,9 @@ void readData() {
           break;
         case 3:
           processAccelerometer();
+          break;
+        case 4:
+          processKtir();
           break;
       }
    }
@@ -76,6 +84,10 @@ void processTilt(const String& data) {
 
 void processAccelerometer() {
   sendAccelerometerData();
+}
+
+void processKtir() {
+  sendKtirData();
 }
 
 int getValue(const String& data, char separator, int index) {
@@ -178,5 +190,17 @@ void sendAccelerometerData() {
 
 String getAccelerometerData() {
   return String(myIMU.readFloatAccelX()) + ";" + String(myIMU.readFloatAccelY()) + ";" + String(myIMU.readFloatAccelZ());
+}
+
+// ------------------------------------ sensors KTIR0711S ------------------------------------------
+
+void sendKtirData() {
+  String data = getKtirData();
+  Serial.println(data);
+}
+
+
+String getKtirData() {
+  return String(analogRead(ktir1)) + ";" + String(analogRead(ktir2)) + ";" + String(analogRead(ktir3));
 }
 
