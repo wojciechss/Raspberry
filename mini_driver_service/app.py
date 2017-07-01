@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
-import json
+import sys
 import falcon
 import logging
 
 from mini_driver import MiniDriver
 
 logger = logging.getLogger('Mini driver service')
+logging.basicConfig(stream=sys.stdout, level=logging.DEBUG, level=logging.INFO)
 api = falcon.API()
 mini_driver = MiniDriver()
 

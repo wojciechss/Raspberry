@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-import serial
+import sys
 import time
+import serial
+import logging
 
 
 # Input:       'device:device_specific_data;'
@@ -9,6 +11,8 @@ import time
 # Motor:       '1:{left_speed}:{right_speed};'
 class MiniDriver:
 
+    logger = logging.getLogger('Mini driver')
+    logging.basicConfig(stream=sys.stdout, level=logging.INFO)
     portName = '/dev/miniDriver'
 
     def connect(self):
@@ -45,8 +49,7 @@ class MiniDriver:
         time.sleep(0.5)
         self.led_off()
 
-    @classmethod
-    def __wait_for_connection(cls):
-        print('Waiting')
+    def __wait_for_connection(self):
+        self.logger.info('Waiting')
         time.sleep(10)
-        print('Connected')
+        self.logger.info('Connected')

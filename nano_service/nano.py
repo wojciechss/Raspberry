@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-import serial
+import sys
 import time
+import serial
+import logging
 
 
 # Input:         'device:device_specific_data;'
@@ -11,6 +13,8 @@ import time
 # Accelerometer: '3;
 class Nano:
 
+    logger = logging.getLogger('Nano')
+    logging.basicConfig(stream=sys.stdout, level=logging.INFO)
     portName = '/dev/nanoBoard'
 
     def connect(self):
@@ -74,11 +78,10 @@ class Nano:
         time.sleep(0.5)
         self.led_off()
 
-    @classmethod
-    def __wait_for_connection(cls):
-        print('Waiting')
+    def __wait_for_connection(self):
+        self.logger.info('Waiting')
         time.sleep(10)
-        print('Connected')
+        self.logger.info('Connected')
 
     @classmethod
     def __parse_int(cls, input):

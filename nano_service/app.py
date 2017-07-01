@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import sys
 import json
 import falcon
 import logging
@@ -7,6 +8,7 @@ import logging
 from nano import Nano
 
 logger = logging.getLogger('Nano service')
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 api = falcon.API()
 nano = Nano()
 
@@ -71,6 +73,7 @@ class ReadAccelerometer(object):
         resp.body = json.dumps(data)
 
 api.add_route('/nano/accelerometer', ReadAccelerometer())
+
 
 class ReadKtir(object):
     def on_get(self, req, resp):
