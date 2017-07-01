@@ -10,7 +10,8 @@ import logging
 # Led:           '0:{state};' on - 1, off - 0
 # Ultrasonic:    '1;'
 # Servo:         '2;{device}:{position}' pan - 0, tilt - 1
-# Accelerometer: '3;
+# Accelerometer: '3;'
+# Ktir:          '4;'
 class Nano:
 
     logger = logging.getLogger('Nano')
