@@ -23,7 +23,7 @@ angular.
     }
 
     var _getPosition = function (positions, sections, nippleRadius, nrOfSections, position) {
-        return positions[getSectionNumber(sections, nippleRadius, nrOfSections, position)]
+        return Math.floor(positions[getSectionNumber(sections, nippleRadius, nrOfSections, position)])
     }
 
     var getSectionNumber = function (sections, nippleRadius, nrOfSections, position) {
