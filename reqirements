@@ -44,6 +44,7 @@ sudo cp nano/nano-usb-serial.rules /etc/udev/rules.d
 Camera
 
 http://www.instructables.com/id/Raspberry-Pi-remote-webcam/
+http://www.instructables.com/id/Remote-Control-Camera-by-Raspberry-Pi/
 
 modprobe bcm2835-v4l2 in /etc/rc.local to make it run on every boot automatically.
 sudo chmod 777 /var/lib/motion

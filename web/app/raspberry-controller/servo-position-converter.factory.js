@@ -4,17 +4,17 @@ angular.
   module('raspberry').
   factory('ServoPositionConverter', function() {
 
-    const nrOfSections = 3;
+    var nrOfSections = 3;
 
-    const nippleRadius = 60;
-    const nippleDiameter = nippleRadius * 2
-    const sectionLength = Math.floor(nippleDiameter / nrOfSections)
+    var nippleRadius = 60;
+    var nippleDiameter = nippleRadius * 2
+    var sectionLength = Math.floor(nippleDiameter / nrOfSections)
     var sections = []
 
-    const minPosition = 60;
-    const maxPosition = 120;
-    const distance = maxPosition - minPosition;
-    const positionLength = distance / (nrOfSections - 1)
+    var minPosition = 60;
+    var maxPosition = 120;
+    var distance = maxPosition - minPosition;
+    var positionLength = distance / (nrOfSections - 1)
     var positions = []
 
     var countPositions = function () {
