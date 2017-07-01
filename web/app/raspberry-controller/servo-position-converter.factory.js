@@ -2,65 +2,56 @@
 
 angular.
   module('raspberry').
-  factory('ServoPositionConverter', function() {
+  factory('ServoPositionConverter', ['PositionConverter', function(PositionConverter) {
 
-    var nrOfSections = 3;
-
+    var nrOfSections = 5;
     var nippleRadius = 60;
-    var nippleDiameter = nippleRadius * 2
-    var sectionLength = Math.floor(nippleDiameter / nrOfSections)
     var sections = []
 
-    var minPosition = 60;
-    var maxPosition = 120;
-    var distance = maxPosition - minPosition;
-    var positionLength = distance / (nrOfSections - 1)
-    var positions = []
+    var tiltPositions = []
+    var minTiltPosition = 60;
+    var maxTiltPosition = 120;
 
-    var countPositions = function () {
-        if (positions.length == nrOfSections) {
-            return;
-        }
-        for (var i = 0; i < nrOfSections; i++) {
-            positions.push(maxPosition - i * positionLength )
-        }
-    }
-
-    var countSections = function () {
-        if (sections.length == nrOfSections) {
-            return;
-        }
-        for (var i = 0; i < nrOfSections; i++) {
-            sections.push(-nippleRadius + i * sectionLength)
-        }
-    }
-
-    var getSectionNumber = function (x) {
-        for (var i = 0; i < nrOfSections; i++) {
-            if (sections[i] + sectionLength >= x) {
-                return i;
-            }
-        }
-    }
+    var panPositions = []
+    var minPanPosition = 130;
+    var maxPanPosition = 180;
 
     var _convertPanPosition = function (data) {
-        if (data.direction.y === 'up') {
-            return 130;
-        } else if (data.direction.y === 'down') {
-            return 180;
-        }
+        var y = Math.sin(data.angle.radian) * data.distance;
+
+        countSections()
+        countPanPositions()
+        return PositionConverter.getPosition(panPositions, sections, nippleRadius, nrOfSections, y)
     }
 
     var _convertTiltPosition = function (data) {
-        var acceleration = data.distance;
-        var x = Math.cos(data.angle.radian) * acceleration;
+        var x = Math.cos(data.angle.radian) * data.distance;
+
         countSections()
-        countPositions()
-        return positions[getSectionNumber(x)]
+        countTiltPositions()
+        return PositionConverter.getPosition(tiltPositions, sections, nippleRadius, nrOfSections, x)
+    }
+
+    var countSections = function () {
+        if (sections.length !== nrOfSections) {
+            sections = PositionConverter.countSections(nippleRadius, nrOfSections)
+        }
+    }
+
+    var countPanPositions = function () {
+        if (panPositions.length !== nrOfSections) {
+            panPositions = PositionConverter.countPositions(minPanPosition, maxPanPosition, nrOfSections)
+        }
+    }
+
+    var countTiltPositions = function () {
+        if (tiltPositions.length !== nrOfSections) {
+            tiltPositions = PositionConverter.countPositions(minTiltPosition, maxTiltPosition, nrOfSections)
+        }
     }
 
     return {
         convertPanPosition: _convertPanPosition,
         convertTiltPosition: _convertTiltPosition
     }
-  });
+  }]);

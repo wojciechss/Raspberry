@@ -49,11 +49,8 @@ angular.
             size: 120
         });
 
-        joystickL.on('plain', function (evt, data) {
-            setPanPosition(data);
-        });
-
         joystickL.on('move', function (evt, data) {
+            setPanPosition(data);
             setTiltPosition(data);
         });
 

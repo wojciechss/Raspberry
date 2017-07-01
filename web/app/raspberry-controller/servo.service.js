@@ -31,7 +31,10 @@ angular.
     }
 
     this.setPanPosition = function (position) {
-        this.sendPanPosition(position);
+        if (lastPanPosition != position) {
+            lastPanPosition = position;
+            this.sendPanPosition(position);
+        }
     }
 
     this.setTiltPosition = function(position) {
