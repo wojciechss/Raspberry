@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gunicorn app:api --config gunicorn.conf --timeout 3600
+gunicorn app:api --config gunicorn.conf --timeout 36000

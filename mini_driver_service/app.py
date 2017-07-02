@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 
-import sys
 import falcon
 import logging
 
 from mini_driver import MiniDriver
 
 logger = logging.getLogger('Mini driver service')
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+handler = logging.StreamHandler()
+handler.setLevel(logging.WARNING)
+logger.addHandler(handler)
+logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
+
 api = falcon.API()
 mini_driver = MiniDriver()
 

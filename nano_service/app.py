@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import sys
 import json
 import falcon
 import logging
@@ -8,7 +7,11 @@ import logging
 from nano import Nano
 
 logger = logging.getLogger('Nano service')
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+handler = logging.StreamHandler()
+handler.setLevel(logging.WARNING)
+logger.addHandler(handler)
+logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
+
 api = falcon.API()
 nano = Nano()
 

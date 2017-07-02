@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import sys
 import time
 import serial
 import logging
@@ -12,7 +11,11 @@ import logging
 class MiniDriver:
 
     logger = logging.getLogger('Mini driver')
-    logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+    handler = logging.StreamHandler()
+    handler.setLevel(logging.WARNING)
+    logger.addHandler(handler)
+    logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
+
     portName = '/dev/miniDriver'
 
     def connect(self):

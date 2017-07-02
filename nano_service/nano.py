@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import sys
 import time
 import serial
 import logging
@@ -15,7 +14,11 @@ import logging
 class Nano:
 
     logger = logging.getLogger('Nano')
-    logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+    handler = logging.StreamHandler()
+    handler.setLevel(logging.WARNING)
+    logger.addHandler(handler)
+    logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
+
     portName = '/dev/nanoBoard'
 
     def connect(self):
