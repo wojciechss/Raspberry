@@ -13,7 +13,7 @@
 --------------------------------
 pip3 install falcon
 pip3 install gunicorn
-
+pip3 install falcon-auth
 
 sudo cp mini_driver_service /etc/init.d/mini_driver_service
 sudo chmod 755 /etc/init.d/mini_driver_service

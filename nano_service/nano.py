@@ -14,11 +14,6 @@ import logging
 class Nano:
 
     logger = logging.getLogger('Nano')
-    handler = logging.StreamHandler()
-    handler.setLevel(logging.WARNING)
-    logger.addHandler(handler)
-    logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
-
     portName = '/dev/nanoBoard'
 
     def connect(self):
