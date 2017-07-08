@@ -3,7 +3,7 @@
 // Register `raspberry-controller` component, along with its associated controller and template
 angular.
   module('raspberry').
-  service('Engine', ['$http', 'Path', function($http, Path) {
+  service('Engine', ['$http', 'Path', 'SpeedConverter', function($http, Path, SpeedConverter) {
 
     var self = this;
     var lastLeftSpeed = 0;
@@ -11,7 +11,7 @@ angular.
 
     this.sendSpeed = function(leftSpeed, rightSpeed) {
         var req = {
-             method: 'PUT',
+             method: 'POST',
              url: Path.DRIVE,
              params: {
                 left: leftSpeed,
@@ -21,7 +21,8 @@ angular.
         $http(req)
     }
 
-    this.setSpeed = function (speed) {
+    this.setSpeed = function (data) {
+        var speed = SpeedConverter.convertSpeed(data);
         var changed  = false;
         if (Math.abs(lastLeftSpeed - speed.left) > 20) {
             lastLeftSpeed = speed.left;

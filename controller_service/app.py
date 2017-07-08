@@ -25,7 +25,7 @@ mini_driver_client = MiniDriverClient()
 
 
 class Drive(object):
-    def on_put(self, req, resp):
+    def on_post(self, req, resp):
         left = req.get_param('left')
         right = req.get_param('right')
         mini_driver_client.drive(left, right)

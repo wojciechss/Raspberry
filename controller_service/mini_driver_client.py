@@ -13,7 +13,7 @@ class MiniDriverClient:
     def drive(self, left, right):
         self.logger.info('Drive')
         data = dict(left=left, right=right)
-        r = requests.put(self.drive_url, params=data, verify=False)
+        r = requests.post(self.drive_url, params=data, verify=False)
         if r.status_code != requests.codes.ok:
             self.logger.info('Can\'t drive. Status ' + str(r.status_code))
             return

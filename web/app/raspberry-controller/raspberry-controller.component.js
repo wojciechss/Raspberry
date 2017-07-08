@@ -5,8 +5,8 @@ angular.
   module('raspberry').
   component('raspberry', {
     templateUrl: 'raspberry-controller/raspberry-controller.template.html',
-    controller: ['Engine', 'SpeedConverter', 'Servo', 'ServoPositionConverter', 'MobileDetector',
-        function RaspberryController(Engine, SpeedConverter, Servo, ServoPositionConverter, MobileDetector) {
+    controller: ['Engine', 'Servo', 'ServoPositionConverter', 'MobileDetector',
+        function RaspberryController(Engine, Servo, ServoPositionConverter, MobileDetector) {
 
         this.isMobile = function() {
             return MobileDetector.isMobile();
@@ -23,8 +23,7 @@ angular.
         }
 
         var drive = function(data) {
-            var speed = SpeedConverter.convertSpeed(data);
-            Engine.setSpeed(speed);
+            Engine.setSpeed(data);
         }
 
         var stop = function() {

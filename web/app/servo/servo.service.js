@@ -10,7 +10,7 @@ angular.
 
     this.sendPanPosition = function(position) {
         var req = {
-             method: 'GET',
+             method: 'POST',
              url: Path.PAN,
              params: {
                 position: position,
@@ -21,7 +21,7 @@ angular.
 
     this.sendTiltPosition = function(position) {
         var req = {
-             method: 'GET',
+             method: 'POST',
              url: Path.TILT,
              params: {
                 position: position,

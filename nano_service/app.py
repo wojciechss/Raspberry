@@ -52,7 +52,7 @@ api.add_route('/nano/ultrasonic', ReadDistance())
 
 
 class SetPanPosition(object):
-    def on_get(self, req, resp):
+    def on_post(self, req, resp):
         position = req.get_param('position')
         logger.info('Pan position: ' + str(position))
         nano.set_pan_position(int(position))
@@ -62,7 +62,7 @@ api.add_route('/nano/pan', SetPanPosition())
 
 
 class SetTiltPosition(object):
-    def on_get(self, req, resp):
+    def on_post(self, req, resp):
         position = req.get_param('position')
         logger.info('Tilt position: ' + str(position))
         nano.set_tilt_position(int(position))
