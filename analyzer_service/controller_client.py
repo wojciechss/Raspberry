@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import json
 import logging
 import requests
 
@@ -19,6 +18,7 @@ class ControllerClient:
             return
 
         self.logger.info('Report alarm: ' + alarm + '. Status ' + str(r.status_code))
+
 
     def remove_alarm(self, alarm):
         data = dict(alarm=alarm)

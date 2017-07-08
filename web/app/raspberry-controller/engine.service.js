@@ -11,7 +11,7 @@ angular.
 
     this.sendSpeed = function(leftSpeed, rightSpeed) {
         var req = {
-             method: 'GET',
+             method: 'PUT',
              url: Path.DRIVE,
              params: {
                 left: leftSpeed,

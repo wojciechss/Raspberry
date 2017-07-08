@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import sys
 import logging
 import requests
 
@@ -8,9 +7,9 @@ import requests
 class NanoClient:
 
     logger = logging.getLogger('Nano client')
-    nano_url = 'https://localhost/nano'
-    led_on_url = nano_url + '/led_on'
-    led_off_url = nano_url + '/led_off'
+    base_url = 'https://localhost/nano'
+    led_on_url = base_url + '/led_on'
+    led_off_url = base_url + '/led_off'
 
     def led_on(self):
         self.logger.info('Led on')

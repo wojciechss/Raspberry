@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import sys
 import json
 import falcon
 import logging
@@ -11,6 +12,10 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.WARNING)
 logger.addHandler(handler)
 logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
+
+logging.basicConfig(stream=sys.stdout,
+                    level=logging.DEBUG,
+                    format='[%(asctime)s] [%(process)s] [%(levelname)s] %(message)s')
 
 api = falcon.API()
 nano = Nano()

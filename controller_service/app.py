@@ -6,6 +6,7 @@ import falcon
 import logging
 from alarm_processor import AlarmProcessor
 from nano_client import NanoClient
+from mini_driver_client import MiniDriverClient
 
 logger = logging.getLogger('Controller service')
 handler = logging.StreamHandler()
@@ -13,14 +14,25 @@ handler.setLevel(logging.WARNING)
 logger.addHandler(handler)
 logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
 
-
-#logging.basicConfig(stream=sys.stdout,
-#                    level=logging.DEBUG,
-#                    format='[%(asctime)s] [%(process)s] [%(levelname)s] %(message)s')
+logging.basicConfig(stream=sys.stdout,
+                    level=logging.DEBUG,
+                    format='[%(asctime)s] [%(process)s] [%(levelname)s] %(message)s')
 
 api = falcon.API()
 alarm_processor = AlarmProcessor()
 nano_cli = NanoClient()
+mini_driver_client = MiniDriverClient()
+
+
+class Drive(object):
+    def on_put(self, req, resp):
+        left = req.get_param('left')
+        right = req.get_param('right')
+        mini_driver_client.drive(left, right)
+        logger.info('Drive: ' + left + ':' + right)
+        resp.status = falcon.HTTP_200
+
+api.add_route('/controller/drive', Drive())
 
 
 class Alarm(object):

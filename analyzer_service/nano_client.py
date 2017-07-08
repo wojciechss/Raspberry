@@ -8,8 +8,8 @@ import requests
 class NanoClient:
 
     logger = logging.getLogger('Nano client')
-    nano_url = 'https://localhost/nano'
-    ultrasonic_url = nano_url + '/ultrasonic'
+    base_url = 'https://localhost/nano'
+    ultrasonic_url = base_url + '/ultrasonic'
 
     def get_distance(self):
         r = requests.get(self.ultrasonic_url, verify=False)

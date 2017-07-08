@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import sys
 import falcon
 import logging
 
@@ -10,6 +11,10 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.WARNING)
 logger.addHandler(handler)
 logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
+
+logging.basicConfig(stream=sys.stdout,
+                    level=logging.DEBUG,
+                    format='[%(asctime)s] [%(process)s] [%(levelname)s] %(message)s')
 
 api = falcon.API()
 mini_driver = MiniDriver()
@@ -34,7 +39,7 @@ api.add_route('/mini_driver/led_off', LedOff())
 
 
 class Drive(object):
-    def on_get(self, req, resp):
+    def on_put(self, req, resp):
         left = req.get_param('left')
         right = req.get_param('right')
         mini_driver.drive(left, right)
