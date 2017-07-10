@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
-import sys
 import json
-import falcon
 import logging
+import sys
+
+import falcon
+from nano_client.nano_client import NanoClient
+from mini_driver_client.mini_driver_client import MiniDriverClient
 from alarm_processor import AlarmProcessor
-from nano_client import NanoClient
-from mini_driver_client import MiniDriverClient
 
 logger = logging.getLogger('Controller service')
 handler = logging.StreamHandler()

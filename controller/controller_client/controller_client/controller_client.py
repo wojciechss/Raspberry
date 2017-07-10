@@ -19,7 +19,6 @@ class ControllerClient:
 
         self.logger.info('Report alarm: ' + alarm + '. Status ' + str(r.status_code))
 
-
     def remove_alarm(self, alarm):
         data = dict(alarm=alarm)
         r = requests.delete(self.alarm_url, params=data, verify=False)

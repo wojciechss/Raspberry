@@ -39,18 +39,6 @@ class LedOff(object):
 api.add_route('/nano/led_off', LedOff())
 
 
-class ReadDistance(object):
-    def on_get(self, req, resp):
-        nano.get_distance_request()
-        distance = nano.read_distance()
-        logger.info('Distance: ' + str(distance))
-        data = dict(distance=distance)
-        resp.status = falcon.HTTP_200
-        resp.body = json.dumps(data)
-
-api.add_route('/nano/ultrasonic', ReadDistance())
-
-
 class SetPanPosition(object):
     def on_post(self, req, resp):
         position = req.get_param('position')
@@ -69,6 +57,18 @@ class SetTiltPosition(object):
         resp.status = falcon.HTTP_200
 
 api.add_route('/nano/tilt', SetTiltPosition())
+
+
+class ReadDistance(object):
+    def on_get(self, req, resp):
+        nano.get_distance_request()
+        distance = nano.read_distance()
+        logger.info('Distance: ' + str(distance))
+        data = dict(data=distance)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(data)
+
+api.add_route('/nano/ultrasonic', ReadDistance())
 
 
 class ReadAccelerometer(object):
