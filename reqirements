@@ -1,34 +1,13 @@
- sudo apt install python3-pip
+sudo apt install python3-pip
 
- pip3 install --upgrade pip
+pip3 install --upgrade pip
 
- sudo pip3 install -U setuptools
-
---------------------------------
- pip3 install serial
- sudo pip3 install pyserial
- python -m pip install pyserial
-
-
---------------------------------
-pip3 install falcon
-pip3 install gunicorn
-pip3 install falcon-auth
-
-sudo cp mini_driver_service /etc/init.d/mini_driver_service
-sudo chmod 755 /etc/init.d/mini_driver_service
-sudo update-rc.d mini_driver_service defaults
-
-sudo cp nano_service /etc/init.d/nano_service
-sudo chmod 755 /etc/init.d/nano_service
-sudo update-rc.d nano_service defaults
-
+sudo pip3 install -U setuptool
 
 ---------------------------------------------------------------------------------
 accelerometr
 
 https://learn.sparkfun.com/tutorials/lis3dh-hookup-guide
-
 
 ---------------------------------------------------------------------------------
 
