@@ -28,3 +28,8 @@ echo 'Create nano service'
 sudo mv ./conf/nano_service /etc/init.d/nano_service
 sudo chmod 755 /etc/init.d/nano_service
 sudo update-rc.d nano_service defaults
+
+echo 'Update USB rules'
+
+sudo cp ./mini_driver/mini_driver_arduino/mini-driver-usb-serial.rules /etc/udev/rules.d
+sudo cp ./nano/nano_arduino/nano-usb-serial.rules /etc/udev/rules.d
