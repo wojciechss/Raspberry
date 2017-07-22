@@ -7,6 +7,7 @@ import logging
 
 from nano import Nano
 from mini_driver import MiniDriver
+from alarm_processor import AlarmProcessor
 
 logger = logging.getLogger('Mono service')
 handler = logging.StreamHandler()
@@ -19,26 +20,27 @@ logging.basicConfig(stream=sys.stdout,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] %(message)s')
 
 api = falcon.API()
+alarm_processor = AlarmProcessor()
 nano = Nano()
 mini_driver = MiniDriver()
 
 
-class LedOn(object):
+class NanoLedOn(object):
     def on_get(self, req, resp):
         nano.led_on()
         logger.info('Led on')
         resp.status = falcon.HTTP_200
 
-api.add_route('/mono/nano/led_on', LedOn())
+api.add_route('/mono/nano/led_on', NanoLedOn())
 
 
-class LedOff(object):
+class NanoLedOff(object):
     def on_get(self, req, resp):
         nano.led_off()
         logger.info('Led off')
         resp.status = falcon.HTTP_200
 
-api.add_route('/mono/nano/led_off', LedOff())
+api.add_route('/mono/nano/led_off', NanoLedOff())
 
 
 class SetPanPosition(object):
@@ -97,6 +99,23 @@ class ReadKtir(object):
 api.add_route('/mono/nano/ktir', ReadKtir())
 
 
+class MiniLedOn(object):
+    def on_get(self, req, resp):
+        mini_driver.led_on()
+        logger.info('Led on')
+        resp.status = falcon.HTTP_200
+
+api.add_route('/mono/mini_driver/led_on', MiniLedOn())
+
+
+class MiniLedOff(object):
+    def on_get(self, req, resp):
+        mini_driver.led_off()
+        logger.info('Led off')
+        resp.status = falcon.HTTP_200
+
+api.add_route('/mono/mini_driver/led_off', MiniLedOff())
+
 class Drive(object):
     def on_post(self, req, resp):
         left = req.get_param('left')
@@ -106,6 +125,30 @@ class Drive(object):
         resp.status = falcon.HTTP_200
 
 api.add_route('/mono/mini_driver/drive', Drive())
+
+
+class Alarm(object):
+    def on_put(self, req, resp):
+        alarm = req.get_param('alarm')
+        logger.info('Alarm reported: ' + alarm)
+        alarm_processor.add_alarm(alarm)
+        mini_driver.led_on()
+
+    def on_delete(self, req, resp):
+        alarm = req.get_param('alarm')
+        logger.info('Alarm removed: ' + alarm)
+        alarm_processor.remove_alarm(alarm)
+        mini_driver.led_off()
+
+    def on_get(self, req, resp):
+        alarm = req.get_param('alarm')
+        alarms = alarm_processor.get_alarm(alarm)
+        data = dict(alarms=alarms)
+        resp.status = falcon.HTTP_200
+        resp.body = json.dumps(data)
+
+
+api.add_route('/controller/alarm', Alarm())
 
 nano.connect()
 mini_driver.connect()
