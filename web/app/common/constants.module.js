@@ -3,10 +3,11 @@
 angular.
   module('constants', []).
   factory('Path', [function() {
-    var controller = '/controller';
-    var nano = '/nano';
+    var base_path = '/mono';
+    var mini = base_path + '/mini_driver';
+    var nano = base_path + '/nano';
     return {
-        DRIVE: controller + '/drive',
+        DRIVE: mini + '/drive',
         PAN: nano + '/pan',
         TILT: nano + '/tilt'
     }
