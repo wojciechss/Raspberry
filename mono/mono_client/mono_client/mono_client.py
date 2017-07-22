@@ -9,8 +9,8 @@ class MonoClient:
 
     logger = logging.getLogger('Mono client')
     base_url = 'https://localhost/mono'
-    nano_url = base_url + 'nano'
-    mini_driver_url = base_url + 'mini_driver'
+    nano_url = base_url + '/nano'
+    mini_driver_url = base_url + '/mini_driver'
     mini_driver_led_on_url = mini_driver_url + '/led_on'
     mini_driver_led_off_url = mini_driver_url + '/led_off'
     nano_led_on_url = nano_url + '/led_on'
