@@ -5,7 +5,7 @@ import logging
 import requests
 
 
-class NanoClient:
+class MonoClient:
 
     logger = logging.getLogger('Mono client')
     base_url = 'https://localhost/mono'
