@@ -148,7 +148,7 @@ class Alarm(object):
         resp.body = json.dumps(data)
 
 
-api.add_route('/controller/alarm', Alarm())
+api.add_route('/mono/alarm', Alarm())
 
 nano.connect()
 mini_driver.connect()
