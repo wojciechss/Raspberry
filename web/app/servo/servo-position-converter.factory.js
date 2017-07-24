@@ -9,8 +9,8 @@ angular.
     var sections = []
 
     var tiltPositions = []
-    var minTiltPosition = 60;
-    var maxTiltPosition = 120;
+    var minTiltPosition = 55;
+    var maxTiltPosition = 115;
 
     var panPositions = []
     var minPanPosition = 130;

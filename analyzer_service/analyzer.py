@@ -7,6 +7,7 @@ from controller_client.controller_client import ControllerClient
 from nano_client.nano_client import NanoClient
 
 DISTANCE = 'DISTANCE'
+CRITICAL_DISTANCE = 20
 
 class Analyzer:
     logger = logging.getLogger('Analyzer service')
@@ -19,11 +20,11 @@ class Analyzer:
         self.logger.info('Started analyzing data')
         while (True):
             self.logger.info('Read data')
-            time.sleep(0.2)
+            time.sleep(0.4)
             distance = self.nano_client.read_distance()
-            if distance is not None and distance > 0 and distance < 5 and not self.alarm_reported:
+            if distance is not None and distance > 0 and distance < CRITICAL_DISTANCE and not self.alarm_reported:
                 self.controller_client.report_alarm(DISTANCE)
                 self.alarm_reported = True
-            elif distance is not None and distance >= 5 and self.alarm_reported:
+            elif distance is not None and distance >= CRITICAL_DISTANCE and self.alarm_reported:
                 self.controller_client.remove_alarm(DISTANCE)
                 self.alarm_reported = False
