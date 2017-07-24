@@ -7,7 +7,7 @@ import requests
 class MiniDriverClient:
 
     logger = logging.getLogger('Mini driver client')
-    base_url = 'https://localhost/mini_driver'
+    base_url = 'http://localhost:5000/mini_driver'
     drive_url = base_url + '/drive'
     led_on_url = base_url + '/led_on'
     led_off_url = base_url + '/led_off'

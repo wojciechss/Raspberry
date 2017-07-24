@@ -8,7 +8,7 @@ import requests
 class NanoClient:
 
     logger = logging.getLogger('Nano client')
-    base_url = 'https://localhost/nano'
+    base_url = 'http://localhost:5001/nano'
     led_on_url = base_url + '/led_on'
     led_off_url = base_url + '/led_off'
     pan_url = base_url + '/pan'

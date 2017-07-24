@@ -7,7 +7,7 @@ import requests
 class ControllerClient:
 
     logger = logging.getLogger('Controller client')
-    controller_url = 'https://localhost/controller'
+    controller_url = 'http://localhost:5002/controller'
     alarm_url = controller_url + '/alarm'
 
     def report_alarm(self, alarm):
