@@ -13,19 +13,16 @@ angular.
             right: 0,
         }
 
-        if (data.angle.degree > 0 && data.angle.degree <= 90) {
+        if (data.angle.degree > 0 && data.angle.degree <= 45) {
             speed.left = acceleration;
-            speed.right = acceleration - x;
-            if (speed.right < 0) {
-                speed.right = 0;
-            }
-        } else if (data.angle.degree > 90 && data.angle.degree <= 180) {
-            speed.left = acceleration + x;
-            if (speed.left < 0) {
-                speed.left = 0;
-            }
+            speed.right = 0;
+        } else if (data.angle.degree > 45 && data.angle.degree < 135) {
+            speed.left = acceleration;
             speed.right = acceleration;
-        } else if (data.angle.degree > 180 && data.angle.degree <= 360) {
+        } else if (data.angle.degree >= 135 && data.angle.degree < 180) {
+            speed.left = 0;
+            speed.right = acceleration;
+        } else if (data.angle.degree >= 180 && data.angle.degree <= 360) {
             speed.left = -100
             speed.right = -100;
         }

@@ -12,6 +12,10 @@ angular.
             return MobileDetector.isMobile();
         }
 
+        this.getCameraHostname = function() {
+            return 'http://' + window.location.hostname + ':8081';
+        }
+
         var setPanPosition = function(data) {
             var panPosition = ServoPositionConverter.convertPanPosition(data);
             Servo.setPanPosition(panPosition);
