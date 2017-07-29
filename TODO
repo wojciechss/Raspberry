@@ -7,8 +7,7 @@
 12. baza danych
 13. oauth
 14. połączenie z telefonem
-16. proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-19. Python exceptions - HTTP statuses
+16. proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for
 20. Service discovery
 
 Done:
@@ -19,7 +18,8 @@ Done:
 1. Logi do kontrolera
 17. install_requirements
 10. sterowanie servo
-20. Python libs for clients
+20. Python libs for clients;
+19. Python exceptions - HTTP statuses
 
 Rejected:
 15. statyczny ip

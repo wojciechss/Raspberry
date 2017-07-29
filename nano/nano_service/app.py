@@ -15,7 +15,7 @@ logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
 
 logging.basicConfig(stream=sys.stdout,
                     level=logging.DEBUG,
-                    format='[%(asctime)s] [%(process)s] [%(levelname)s] %(message)s')
+                    format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
 api = falcon.API()
 nano = Nano()
