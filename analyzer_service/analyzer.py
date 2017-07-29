@@ -20,7 +20,7 @@ class Analyzer:
         self.logger.info('Started analyzing data')
         while (True):
             self.logger.info('Read data')
-            time.sleep(0.4)
+            time.sleep(0.2)
             distance = self.nano_client.read_distance()
             if distance is not None and distance > 0 and distance < CRITICAL_DISTANCE and not self.alarm_reported:
                 self.controller_client.report_alarm(DISTANCE)

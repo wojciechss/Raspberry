@@ -51,7 +51,7 @@ class Alarm(object):
 
     def on_get(self, req, resp):
         alarm = req.get_param('alarm')
-        alarms = alarm_processor.get_alarm(alarm)
+        alarms = alarm_processor.get_alarm_count(alarm)
         data = dict(alarms=alarms)
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(data)
