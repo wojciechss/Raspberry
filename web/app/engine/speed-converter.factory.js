@@ -22,7 +22,7 @@ angular.
         } else if (data.angle.degree >= 135 && data.angle.degree < 180) {
             speed.left = 0;
             speed.right = acceleration;
-        } else if (data.angle.degree >= 180 && data.angle.degree <= 360) {
+        } else if (data.angle.degree > 180 && data.angle.degree < 360) {
             speed.left = -100
             speed.right = -100;
         }

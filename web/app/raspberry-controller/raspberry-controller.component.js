@@ -27,11 +27,11 @@ angular.
         }
 
         var drive = function(data) {
-            Engine.setSpeed(data);
+            Engine.convertAndSetSpeed(data);
         }
 
         var stop = function() {
-            Engine.sendSpeed(0, 0);
+            Engine.setSpeed(0, 0);
         }
 
         var joystickL = nipplejs.create({

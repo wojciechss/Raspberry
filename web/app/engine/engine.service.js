@@ -21,19 +21,23 @@ angular.
         $http(req)
     }
 
-    this.setSpeed = function (data) {
-        var speed = SpeedConverter.convertSpeed(data);
+    this.setSpeed = function (leftSpeed, rightSpeed) {
         var changed  = false;
-        if (Math.abs(lastLeftSpeed - speed.left) > 20) {
-            lastLeftSpeed = speed.left;
+        if (Math.abs(lastLeftSpeed - leftSpeed) > 20) {
+            lastLeftSpeed = leftSpeed;
             changed = true;
         }
-        if (Math.abs(lastRightSpeed - speed.right) > 20) {
-            lastRightSpeed = speed.right;
+        if (Math.abs(lastRightSpeed - rightSpeed) > 20) {
+            lastRightSpeed = rightSpeed;
             changed = true;
         }
         if (changed) {
-            this.sendSpeed(Math.floor(speed.left), Math.floor(speed.right));
+            this.sendSpeed(Math.floor(leftSpeed), Math.floor(rightSpeed));
         }
+    }
+
+    this.convertAndSetSpeed = function (data) {
+        var speed = SpeedConverter.convertSpeed(data);
+        this.setSpeed(speed.left, speed.right)
     };
   }]);
