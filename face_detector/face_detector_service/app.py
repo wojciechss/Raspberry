@@ -16,15 +16,13 @@ logging.basicConfig(stream=sys.stdout,
                     level=logging.DEBUG,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
-FILENAME = 'lastsnap.jpg'
 api = falcon.API()
-face_detector = FaceDetector(FILENAME)
+face_detector = FaceDetector()
 
 
 class DetectFace(object):
     def on_get(self, req, resp):
-        detected = face_detector.is_face_detected()
-        logger.info('Face detected ' + detected)
+        face_detector.detect_face()
         resp.status = falcon.HTTP_200
 
 api.add_route('/face/detect', DetectFace())
