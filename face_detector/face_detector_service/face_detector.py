@@ -13,7 +13,7 @@ class FaceDetector:
 
     def __init__(self, filename):
         self.filename = filename
-        self.face_cascade = cv2.CascadeClassifier('/home/wojtek/opencv/opencv/data/haarcascades/haarcascade_frontalface_default.xml')
+        self.face_cascade = cv2.CascadeClassifier('/home/pi/opencv/data/haarcascades/haarcascade_frontalface_default.xml')
 
     def is_face_detected(self):
         img = cv2.imread(self.filename)
