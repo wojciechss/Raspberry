@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 
-from enum import Enum
-
 
 class PositionCalculator:
-
-    DISTANCE = Enum('DISTANCE', 'CLOSE OK FAR')
-    SECTION = Enum('SECTION', 'FIRST CENTER SECOND')
 
     def __init__(self, section_size):
         self.section_size = section_size
@@ -15,11 +10,11 @@ class PositionCalculator:
         min_length = (full_length - full_length * 0.1) / 2
         max_length = (full_length + full_length * 0.1) / 2
         if length < min_length:
-            return self.DISTANCE.FAR
+            return 3
         elif length > max_length:
-            return self.DISTANCE.CLOSE
+            return 1
         else:
-            return self.DISTANCE.OK
+            return 2
 
     def section(self, position, length, full_length):
         if (position + length) < 0.5 * full_length:
@@ -33,8 +28,8 @@ class PositionCalculator:
             second_half = 1 - first_half
 
         if second_half > self.section_size:
-            return self.SECTION.FIRST
+            return 1
         elif first_half > self.section_size:
-            return self.SECTION.SECOND
+            return 3
         else:
-            return self.SECTION.CENTER
+            return 2

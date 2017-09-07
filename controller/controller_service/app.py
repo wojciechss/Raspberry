@@ -8,6 +8,7 @@ import falcon
 from nano_client.nano_client import NanoClient
 from mini_driver_client.mini_driver_client import MiniDriverClient
 from alarm_processor import AlarmProcessor
+from event_analyzer import EventAnalyzer
 
 logger = logging.getLogger('Controller service')
 handler = logging.StreamHandler()
@@ -21,6 +22,7 @@ logging.basicConfig(stream=sys.stdout,
 
 api = falcon.API()
 alarm_processor = AlarmProcessor()
+event_analyzer = EventAnalyzer()
 nano_cli = NanoClient()
 mini_driver_client = MiniDriverClient()
 
@@ -58,3 +60,14 @@ class Alarm(object):
 
 
 api.add_route('/controller/alarm', Alarm())
+
+
+class Event(object):
+    def on_put(self, req, resp):
+        data = json.loads(req.stream.read().decode('utf-8'))
+        logger.info('Event reported: ' + str(data))
+        event_analyzer.analyze(data)
+
+
+
+api.add_route('/controller/event', Event())

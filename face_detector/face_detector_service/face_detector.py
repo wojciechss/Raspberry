@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from image_analyzer import ImageAnalyzer
-from mini_driver_client.mini_driver_client import MiniDriverClient
+from controller_client.controller_client import ControllerClient
 
 
 class FaceDetector:
@@ -10,10 +10,9 @@ class FaceDetector:
 
     def __init__(self):
         self.image_analyzer = ImageAnalyzer(self.FILENAME)
-        self.mini_driver_client = MiniDriverClient()
+        self.controller_client = ControllerClient()
 
     def detect_face(self):
-        if self.image_analyzer.is_face_detected():
-            self.mini_driver_client.led_on()
-        else:
-            self.mini_driver_client.led_off()
+        data = self.image_analyzer.analyze()
+        self.controller_client.report_event(data)
+
