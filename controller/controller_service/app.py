@@ -65,8 +65,8 @@ api.add_route('/controller/alarm', Alarm())
 class Event(object):
     def on_put(self, req, resp):
         data = json.loads(req.stream.read().decode('utf-8'))
-        logger.info('Event reported: ' + str(data))
-        event_analyzer.analyze(data)
+        result = event_analyzer.analyze(data)
+        logger.info(str(result))
 
 
 

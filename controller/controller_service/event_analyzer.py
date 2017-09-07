@@ -37,4 +37,6 @@ class EventAnalyzer:
                 elif section['distance'] == 3:
                     distance = 'FAR'
 
-                self.logger.info(horizontal + ':' + vertical + ':' + distance)
+                result = horizontal + ':' + vertical + ':' + distance
+                return result
+            return ''
