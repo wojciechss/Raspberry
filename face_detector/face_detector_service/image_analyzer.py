@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import cv2
-import json
 from face_detector_service.position_calculator import PositionCalculator
 
 
@@ -32,5 +31,4 @@ class ImageAnalyzer:
         return self.make_response(sections)
 
     def make_response(self, sections):
-        result = dict(type=self.FACE_FIELD, content=sections)
-        return json.dumps(result)
+        return dict(type=self.FACE_FIELD, content=sections)
