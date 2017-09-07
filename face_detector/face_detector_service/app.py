@@ -17,6 +17,8 @@ logging.basicConfig(stream=sys.stdout,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
 api = falcon.API()
+
+print(OPENCV_PATH)
 face_detector = FaceDetector()
 
 

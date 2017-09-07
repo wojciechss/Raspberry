@@ -9,8 +9,8 @@ from nano_client.nano_client import NanoClient
 DISTANCE = 'DISTANCE'
 CRITICAL_DISTANCE = 20
 
-class Analyzer:
-    logger = logging.getLogger('Analyzer service')
+class ObstacleDetector:
+    logger = logging.getLogger('Obstacle detector')
     nano_client = NanoClient()
     controller_client = ControllerClient()
 

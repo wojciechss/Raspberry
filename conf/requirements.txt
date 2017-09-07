@@ -1,6 +1,6 @@
 controller/controller_client
 mini_driver/mini_driver_client
 nano/nano_client
-face_detector/face_detector_client
 pyserial
 gunicorn
+nose
