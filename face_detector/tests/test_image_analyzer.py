@@ -1,4 +1,4 @@
-from face_detector_service.image_analyzer import ImageAnalyzer
+from image_analyzer import ImageAnalyzer
 
 
 def test_detect_face():

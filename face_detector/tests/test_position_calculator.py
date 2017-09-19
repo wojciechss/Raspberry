@@ -1,4 +1,4 @@
-from face_detector_service.position_calculator import PositionCalculator
+from position_calculator import PositionCalculator
 
 
 def test_full_first_section():
