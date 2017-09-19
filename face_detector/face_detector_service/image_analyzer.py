@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import cv2
-from face_detector_service.position_calculator import PositionCalculator
+from position_calculator import PositionCalculator
 
 
 class ImageAnalyzer:
