@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gunicorn app:api --config gunicorn.conf
+./app.py

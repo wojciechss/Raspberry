@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import cv2
-from position_calculator import PositionCalculator
+from face_detector_service.position_calculator import PositionCalculator
 
 
 class ImageAnalyzer:
@@ -9,13 +9,11 @@ class ImageAnalyzer:
     SCHEMA_PATH = '/opt/opencv/data/haarcascades/haarcascade_frontalface_default.xml'
     FACE_FIELD = 'face'
 
-    def __init__(self, filename):
-        self.filename = filename
+    def __init__(self):
         self.face_cascade = cv2.CascadeClassifier(self.SCHEMA_PATH)
         self.position_calculator = PositionCalculator(section_size=0.75)
 
-    def analyze(self):
-        img = cv2.imread(self.filename)
+    def analyze(self, img):
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         faces = self.face_cascade.detectMultiScale(gray, 1.3, 5)

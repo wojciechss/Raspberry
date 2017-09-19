@@ -69,5 +69,4 @@ class Event(object):
         logger.info(str(result))
 
 
-
 api.add_route('/controller/event', Event())
