@@ -9,7 +9,7 @@ from event_analyzer import EventAnalyzer
 class Analyzer(Thread):
     face_detector_client = FaceDetectorClient()
     event_analyzer = EventAnalyzer()
-    running = True
+    running = False
 
     def stop(self):
         self.running = False
