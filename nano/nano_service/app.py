@@ -64,9 +64,8 @@ class ReadDistance(object):
         nano.get_distance_request()
         distance = nano.read_distance()
         logger.info('Distance: ' + str(distance))
-        data = dict(data=distance)
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(data)
+        resp.body = json.dumps(dict(data=distance))
 
 api.add_route('/nano/ultrasonic', ReadDistance())
 

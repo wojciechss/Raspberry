@@ -7,8 +7,7 @@ import sys
 import falcon
 from nano_client.nano_client import NanoClient
 from mini_driver_client.mini_driver_client import MiniDriverClient
-from alarm_processor import AlarmProcessor
-from event_analyzer import EventAnalyzer
+from analyzer import Analyzer
 
 logger = logging.getLogger('Controller service')
 handler = logging.StreamHandler()
@@ -21,11 +20,10 @@ logging.basicConfig(stream=sys.stdout,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
 api = falcon.API()
-alarm_processor = AlarmProcessor()
-event_analyzer = EventAnalyzer()
+analyzer = Analyzer()
 nano_cli = NanoClient()
 mini_driver_client = MiniDriverClient()
-
+analyzer.run()
 
 class Drive(object):
     def on_post(self, req, resp):
@@ -38,35 +36,26 @@ class Drive(object):
 api.add_route('/controller/drive', Drive())
 
 
-class Alarm(object):
-    def on_put(self, req, resp):
-        alarm = req.get_param('alarm')
-        logger.info('Alarm reported: ' + alarm)
-        alarm_processor.add_alarm(alarm)
-        nano_cli.led_on()
-
-    def on_delete(self, req, resp):
-        alarm = req.get_param('alarm')
-        logger.info('Alarm removed: ' + alarm)
-        alarm_processor.remove_alarm(alarm)
-        nano_cli.led_off()
-
+class Start(object):
     def on_get(self, req, resp):
-        alarm = req.get_param('alarm')
-        alarms = alarm_processor.get_alarm_count(alarm)
-        data = dict(alarms=alarms)
-        resp.status = falcon.HTTP_200
-        resp.body = json.dumps(data)
+        logger.info('start')
+        analyzer.start()
 
 
-api.add_route('/controller/alarm', Alarm())
+api.add_route('/controller/start', Start())
 
 
-class Event(object):
-    def on_put(self, req, resp):
-        data = json.loads(req.stream.read().decode('utf-8'))
-        result = event_analyzer.analyze(data)
-        logger.info(str(result))
+class Stop(object):
+    def on_get(self, req, resp):
+        logger.info('stop')
+        analyzer.stop()
 
 
-api.add_route('/controller/event', Event())
+api.add_route('/controller/stop', Stop())
+
+class Status(object):
+    def on_get(self, req, resp):
+        logger.info('Status ' + str(analyzer.running))
+
+
+api.add_route('/controller/status', Status())
