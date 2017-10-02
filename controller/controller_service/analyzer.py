@@ -22,7 +22,12 @@ class Analyzer(Thread):
             if self.running:
                 print('run')
                 data = self.face_detector_client.detect()
+
+                start = time.time()
                 print(self.event_analyzer.analyze(data))
+                end = time.time()
+                duration = end - start
+                print("{:.8f}".format(duration))
             time.sleep(1)
 
     def run(self):
