@@ -1,4 +1,4 @@
-from position_calculator import PositionCalculator
+from detection.position_calculator import PositionCalculator
 
 
 def test_full_first_section():
