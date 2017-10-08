@@ -1,9 +1,11 @@
-from face_detector import FaceDetector
+import cv2
+from camera_service.face_detector import FaceDetector
 
 
 def test_detect_face():
-    uut = FaceDetector('camera_service/tests/data/snapshot.jpg')
-    result = uut.analyze()
+    img = cv2.imread('tests/data/snapshot.jpg')
+    uut = FaceDetector()
+    result = uut.run(img)
     content = result['content']
     assert result['type'] == 'face'
     assert len(content) == 1
@@ -15,24 +17,19 @@ def test_detect_face():
 
 
 def test_detect_faces():
-    uut = FaceDetector('camera_service/tests/data/snap_multiple_faces.jpg')
-    result = uut.analyze()
+    img = cv2.imread('tests/data/snap_multiple_faces.jpg')
+    uut = FaceDetector()
+    result = uut.run(img)
     content = result['content']
     assert result['type'] == 'face'
     assert len(content) == 3
 
 
 def test_no_face():
-    uut = FaceDetector('camera_service/tests/data/no_face.jpg')
-    result = uut.analyze()
+    img = cv2.imread('tests/data/no_face.jpg')
+    uut = FaceDetector()
+    result = uut.run(img)
     content = result['content']
     assert result['type'] == 'face'
     assert len(content) == 0
 
-
-def test_no_face2():
-    uut = FaceDetector('camera_service/tests/data/lastsnap.jpg')
-    result = uut.analyze()
-    content = result['content']
-    assert result['type'] == 'face'
-    assert len(content) == 0

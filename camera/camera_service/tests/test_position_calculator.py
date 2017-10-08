@@ -1,4 +1,4 @@
-from position_calculator import PositionCalculator
+from camera_service.position_calculator import PositionCalculator
 
 
 def test_full_first_section():
