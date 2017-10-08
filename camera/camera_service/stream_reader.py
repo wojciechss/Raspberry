@@ -7,8 +7,11 @@ import requests
 
 class StreamReader:
 
-    def read(self, url):
-        self.stream = requests.get(url, stream=True)
+    def __init__(self, url):
+        self.url = url
+
+    def read(self):
+        self.stream = requests.get(self.url, stream=True)
         bytes = b''
         while True:
             try:

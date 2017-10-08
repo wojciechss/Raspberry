@@ -9,7 +9,6 @@ apt-get install motion
 
 cp ./conf/motion /etc/default/motion
 cp ./conf/motion.conf /etc/motion/motion.conf
-cp ./face_detector/face_detector_client/detect_face /usr/local/bin
 
 # modprobe bcm2835-v4l2 in /etc/rc.local to make it run on every boot automatically.
 

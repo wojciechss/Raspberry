@@ -40,3 +40,37 @@ class EventAnalyzer:
                 result = horizontal + ':' + vertical + ':' + distance
                 return result
             return ''
+
+    def is_face_detected(self, data):
+        if data['type'] == 'face':
+            content = data['content']
+            if len(content) > 0:
+                return True
+        return False
+
+    def get_section(self, data):
+        if data['type'] == 'face':
+            content = data['content']
+            if len(content) > 1:
+                self.logger.info(data['content'])
+            elif len(content) == 1:
+                return content[0]
+        return None
+
+    def get_horizontal(self, data):
+        section = self.get_section(data)
+        if section != None:
+            return section['horizontal']
+        return 0
+
+    def get_vertical(self, data):
+        section = self.get_section(data)
+        if section != None:
+            return section['vertical']
+        return 0
+
+    def get_distance(self, data):
+        section = self.get_section(data)
+        if section != None:
+            return section['distance']
+        return 0

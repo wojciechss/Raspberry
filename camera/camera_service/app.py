@@ -5,9 +5,9 @@ import logging
 import sys
 
 import falcon
-from face_detector import FaceDetector
+from object_detector import ObjectDetector
 
-logger = logging.getLogger('Face detector service')
+logger = logging.getLogger('Camera service')
 handler = logging.StreamHandler()
 handler.setLevel(logging.WARNING)
 logger.addHandler(handler)
@@ -18,13 +18,14 @@ logging.basicConfig(stream=sys.stdout,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
 api = falcon.API()
-face_detector = FaceDetector()
+object_detector = ObjectDetector()
 
-class Face(object):
+class Detect(object):
     def on_get(self, req, resp):
-        data = face_detector.detect_face()
-        logger.info('Detect face ' + str(data))
+        object = req.get_param('object')
+        data = object_detector.detect()
+        logger.info('Detect ' + str(data))
         resp.body = json.dumps(dict(data=data))
         resp.status = falcon.HTTP_200
 
-api.add_route('/face_detector/detect', Face())
+api.add_route('/camera/detect', Detect())

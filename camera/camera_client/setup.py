@@ -1,9 +1,9 @@
 from setuptools import setup
 
-setup(name='face_detector_client',
+setup(name='camera_client',
       version='0.1',
-      description='Face detector client',
+      description='Camera client',
       author='Wojciech Jozwiak',
       license='MIT',
-      packages=['face_detector_client'],
+      packages=['camera_client'],
       zip_safe=False)
