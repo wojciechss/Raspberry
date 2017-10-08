@@ -23,7 +23,7 @@ object_detector = ObjectDetector()
 class Detect(object):
     def on_get(self, req, resp):
         object = req.get_param('object')
-        data = object_detector.detect()
+        data = object_detector.detect(object)
         logger.info('Detect ' + str(data))
         resp.body = json.dumps(dict(data=data))
         resp.status = falcon.HTTP_200
