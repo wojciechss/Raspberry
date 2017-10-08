@@ -1,4 +1,4 @@
-from detection.face_detector import FaceDetector
+from face_detector import FaceDetector
 
 
 def test_detect_face():
@@ -12,6 +12,7 @@ def test_detect_face():
     assert section['vertical'] == 3
     assert section['distance'] == 2
     print(result)
+
 
 def test_detect_faces():
     uut = FaceDetector('camera_service/tests/data/snap_multiple_faces.jpg')
@@ -27,6 +28,7 @@ def test_no_face():
     content = result['content']
     assert result['type'] == 'face'
     assert len(content) == 0
+
 
 def test_no_face2():
     uut = FaceDetector('camera_service/tests/data/lastsnap.jpg')

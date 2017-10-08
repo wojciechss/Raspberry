@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-from detection.face_detector import FaceDetector
-from stream.stream_reader import StreamReader
+from face_detector import FaceDetector
+from stream_reader import StreamReader
 
 
 class ObjectDetector:

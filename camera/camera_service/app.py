@@ -5,7 +5,7 @@ import logging
 import sys
 
 import falcon
-from detection.object_detector import ObjectDetector
+from object_detector import ObjectDetector
 
 logger = logging.getLogger('Camera service')
 handler = logging.StreamHandler()
