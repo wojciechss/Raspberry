@@ -41,15 +41,16 @@ class EventAnalyzer:
                 return result
             return ''
 
-    def is_face_detected(self, data):
-        if data['type'] == 'face':
+    @staticmethod
+    def is_object_detected(data, object_name):
+        if data['type'] == object_name:
             content = data['content']
             if len(content) > 0:
                 return True
         return False
 
-    def get_section(self, data):
-        if data['type'] == 'face':
+    def get_section(self, data, object_name):
+        if data['type'] == object_name:
             content = data['content']
             if len(content) > 1:
                 self.logger.info(data['content'])
@@ -57,20 +58,20 @@ class EventAnalyzer:
                 return content[0]
         return None
 
-    def get_horizontal(self, data):
-        section = self.get_section(data)
-        if section != None:
-            return section['horizontal']
+    def get_horizontal(self, data, object_name):
+        section = self.get_section(data, object_name)
+        if section is not None:
+            return section['section_x']
         return 0
 
-    def get_vertical(self, data):
-        section = self.get_section(data)
-        if section != None:
-            return section['vertical']
+    def get_vertical(self, data, object_name):
+        section = self.get_section(data, object_name)
+        if section is not None:
+            return section['section_y']
         return 0
 
-    def get_distance(self, data):
-        section = self.get_section(data)
-        if section != None:
-            return section['distance']
+    def get_size(self, data, object_name):
+        section = self.get_section(data, object_name)
+        if section is not None:
+            return section['size']
         return 0

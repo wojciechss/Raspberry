@@ -1,61 +1,47 @@
-from camera_service.position_calculator import PositionCalculator
-
-
-def test_full_first_section():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=10, length=140, full_length=320) == 1
-
-
-def test_first_section():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=69, length=120, full_length=320) == 1
-
-
-def test_full_second_section():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=170, length=140, full_length=320) == 3
-
-
-def test_second_section():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=131, length=120, full_length=320) == 3
-
-
-def test_length_equal_to_half_full_length_first_section():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=0, length=160, full_length=320) == 1
-
-
-def test_length_equal_to_half_full_length_second_section():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=160, length=160, full_length=320) == 3
-
-
-def test_length_equal_full_length():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=0, length=320, full_length=320) == 2
+from camera_service.section_calculator import SectionCalculator
 
 
 def test_center_section():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.section(position=100, length=120, full_length=320) == 2
+    uut = SectionCalculator()
+    assert uut.calculate(3, 45, 45, 90, 90) == (2, 2)
 
 
-def test_length_smaller_distance_ok():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.distance(length=150, full_length=320) == 2
+def test_left_section():
+    uut = SectionCalculator()
+    pos = uut.calculate(3, 20, 45, 90, 90)
+    assert uut.calculate(3, 20, 45, 90, 90) == (1, 2)
 
 
-def test_length_bigger_distance_ok():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.distance(length=170, full_length=320) == 2
+def test_right_section():
+    uut = SectionCalculator()
+    assert uut.calculate(3, 70, 45, 90, 90) == (3, 2)
 
 
-def test_distance_close():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.distance(length=180, full_length=320) == 1
+def test_up_section():
+    uut = SectionCalculator()
+    assert uut.calculate(3, 45, 20, 90, 90) == (2, 1)
 
 
-def test_distance_far():
-    uut = PositionCalculator(section_size=0.75)
-    assert uut.distance(length=140, full_length=320) == 3
+def test_down_section():
+    uut = SectionCalculator()
+    assert uut.calculate(3, 45, 70, 90, 90) == (2, 3)
+
+
+def test_start_first_sections():
+    uut = SectionCalculator()
+    assert uut.calculate(3, 0, 0, 90, 90) == (1, 1)
+
+
+def test_end_first_sections():
+    uut = SectionCalculator()
+    assert uut.calculate(3, 30, 30, 90, 90) == (1, 1)
+
+
+def test_end_second_sections():
+    uut = SectionCalculator()
+    assert uut.calculate(3, 60, 60, 90, 90) == (2, 2)
+
+
+def test_end_third_sections():
+    uut = SectionCalculator()
+    assert uut.calculate(3, 90, 90, 90, 90) == (3, 3)
