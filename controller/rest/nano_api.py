@@ -14,7 +14,7 @@ class NanoApiBase(object):
 
 class LedOn(NanoApiBase):
     def __init__(self, nano):
-        super(NanoApiBase, self).__init__(nano)
+        super(LedOn, self).__init__(nano)
 
     def on_get(self, req, resp):
         self.nano.led_on()
@@ -24,7 +24,7 @@ class LedOn(NanoApiBase):
 
 class LedOff(NanoApiBase):
     def __init__(self, nano):
-        super(NanoApiBase, self).__init__(nano)
+        super(LedOff, self).__init__(nano)
 
     def on_get(self, req, resp):
         self.nano.led_off()
@@ -34,7 +34,7 @@ class LedOff(NanoApiBase):
 
 class SetPanPosition(NanoApiBase):
     def __init__(self, nano):
-        super(NanoApiBase, self).__init__(nano)
+        super(SetPanPosition, self).__init__(nano)
 
     def on_post(self, req, resp):
         position = req.get_param('position')
@@ -45,7 +45,7 @@ class SetPanPosition(NanoApiBase):
 
 class SetTiltPosition(NanoApiBase):
     def __init__(self, nano):
-        super(NanoApiBase, self).__init__(nano)
+        super(SetTiltPosition, self).__init__(nano)
 
     def on_post(self, req, resp):
         position = req.get_param('position')
@@ -56,7 +56,7 @@ class SetTiltPosition(NanoApiBase):
 
 class ReadDistance(NanoApiBase):
     def __init__(self, nano):
-        super(NanoApiBase, self).__init__(nano)
+        super(ReadDistance, self).__init__(nano)
 
     def on_get(self, req, resp):
         self.nano.get_distance_request()
@@ -68,7 +68,7 @@ class ReadDistance(NanoApiBase):
 
 class ReadAccelerometer(NanoApiBase):
     def __init__(self, nano):
-        super(NanoApiBase, self).__init__(nano)
+        super(ReadAccelerometer, self).__init__(nano)
 
     def on_get(self, req, resp):
         self.nano.get_accelerometer_data_request()
@@ -81,7 +81,7 @@ class ReadAccelerometer(NanoApiBase):
 
 class ReadKtir(NanoApiBase):
     def __init__(self, nano):
-        super(NanoApiBase, self).__init__(nano)
+        super(ReadKtir, self).__init__(nano)
 
     def on_get(self, req, resp):
         self.nano.get_ktir_data_request()

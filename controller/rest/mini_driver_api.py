@@ -12,7 +12,7 @@ class MiniDriverApiBase(object):
 
 class LedOn(MiniDriverApiBase):
     def __init__(self, mini_driver):
-        super(MiniDriverApiBase, self).__init__(mini_driver)
+        super(LedOn, self).__init__(mini_driver)
 
     def on_get(self, req, resp):
         self.mini_driver.led_on()
@@ -22,7 +22,7 @@ class LedOn(MiniDriverApiBase):
 
 class LedOff(MiniDriverApiBase):
     def __init__(self, mini_driver):
-        super(MiniDriverApiBase, self).__init__(mini_driver)
+        super(LedOff, self).__init__(mini_driver)
 
     def on_get(self, req, resp):
         self.mini_driver.led_off()
@@ -32,7 +32,7 @@ class LedOff(MiniDriverApiBase):
 
 class Drive(MiniDriverApiBase):
     def __init__(self, mini_driver):
-        super(MiniDriverApiBase, self).__init__(mini_driver)
+        super(Drive, self).__init__(mini_driver)
 
     def on_post(self, req, resp):
         left = req.get_param('left')
