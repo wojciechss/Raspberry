@@ -97,7 +97,7 @@ class NanoApiFactory(object):
     @staticmethod
     def create(api):
         nano = NanoProcessor()
-        nano.connect()
+        #nano.connect()
         api.add_route('/nano/led_on', LedOn(nano))
         api.add_route('/nano/led_off', LedOff(nano))
         api.add_route('/nano/pan', SetPanPosition(nano))
