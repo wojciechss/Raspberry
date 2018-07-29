@@ -1,0 +1,2126 @@
+[2017-07-20 20:56:26,305] [1246] [INFO] Alarm reported: DISTANCE
+[2017-07-20 20:56:26,306] [1246] [INFO] Alarms: 0
+[2017-07-20 20:56:26,306] [1246] [INFO] Add alarm: DISTANCE
+[2017-07-20 20:56:26,306] [1246] [INFO] Led on
+[2017-07-20 20:56:26,315] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:26,334] [1246] [DEBUG] "GET /nano/led_on HTTP/1.1" 200 0
+[2017-07-20 20:56:26,855] [1246] [INFO] Alarm removed: DISTANCE
+[2017-07-20 20:56:26,855] [1246] [INFO] Alarms: 1
+[2017-07-20 20:56:26,856] [1246] [INFO] Remove alarm: DISTANCE
+[2017-07-20 20:56:26,856] [1246] [INFO] Led off
+[2017-07-20 20:56:26,859] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:26,878] [1246] [DEBUG] "GET /nano/led_off HTTP/1.1" 200 0
+[2017-07-20 20:56:27,932] [1246] [INFO] Alarm removed: DISTANCE
+[2017-07-20 20:56:27,933] [1246] [INFO] Alarms: 0
+[2017-07-20 20:56:27,933] [1246] [INFO] Alarm not found: DISTANCE
+[2017-07-20 20:56:27,933] [1246] [INFO] Led off
+[2017-07-20 20:56:27,936] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:27,954] [1246] [DEBUG] "GET /nano/led_off HTTP/1.1" 200 0
+[2017-07-20 20:56:36,052] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,092] [1246] [DEBUG] "POST /mini_driver/drive?right=57&left=69 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,092] [1246] [INFO] Drive: 69:57. Status 200
+[2017-07-20 20:56:36,093] [1246] [INFO] Drive: 69:57
+[2017-07-20 20:56:36,103] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,116] [1246] [DEBUG] "POST /mini_driver/drive?right=61&left=77 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,117] [1246] [INFO] Drive: 77:61. Status 200
+[2017-07-20 20:56:36,117] [1246] [INFO] Drive: 77:61
+[2017-07-20 20:56:36,125] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,136] [1246] [DEBUG] "POST /mini_driver/drive?right=78&left=98 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,137] [1246] [INFO] Drive: 98:78. Status 200
+[2017-07-20 20:56:36,137] [1246] [INFO] Drive: 98:78
+[2017-07-20 20:56:36,145] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,156] [1246] [DEBUG] "POST /mini_driver/drive?right=98&left=122 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,156] [1246] [INFO] Drive: 122:98. Status 200
+[2017-07-20 20:56:36,156] [1246] [INFO] Drive: 122:98
+[2017-07-20 20:56:36,204] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,214] [1246] [DEBUG] "POST /mini_driver/drive?right=142&left=170 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,215] [1246] [INFO] Drive: 170:142. Status 200
+[2017-07-20 20:56:36,215] [1246] [INFO] Drive: 170:142
+[2017-07-20 20:56:36,245] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,260] [1246] [DEBUG] "POST /mini_driver/drive?right=158&left=190 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,261] [1246] [INFO] Drive: 190:158. Status 200
+[2017-07-20 20:56:36,261] [1246] [INFO] Drive: 190:158
+[2017-07-20 20:56:36,282] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,294] [1246] [DEBUG] "POST /mini_driver/drive?right=182&left=214 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,294] [1246] [INFO] Drive: 214:182. Status 200
+[2017-07-20 20:56:36,294] [1246] [INFO] Drive: 214:182
+[2017-07-20 20:56:36,306] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,316] [1246] [DEBUG] "POST /mini_driver/drive?right=194&left=230 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,317] [1246] [INFO] Drive: 230:194. Status 200
+[2017-07-20 20:56:36,317] [1246] [INFO] Drive: 230:194
+[2017-07-20 20:56:36,325] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:36,335] [1246] [DEBUG] "POST /mini_driver/drive?right=198&left=234 HTTP/1.1" 200 0
+[2017-07-20 20:56:36,336] [1246] [INFO] Drive: 234:198. Status 200
+[2017-07-20 20:56:36,336] [1246] [INFO] Drive: 234:198
+[2017-07-20 20:56:37,180] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:37,194] [1246] [DEBUG] "POST /mini_driver/drive?right=28&left=24 HTTP/1.1" 200 0
+[2017-07-20 20:56:37,195] [1246] [INFO] Drive: 24:28. Status 200
+[2017-07-20 20:56:37,196] [1246] [INFO] Drive: 24:28
+[2017-07-20 20:56:37,204] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:37,218] [1246] [DEBUG] "POST /mini_driver/drive?right=52&left=48 HTTP/1.1" 200 0
+[2017-07-20 20:56:37,219] [1246] [INFO] Drive: 48:52. Status 200
+[2017-07-20 20:56:37,220] [1246] [INFO] Drive: 48:52
+[2017-07-20 20:56:37,254] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:37,265] [1246] [DEBUG] "POST /mini_driver/drive?right=136&left=128 HTTP/1.1" 200 0
+[2017-07-20 20:56:37,266] [1246] [INFO] Drive: 128:136. Status 200
+[2017-07-20 20:56:37,266] [1246] [INFO] Drive: 128:136
+[2017-07-20 20:56:37,284] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:37,295] [1246] [DEBUG] "POST /mini_driver/drive?right=164&left=156 HTTP/1.1" 200 0
+[2017-07-20 20:56:37,296] [1246] [INFO] Drive: 156:164. Status 200
+[2017-07-20 20:56:37,296] [1246] [INFO] Drive: 156:164
+[2017-07-20 20:56:37,344] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:37,355] [1246] [DEBUG] "POST /mini_driver/drive?right=212&left=204 HTTP/1.1" 200 0
+[2017-07-20 20:56:37,356] [1246] [INFO] Drive: 204:212. Status 200
+[2017-07-20 20:56:37,356] [1246] [INFO] Drive: 204:212
+[2017-07-20 20:56:37,628] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:37,651] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:56:37,652] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:56:37,653] [1246] [INFO] Drive: 0:0
+[2017-07-20 20:56:43,442] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:43,458] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:56:43,460] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:56:43,460] [1246] [INFO] Drive: 0:0
+[2017-07-20 20:56:43,486] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:43,499] [1246] [DEBUG] "POST /mini_driver/drive?right=60&left=56 HTTP/1.1" 200 0
+[2017-07-20 20:56:43,500] [1246] [INFO] Drive: 56:60. Status 200
+[2017-07-20 20:56:43,500] [1246] [INFO] Drive: 56:60
+[2017-07-20 20:56:43,539] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:43,550] [1246] [DEBUG] "POST /mini_driver/drive?right=120&left=116 HTTP/1.1" 200 0
+[2017-07-20 20:56:43,551] [1246] [INFO] Drive: 116:120. Status 200
+[2017-07-20 20:56:43,551] [1246] [INFO] Drive: 116:120
+[2017-07-20 20:56:43,961] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:43,977] [1246] [DEBUG] "POST /mini_driver/drive?right=176&left=192 HTTP/1.1" 200 0
+[2017-07-20 20:56:43,978] [1246] [INFO] Drive: 192:176. Status 200
+[2017-07-20 20:56:43,979] [1246] [INFO] Drive: 192:176
+[2017-07-20 20:56:44,007] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,022] [1246] [DEBUG] "POST /mini_driver/drive?right=161&left=181 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,023] [1246] [INFO] Drive: 181:161. Status 200
+[2017-07-20 20:56:44,023] [1246] [INFO] Drive: 181:161
+[2017-07-20 20:56:44,080] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,090] [1246] [DEBUG] "POST /mini_driver/drive?right=91&left=119 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,091] [1246] [INFO] Drive: 119:91. Status 200
+[2017-07-20 20:56:44,092] [1246] [INFO] Drive: 119:91
+[2017-07-20 20:56:44,104] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,116] [1246] [DEBUG] "POST /mini_driver/drive?right=68&left=96 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,117] [1246] [INFO] Drive: 96:68. Status 200
+[2017-07-20 20:56:44,117] [1246] [INFO] Drive: 96:68
+[2017-07-20 20:56:44,124] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,136] [1246] [DEBUG] "POST /mini_driver/drive?right=48&left=72 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,137] [1246] [INFO] Drive: 72:48. Status 200
+[2017-07-20 20:56:44,137] [1246] [INFO] Drive: 72:48
+[2017-07-20 20:56:44,157] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,172] [1246] [DEBUG] "POST /mini_driver/drive?right=4&left=8 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,173] [1246] [INFO] Drive: 8:4. Status 200
+[2017-07-20 20:56:44,173] [1246] [INFO] Drive: 8:4
+[2017-07-20 20:56:44,919] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,932] [1246] [DEBUG] "POST /mini_driver/drive?right=5&left=1 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,933] [1246] [INFO] Drive: 1:5. Status 200
+[2017-07-20 20:56:44,933] [1246] [INFO] Drive: 1:5
+[2017-07-20 20:56:44,943] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,955] [1246] [DEBUG] "POST /mini_driver/drive?right=56&left=60 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,955] [1246] [INFO] Drive: 60:56. Status 200
+[2017-07-20 20:56:44,955] [1246] [INFO] Drive: 60:56
+[2017-07-20 20:56:44,963] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,975] [1246] [DEBUG] "POST /mini_driver/drive?right=164&left=176 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,976] [1246] [INFO] Drive: 176:164. Status 200
+[2017-07-20 20:56:44,976] [1246] [INFO] Drive: 176:164
+[2017-07-20 20:56:44,984] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:56:44,996] [1246] [DEBUG] "POST /mini_driver/drive?right=212&left=232 HTTP/1.1" 200 0
+[2017-07-20 20:56:44,997] [1246] [INFO] Drive: 232:212. Status 200
+[2017-07-20 20:56:44,997] [1246] [INFO] Drive: 232:212
+[2017-07-20 20:57:18,889] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:18,906] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:57:18,907] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:57:18,908] [1246] [INFO] Drive: 0:0
+[2017-07-20 20:57:19,026] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:19,051] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=24 HTTP/1.1" 200 0
+[2017-07-20 20:57:19,052] [1246] [INFO] Drive: 24:24. Status 200
+[2017-07-20 20:57:19,053] [1246] [INFO] Drive: 24:24
+[2017-07-20 20:57:19,064] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:19,078] [1246] [DEBUG] "POST /mini_driver/drive?right=44&left=48 HTTP/1.1" 200 0
+[2017-07-20 20:57:19,079] [1246] [INFO] Drive: 48:44. Status 200
+[2017-07-20 20:57:19,079] [1246] [INFO] Drive: 48:44
+[2017-07-20 20:57:19,087] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:19,099] [1246] [DEBUG] "POST /mini_driver/drive?right=72&left=80 HTTP/1.1" 200 0
+[2017-07-20 20:57:19,100] [1246] [INFO] Drive: 80:72. Status 200
+[2017-07-20 20:57:19,100] [1246] [INFO] Drive: 80:72
+[2017-07-20 20:57:19,109] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:19,122] [1246] [DEBUG] "POST /mini_driver/drive?right=92&left=104 HTTP/1.1" 200 0
+[2017-07-20 20:57:19,123] [1246] [INFO] Drive: 104:92. Status 200
+[2017-07-20 20:57:19,123] [1246] [INFO] Drive: 104:92
+[2017-07-20 20:57:19,133] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:19,149] [1246] [DEBUG] "POST /mini_driver/drive?right=125&left=145 HTTP/1.1" 200 0
+[2017-07-20 20:57:19,150] [1246] [INFO] Drive: 145:125. Status 200
+[2017-07-20 20:57:19,150] [1246] [INFO] Drive: 145:125
+[2017-07-20 20:57:19,162] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:19,174] [1246] [DEBUG] "POST /mini_driver/drive?right=161&left=181 HTTP/1.1" 200 0
+[2017-07-20 20:57:19,175] [1246] [INFO] Drive: 181:161. Status 200
+[2017-07-20 20:57:19,175] [1246] [INFO] Drive: 181:161
+[2017-07-20 20:57:20,325] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:20,339] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:57:20,340] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:57:20,341] [1246] [INFO] Drive: 0:0
+[2017-07-20 20:57:21,321] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:21,337] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:57:21,338] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:57:21,339] [1246] [INFO] Drive: 0:0
+[2017-07-20 20:57:21,409] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:21,435] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=24 HTTP/1.1" 200 0
+[2017-07-20 20:57:21,437] [1246] [INFO] Drive: 24:24. Status 200
+[2017-07-20 20:57:21,437] [1246] [INFO] Drive: 24:24
+[2017-07-20 20:57:21,479] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:21,502] [1246] [DEBUG] "POST /mini_driver/drive?right=72&left=84 HTTP/1.1" 200 0
+[2017-07-20 20:57:21,503] [1246] [INFO] Drive: 84:72. Status 200
+[2017-07-20 20:57:21,503] [1246] [INFO] Drive: 84:72
+[2017-07-20 20:57:21,547] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:21,566] [1246] [DEBUG] "POST /mini_driver/drive?right=110&left=134 HTTP/1.1" 200 0
+[2017-07-20 20:57:21,567] [1246] [INFO] Drive: 134:110. Status 200
+[2017-07-20 20:57:21,567] [1246] [INFO] Drive: 134:110
+[2017-07-20 20:57:21,575] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:21,584] [1246] [DEBUG] "POST /mini_driver/drive?right=114&left=138 HTTP/1.1" 200 0
+[2017-07-20 20:57:21,585] [1246] [INFO] Drive: 138:114. Status 200
+[2017-07-20 20:57:21,585] [1246] [INFO] Drive: 138:114
+[2017-07-20 20:57:22,083] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:22,096] [1246] [DEBUG] "POST /mini_driver/drive?right=77&left=113 HTTP/1.1" 200 0
+[2017-07-20 20:57:22,097] [1246] [INFO] Drive: 113:77. Status 200
+[2017-07-20 20:57:22,097] [1246] [INFO] Drive: 113:77
+[2017-07-20 20:57:22,105] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:22,118] [1246] [DEBUG] "POST /mini_driver/drive?right=67&left=107 HTTP/1.1" 200 0
+[2017-07-20 20:57:22,118] [1246] [INFO] Drive: 107:67. Status 200
+[2017-07-20 20:57:22,118] [1246] [INFO] Drive: 107:67
+[2017-07-20 20:57:22,197] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:22,208] [1246] [DEBUG] "POST /mini_driver/drive?right=10&left=66 HTTP/1.1" 200 0
+[2017-07-20 20:57:22,209] [1246] [INFO] Drive: 66:10. Status 200
+[2017-07-20 20:57:22,209] [1246] [INFO] Drive: 66:10
+[2017-07-20 20:57:22,221] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:22,236] [1246] [DEBUG] "POST /mini_driver/drive?right=3&left=63 HTTP/1.1" 200 0
+[2017-07-20 20:57:22,236] [1246] [INFO] Drive: 63:3. Status 200
+[2017-07-20 20:57:22,237] [1246] [INFO] Drive: 63:3
+[2017-07-20 20:57:23,282] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:23,293] [1246] [DEBUG] "POST /mini_driver/drive?right=32&left=88 HTTP/1.1" 200 0
+[2017-07-20 20:57:23,293] [1246] [INFO] Drive: 88:32. Status 200
+[2017-07-20 20:57:23,294] [1246] [INFO] Drive: 88:32
+[2017-07-20 20:57:23,302] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:23,313] [1246] [DEBUG] "POST /mini_driver/drive?right=70&left=130 HTTP/1.1" 200 0
+[2017-07-20 20:57:23,314] [1246] [INFO] Drive: 130:70. Status 200
+[2017-07-20 20:57:23,314] [1246] [INFO] Drive: 130:70
+[2017-07-20 20:57:23,322] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:23,333] [1246] [DEBUG] "POST /mini_driver/drive?right=84&left=152 HTTP/1.1" 200 0
+[2017-07-20 20:57:23,334] [1246] [INFO] Drive: 152:84. Status 200
+[2017-07-20 20:57:23,334] [1246] [INFO] Drive: 152:84
+[2017-07-20 20:57:23,342] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:23,364] [1246] [DEBUG] "POST /mini_driver/drive?right=101&left=177 HTTP/1.1" 200 0
+[2017-07-20 20:57:23,365] [1246] [INFO] Drive: 177:101. Status 200
+[2017-07-20 20:57:23,365] [1246] [INFO] Drive: 177:101
+[2017-07-20 20:57:24,272] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:24,284] [1246] [DEBUG] "POST /mini_driver/drive?right=145&left=240 HTTP/1.1" 200 0
+[2017-07-20 20:57:24,285] [1246] [INFO] Drive: 240:145. Status 200
+[2017-07-20 20:57:24,286] [1246] [INFO] Drive: 240:145
+[2017-07-20 20:57:24,298] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:24,309] [1246] [DEBUG] "POST /mini_driver/drive?right=123&left=240 HTTP/1.1" 200 0
+[2017-07-20 20:57:24,310] [1246] [INFO] Drive: 240:123. Status 200
+[2017-07-20 20:57:24,310] [1246] [INFO] Drive: 240:123
+[2017-07-20 20:57:24,321] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:24,337] [1246] [DEBUG] "POST /mini_driver/drive?right=76&left=188 HTTP/1.1" 200 0
+[2017-07-20 20:57:24,338] [1246] [INFO] Drive: 188:76. Status 200
+[2017-07-20 20:57:24,338] [1246] [INFO] Drive: 188:76
+[2017-07-20 20:57:24,349] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:24,361] [1246] [DEBUG] "POST /mini_driver/drive?right=7&left=107 HTTP/1.1" 200 0
+[2017-07-20 20:57:24,362] [1246] [INFO] Drive: 107:7. Status 200
+[2017-07-20 20:57:24,362] [1246] [INFO] Drive: 107:7
+[2017-07-20 20:57:25,278] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:25,289] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:57:25,290] [1246] [INFO] Drive: 0:240. Status 200
+[2017-07-20 20:57:25,290] [1246] [INFO] Drive: 0:240
+[2017-07-20 20:57:25,355] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:25,366] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=21 HTTP/1.1" 200 0
+[2017-07-20 20:57:25,367] [1246] [INFO] Drive: 21:240. Status 200
+[2017-07-20 20:57:25,367] [1246] [INFO] Drive: 21:240
+[2017-07-20 20:57:25,400] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:25,411] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=44 HTTP/1.1" 200 0
+[2017-07-20 20:57:25,412] [1246] [INFO] Drive: 44:240. Status 200
+[2017-07-20 20:57:25,412] [1246] [INFO] Drive: 44:240
+[2017-07-20 20:57:25,502] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:25,513] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=129 HTTP/1.1" 200 0
+[2017-07-20 20:57:25,513] [1246] [INFO] Drive: 129:240. Status 200
+[2017-07-20 20:57:25,514] [1246] [INFO] Drive: 129:240
+[2017-07-20 20:57:25,527] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:25,537] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=152 HTTP/1.1" 200 0
+[2017-07-20 20:57:25,538] [1246] [INFO] Drive: 152:240. Status 200
+[2017-07-20 20:57:25,538] [1246] [INFO] Drive: 152:240
+[2017-07-20 20:57:25,711] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:25,726] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=195 HTTP/1.1" 200 0
+[2017-07-20 20:57:25,727] [1246] [INFO] Drive: 195:240. Status 200
+[2017-07-20 20:57:25,727] [1246] [INFO] Drive: 195:240
+[2017-07-20 20:57:25,941] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:25,953] [1246] [DEBUG] "POST /mini_driver/drive?right=192&left=240 HTTP/1.1" 200 0
+[2017-07-20 20:57:25,953] [1246] [INFO] Drive: 240:192. Status 200
+[2017-07-20 20:57:25,954] [1246] [INFO] Drive: 240:192
+[2017-07-20 20:57:26,290] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:26,300] [1246] [DEBUG] "POST /mini_driver/drive?right=151&left=240 HTTP/1.1" 200 0
+[2017-07-20 20:57:26,301] [1246] [INFO] Drive: 240:151. Status 200
+[2017-07-20 20:57:26,302] [1246] [INFO] Drive: 240:151
+[2017-07-20 20:57:26,727] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:26,739] [1246] [DEBUG] "POST /mini_driver/drive?right=138&left=186 HTTP/1.1" 200 0
+[2017-07-20 20:57:26,740] [1246] [INFO] Drive: 186:138. Status 200
+[2017-07-20 20:57:26,740] [1246] [INFO] Drive: 186:138
+[2017-07-20 20:57:26,748] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:26,759] [1246] [DEBUG] "POST /mini_driver/drive?right=129&left=153 HTTP/1.1" 200 0
+[2017-07-20 20:57:26,760] [1246] [INFO] Drive: 153:129. Status 200
+[2017-07-20 20:57:26,760] [1246] [INFO] Drive: 153:129
+[2017-07-20 20:57:26,767] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:26,778] [1246] [DEBUG] "POST /mini_driver/drive?right=128&left=124 HTTP/1.1" 200 0
+[2017-07-20 20:57:26,779] [1246] [INFO] Drive: 124:128. Status 200
+[2017-07-20 20:57:26,779] [1246] [INFO] Drive: 124:128
+[2017-07-20 20:57:26,786] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:26,799] [1246] [DEBUG] "POST /mini_driver/drive?right=105&left=61 HTTP/1.1" 200 0
+[2017-07-20 20:57:26,800] [1246] [INFO] Drive: 61:105. Status 200
+[2017-07-20 20:57:26,800] [1246] [INFO] Drive: 61:105
+[2017-07-20 20:57:26,814] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:26,824] [1246] [DEBUG] "POST /mini_driver/drive?right=99&left=35 HTTP/1.1" 200 0
+[2017-07-20 20:57:26,825] [1246] [INFO] Drive: 35:99. Status 200
+[2017-07-20 20:57:26,825] [1246] [INFO] Drive: 35:99
+[2017-07-20 20:57:26,843] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:26,856] [1246] [DEBUG] "POST /mini_driver/drive?right=132&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:57:26,857] [1246] [INFO] Drive: 0:132. Status 200
+[2017-07-20 20:57:26,857] [1246] [INFO] Drive: 0:132
+[2017-07-20 20:57:27,795] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:27,809] [1246] [DEBUG] "POST /mini_driver/drive?right=41&left=173 HTTP/1.1" 200 0
+[2017-07-20 20:57:27,810] [1246] [INFO] Drive: 173:41. Status 200
+[2017-07-20 20:57:27,811] [1246] [INFO] Drive: 173:41
+[2017-07-20 20:57:27,878] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:27,890] [1246] [DEBUG] "POST /mini_driver/drive?right=84&left=216 HTTP/1.1" 200 0
+[2017-07-20 20:57:27,891] [1246] [INFO] Drive: 216:84. Status 200
+[2017-07-20 20:57:27,891] [1246] [INFO] Drive: 216:84
+[2017-07-20 20:57:27,900] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:27,911] [1246] [DEBUG] "POST /mini_driver/drive?right=100&left=232 HTTP/1.1" 200 0
+[2017-07-20 20:57:27,912] [1246] [INFO] Drive: 232:100. Status 200
+[2017-07-20 20:57:27,912] [1246] [INFO] Drive: 232:100
+[2017-07-20 20:57:27,921] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:27,931] [1246] [DEBUG] "POST /mini_driver/drive?right=109&left=237 HTTP/1.1" 200 0
+[2017-07-20 20:57:27,932] [1246] [INFO] Drive: 237:109. Status 200
+[2017-07-20 20:57:27,933] [1246] [INFO] Drive: 237:109
+[2017-07-20 20:57:28,306] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,318] [1246] [DEBUG] "POST /mini_driver/drive?right=106&left=218 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,319] [1246] [INFO] Drive: 218:106. Status 200
+[2017-07-20 20:57:28,319] [1246] [INFO] Drive: 218:106
+[2017-07-20 20:57:28,338] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,352] [1246] [DEBUG] "POST /mini_driver/drive?right=88&left=188 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,353] [1246] [INFO] Drive: 188:88. Status 200
+[2017-07-20 20:57:28,353] [1246] [INFO] Drive: 188:88
+[2017-07-20 20:57:28,382] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,392] [1246] [DEBUG] "POST /mini_driver/drive?right=70&left=166 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,393] [1246] [INFO] Drive: 166:70. Status 200
+[2017-07-20 20:57:28,393] [1246] [INFO] Drive: 166:70
+[2017-07-20 20:57:28,438] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,454] [1246] [DEBUG] "POST /mini_driver/drive?right=52&left=144 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,455] [1246] [INFO] Drive: 144:52. Status 200
+[2017-07-20 20:57:28,455] [1246] [INFO] Drive: 144:52
+[2017-07-20 20:57:28,482] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,493] [1246] [DEBUG] "POST /mini_driver/drive?right=40&left=124 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,494] [1246] [INFO] Drive: 124:40. Status 200
+[2017-07-20 20:57:28,494] [1246] [INFO] Drive: 124:40
+[2017-07-20 20:57:28,600] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,613] [1246] [DEBUG] "POST /mini_driver/drive?right=22&left=102 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,614] [1246] [INFO] Drive: 102:22. Status 200
+[2017-07-20 20:57:28,614] [1246] [INFO] Drive: 102:22
+[2017-07-20 20:57:28,651] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,662] [1246] [DEBUG] "POST /mini_driver/drive?right=20&left=100 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,662] [1246] [INFO] Drive: 100:20. Status 200
+[2017-07-20 20:57:28,662] [1246] [INFO] Drive: 100:20
+[2017-07-20 20:57:28,777] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:28,790] [1246] [DEBUG] "POST /mini_driver/drive?right=6&left=78 HTTP/1.1" 200 0
+[2017-07-20 20:57:28,791] [1246] [INFO] Drive: 78:6. Status 200
+[2017-07-20 20:57:28,791] [1246] [INFO] Drive: 78:6
+[2017-07-20 20:57:29,868] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:29,881] [1246] [DEBUG] "POST /mini_driver/drive?right=1&left=61 HTTP/1.1" 200 0
+[2017-07-20 20:57:29,882] [1246] [INFO] Drive: 61:1. Status 200
+[2017-07-20 20:57:29,882] [1246] [INFO] Drive: 61:1
+[2017-07-20 20:57:29,958] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:29,970] [1246] [DEBUG] "POST /mini_driver/drive?right=38&left=110 HTTP/1.1" 200 0
+[2017-07-20 20:57:29,971] [1246] [INFO] Drive: 110:38. Status 200
+[2017-07-20 20:57:29,971] [1246] [INFO] Drive: 110:38
+[2017-07-20 20:57:29,978] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:29,990] [1246] [DEBUG] "POST /mini_driver/drive?right=41&left=113 HTTP/1.1" 200 0
+[2017-07-20 20:57:29,991] [1246] [INFO] Drive: 113:41. Status 200
+[2017-07-20 20:57:29,991] [1246] [INFO] Drive: 113:41
+[2017-07-20 20:57:29,998] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:30,009] [1246] [DEBUG] "POST /mini_driver/drive?right=56&left=132 HTTP/1.1" 200 0
+[2017-07-20 20:57:30,009] [1246] [INFO] Drive: 132:56. Status 200
+[2017-07-20 20:57:30,009] [1246] [INFO] Drive: 132:56
+[2017-07-20 20:57:30,017] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:30,027] [1246] [DEBUG] "POST /mini_driver/drive?right=62&left=138 HTTP/1.1" 200 0
+[2017-07-20 20:57:30,028] [1246] [INFO] Drive: 138:62. Status 200
+[2017-07-20 20:57:30,028] [1246] [INFO] Drive: 138:62
+[2017-07-20 20:57:30,192] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:30,202] [1246] [DEBUG] "POST /mini_driver/drive?right=109&left=189 HTTP/1.1" 200 0
+[2017-07-20 20:57:30,203] [1246] [INFO] Drive: 189:109. Status 200
+[2017-07-20 20:57:30,203] [1246] [INFO] Drive: 189:109
+[2017-07-20 20:57:30,283] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:30,295] [1246] [DEBUG] "POST /mini_driver/drive?right=131&left=211 HTTP/1.1" 200 0
+[2017-07-20 20:57:30,296] [1246] [INFO] Drive: 211:131. Status 200
+[2017-07-20 20:57:30,296] [1246] [INFO] Drive: 211:131
+[2017-07-20 20:57:31,016] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:57:31,033] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:57:31,036] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:57:31,036] [1246] [INFO] Drive: 0:0
+[2017-07-20 20:59:26,217] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:26,239] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=20 HTTP/1.1" 200 0
+[2017-07-20 20:59:26,241] [1246] [INFO] Drive: 20:24. Status 200
+[2017-07-20 20:59:26,241] [1246] [INFO] Drive: 20:24
+[2017-07-20 20:59:26,263] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:26,285] [1246] [DEBUG] "POST /mini_driver/drive?right=116&left=112 HTTP/1.1" 200 0
+[2017-07-20 20:59:26,286] [1246] [INFO] Drive: 112:116. Status 200
+[2017-07-20 20:59:26,287] [1246] [INFO] Drive: 112:116
+[2017-07-20 20:59:26,295] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:26,307] [1246] [DEBUG] "POST /mini_driver/drive?right=136&left=128 HTTP/1.1" 200 0
+[2017-07-20 20:59:26,308] [1246] [INFO] Drive: 128:136. Status 200
+[2017-07-20 20:59:26,308] [1246] [INFO] Drive: 128:136
+[2017-07-20 20:59:26,383] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:26,395] [1246] [DEBUG] "POST /mini_driver/drive?right=216&left=200 HTTP/1.1" 200 0
+[2017-07-20 20:59:26,397] [1246] [INFO] Drive: 200:216. Status 200
+[2017-07-20 20:59:26,397] [1246] [INFO] Drive: 200:216
+[2017-07-20 20:59:28,346] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:28,371] [1246] [DEBUG] "POST /mini_driver/drive?right=20&left=16 HTTP/1.1" 200 0
+[2017-07-20 20:59:28,372] [1246] [INFO] Drive: 16:20. Status 200
+[2017-07-20 20:59:28,373] [1246] [INFO] Drive: 16:20
+[2017-07-20 20:59:28,390] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:28,423] [1246] [DEBUG] "POST /mini_driver/drive?right=57&left=45 HTTP/1.1" 200 0
+[2017-07-20 20:59:28,424] [1246] [INFO] Drive: 45:57. Status 200
+[2017-07-20 20:59:28,425] [1246] [INFO] Drive: 45:57
+[2017-07-20 20:59:28,438] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:28,454] [1246] [DEBUG] "POST /mini_driver/drive?right=89&left=73 HTTP/1.1" 200 0
+[2017-07-20 20:59:28,455] [1246] [INFO] Drive: 73:89. Status 200
+[2017-07-20 20:59:28,455] [1246] [INFO] Drive: 73:89
+[2017-07-20 20:59:28,463] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:28,475] [1246] [DEBUG] "POST /mini_driver/drive?right=153&left=129 HTTP/1.1" 200 0
+[2017-07-20 20:59:28,476] [1246] [INFO] Drive: 129:153. Status 200
+[2017-07-20 20:59:28,476] [1246] [INFO] Drive: 129:153
+[2017-07-20 20:59:28,485] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:28,496] [1246] [DEBUG] "POST /mini_driver/drive?right=186&left=158 HTTP/1.1" 200 0
+[2017-07-20 20:59:28,497] [1246] [INFO] Drive: 158:186. Status 200
+[2017-07-20 20:59:28,497] [1246] [INFO] Drive: 158:186
+[2017-07-20 20:59:28,505] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:28,520] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=208 HTTP/1.1" 200 0
+[2017-07-20 20:59:28,521] [1246] [INFO] Drive: 208:240. Status 200
+[2017-07-20 20:59:28,521] [1246] [INFO] Drive: 208:240
+[2017-07-20 20:59:29,942] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:29,960] [1246] [DEBUG] "POST /mini_driver/drive?right=31&left=32 HTTP/1.1" 200 0
+[2017-07-20 20:59:29,962] [1246] [INFO] Drive: 32:31. Status 200
+[2017-07-20 20:59:29,962] [1246] [INFO] Drive: 32:31
+[2017-07-20 20:59:29,973] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:29,986] [1246] [DEBUG] "POST /mini_driver/drive?right=72&left=72 HTTP/1.1" 200 0
+[2017-07-20 20:59:29,987] [1246] [INFO] Drive: 72:72. Status 200
+[2017-07-20 20:59:29,987] [1246] [INFO] Drive: 72:72
+[2017-07-20 20:59:29,997] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:30,012] [1246] [DEBUG] "POST /mini_driver/drive?right=100&left=100 HTTP/1.1" 200 0
+[2017-07-20 20:59:30,014] [1246] [INFO] Drive: 100:100. Status 200
+[2017-07-20 20:59:30,014] [1246] [INFO] Drive: 100:100
+[2017-07-20 20:59:30,028] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:30,042] [1246] [DEBUG] "POST /mini_driver/drive?right=172&left=172 HTTP/1.1" 200 0
+[2017-07-20 20:59:30,043] [1246] [INFO] Drive: 172:172. Status 200
+[2017-07-20 20:59:30,043] [1246] [INFO] Drive: 172:172
+[2017-07-20 20:59:30,079] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:30,092] [1246] [DEBUG] "POST /mini_driver/drive?right=220&left=216 HTTP/1.1" 200 0
+[2017-07-20 20:59:30,093] [1246] [INFO] Drive: 216:220. Status 200
+[2017-07-20 20:59:30,093] [1246] [INFO] Drive: 216:220
+[2017-07-20 20:59:34,579] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:34,605] [1246] [DEBUG] "POST /mini_driver/drive?right=17&left=25 HTTP/1.1" 200 0
+[2017-07-20 20:59:34,607] [1246] [INFO] Drive: 25:17. Status 200
+[2017-07-20 20:59:34,607] [1246] [INFO] Drive: 25:17
+[2017-07-20 20:59:34,621] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:34,643] [1246] [DEBUG] "POST /mini_driver/drive?right=58&left=78 HTTP/1.1" 200 0
+[2017-07-20 20:59:34,644] [1246] [INFO] Drive: 78:58. Status 200
+[2017-07-20 20:59:34,644] [1246] [INFO] Drive: 78:58
+[2017-07-20 20:59:34,654] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:34,671] [1246] [DEBUG] "POST /mini_driver/drive?right=83&left=111 HTTP/1.1" 200 0
+[2017-07-20 20:59:34,672] [1246] [INFO] Drive: 111:83. Status 200
+[2017-07-20 20:59:34,672] [1246] [INFO] Drive: 111:83
+[2017-07-20 20:59:34,682] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:34,697] [1246] [DEBUG] "POST /mini_driver/drive?right=143&left=179 HTTP/1.1" 200 0
+[2017-07-20 20:59:34,698] [1246] [INFO] Drive: 179:143. Status 200
+[2017-07-20 20:59:34,698] [1246] [INFO] Drive: 179:143
+[2017-07-20 20:59:34,708] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:34,720] [1246] [DEBUG] "POST /mini_driver/drive?right=171&left=207 HTTP/1.1" 200 0
+[2017-07-20 20:59:34,721] [1246] [INFO] Drive: 207:171. Status 200
+[2017-07-20 20:59:34,721] [1246] [INFO] Drive: 207:171
+[2017-07-20 20:59:34,741] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:34,754] [1246] [DEBUG] "POST /mini_driver/drive?right=198&left=234 HTTP/1.1" 200 0
+[2017-07-20 20:59:34,754] [1246] [INFO] Drive: 234:198. Status 200
+[2017-07-20 20:59:34,755] [1246] [INFO] Drive: 234:198
+[2017-07-20 20:59:36,216] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:36,239] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:59:36,240] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:59:36,240] [1246] [INFO] Drive: 0:0
+[2017-07-20 20:59:36,312] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:36,328] [1246] [DEBUG] "POST /mini_driver/drive?right=112&left=108 HTTP/1.1" 200 0
+[2017-07-20 20:59:36,329] [1246] [INFO] Drive: 108:112. Status 200
+[2017-07-20 20:59:36,329] [1246] [INFO] Drive: 108:112
+[2017-07-20 20:59:37,476] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 20:59:37,502] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 20:59:37,504] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 20:59:37,504] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:01:13,283] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:13,294] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:01:13,295] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:01:13,295] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:01:13,422] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:13,435] [1246] [DEBUG] "POST /mini_driver/drive?right=40&left=44 HTTP/1.1" 200 0
+[2017-07-20 21:01:13,436] [1246] [INFO] Drive: 44:40. Status 200
+[2017-07-20 21:01:13,436] [1246] [INFO] Drive: 44:40
+[2017-07-20 21:01:13,446] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:13,460] [1246] [DEBUG] "POST /mini_driver/drive?right=44&left=52 HTTP/1.1" 200 0
+[2017-07-20 21:01:13,461] [1246] [INFO] Drive: 52:44. Status 200
+[2017-07-20 21:01:13,461] [1246] [INFO] Drive: 52:44
+[2017-07-20 21:01:13,564] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:13,575] [1246] [DEBUG] "POST /mini_driver/drive?right=84&left=92 HTTP/1.1" 200 0
+[2017-07-20 21:01:13,577] [1246] [INFO] Drive: 92:84. Status 200
+[2017-07-20 21:01:13,577] [1246] [INFO] Drive: 92:84
+[2017-07-20 21:01:13,587] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:13,602] [1246] [DEBUG] "POST /mini_driver/drive?right=92&left=104 HTTP/1.1" 200 0
+[2017-07-20 21:01:13,603] [1246] [INFO] Drive: 104:92. Status 200
+[2017-07-20 21:01:13,603] [1246] [INFO] Drive: 104:92
+[2017-07-20 21:01:13,650] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:13,671] [1246] [DEBUG] "POST /mini_driver/drive?right=136&left=148 HTTP/1.1" 200 0
+[2017-07-20 21:01:13,672] [1246] [INFO] Drive: 148:136. Status 200
+[2017-07-20 21:01:13,673] [1246] [INFO] Drive: 148:136
+[2017-07-20 21:01:15,282] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:15,293] [1246] [DEBUG] "POST /mini_driver/drive?right=36&left=36 HTTP/1.1" 200 0
+[2017-07-20 21:01:15,294] [1246] [INFO] Drive: 36:36. Status 200
+[2017-07-20 21:01:15,294] [1246] [INFO] Drive: 36:36
+[2017-07-20 21:01:15,343] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:15,356] [1246] [DEBUG] "POST /mini_driver/drive?right=84&left=88 HTTP/1.1" 200 0
+[2017-07-20 21:01:15,357] [1246] [INFO] Drive: 88:84. Status 200
+[2017-07-20 21:01:15,357] [1246] [INFO] Drive: 88:84
+[2017-07-20 21:01:15,430] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:15,440] [1246] [DEBUG] "POST /mini_driver/drive?right=168&left=180 HTTP/1.1" 200 0
+[2017-07-20 21:01:15,441] [1246] [INFO] Drive: 180:168. Status 200
+[2017-07-20 21:01:15,441] [1246] [INFO] Drive: 180:168
+[2017-07-20 21:01:15,466] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:15,477] [1246] [DEBUG] "POST /mini_driver/drive?right=188&left=204 HTTP/1.1" 200 0
+[2017-07-20 21:01:15,478] [1246] [INFO] Drive: 204:188. Status 200
+[2017-07-20 21:01:15,478] [1246] [INFO] Drive: 204:188
+[2017-07-20 21:01:16,246] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:16,261] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:01:16,262] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:01:16,262] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:01:16,722] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:16,750] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:01:16,752] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:01:16,752] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:01:17,401] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:17,414] [1246] [DEBUG] "POST /mini_driver/drive?right=44&left=68 HTTP/1.1" 200 0
+[2017-07-20 21:01:17,415] [1246] [INFO] Drive: 68:44. Status 200
+[2017-07-20 21:01:17,415] [1246] [INFO] Drive: 68:44
+[2017-07-20 21:01:17,434] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:01:17,449] [1246] [DEBUG] "POST /mini_driver/drive?right=82&left=106 HTTP/1.1" 200 0
+[2017-07-20 21:01:17,450] [1246] [INFO] Drive: 106:82. Status 200
+[2017-07-20 21:01:17,450] [1246] [INFO] Drive: 106:82
+[2017-07-20 21:03:34,111] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:34,137] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:03:34,138] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:03:34,138] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:03:34,149] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:34,163] [1246] [DEBUG] "POST /mini_driver/drive?right=42&left=58 HTTP/1.1" 200 0
+[2017-07-20 21:03:34,164] [1246] [INFO] Drive: 58:42. Status 200
+[2017-07-20 21:03:34,164] [1246] [INFO] Drive: 58:42
+[2017-07-20 21:03:34,177] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:34,193] [1246] [DEBUG] "POST /mini_driver/drive?right=64&left=92 HTTP/1.1" 200 0
+[2017-07-20 21:03:34,194] [1246] [INFO] Drive: 92:64. Status 200
+[2017-07-20 21:03:34,194] [1246] [INFO] Drive: 92:64
+[2017-07-20 21:03:34,240] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:34,263] [1246] [DEBUG] "POST /mini_driver/drive?right=124&left=180 HTTP/1.1" 200 0
+[2017-07-20 21:03:34,265] [1246] [INFO] Drive: 180:124. Status 200
+[2017-07-20 21:03:34,265] [1246] [INFO] Drive: 180:124
+[2017-07-20 21:03:34,458] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:34,468] [1246] [DEBUG] "POST /mini_driver/drive?right=171&left=227 HTTP/1.1" 200 0
+[2017-07-20 21:03:34,469] [1246] [INFO] Drive: 227:171. Status 200
+[2017-07-20 21:03:34,469] [1246] [INFO] Drive: 227:171
+[2017-07-20 21:03:34,830] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:34,847] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:03:34,849] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:03:34,849] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:03:35,243] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:35,263] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:03:35,265] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:03:35,265] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:03:36,005] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:36,016] [1246] [DEBUG] "POST /mini_driver/drive?right=28&left=24 HTTP/1.1" 200 0
+[2017-07-20 21:03:36,017] [1246] [INFO] Drive: 24:28. Status 200
+[2017-07-20 21:03:36,017] [1246] [INFO] Drive: 24:28
+[2017-07-20 21:03:36,027] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:36,040] [1246] [DEBUG] "POST /mini_driver/drive?right=64&left=68 HTTP/1.1" 200 0
+[2017-07-20 21:03:36,041] [1246] [INFO] Drive: 68:64. Status 200
+[2017-07-20 21:03:36,041] [1246] [INFO] Drive: 68:64
+[2017-07-20 21:03:36,054] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:36,072] [1246] [DEBUG] "POST /mini_driver/drive?right=76&left=88 HTTP/1.1" 200 0
+[2017-07-20 21:03:36,073] [1246] [INFO] Drive: 88:76. Status 200
+[2017-07-20 21:03:36,074] [1246] [INFO] Drive: 88:76
+[2017-07-20 21:03:36,089] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:36,115] [1246] [DEBUG] "POST /mini_driver/drive?right=114&left=138 HTTP/1.1" 200 0
+[2017-07-20 21:03:36,116] [1246] [INFO] Drive: 138:114. Status 200
+[2017-07-20 21:03:36,116] [1246] [INFO] Drive: 138:114
+[2017-07-20 21:03:36,136] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:03:36,153] [1246] [DEBUG] "POST /mini_driver/drive?right=167&left=207 HTTP/1.1" 200 0
+[2017-07-20 21:03:36,154] [1246] [INFO] Drive: 207:167. Status 200
+[2017-07-20 21:03:36,155] [1246] [INFO] Drive: 207:167
+[2017-07-20 21:04:00,418] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:00,432] [1246] [DEBUG] "POST /mini_driver/drive?right=16&left=20 HTTP/1.1" 200 0
+[2017-07-20 21:04:00,433] [1246] [INFO] Drive: 20:16. Status 200
+[2017-07-20 21:04:00,434] [1246] [INFO] Drive: 20:16
+[2017-07-20 21:04:00,558] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:00,580] [1246] [DEBUG] "POST /mini_driver/drive?right=93&left=109 HTTP/1.1" 200 0
+[2017-07-20 21:04:00,581] [1246] [INFO] Drive: 109:93. Status 200
+[2017-07-20 21:04:00,581] [1246] [INFO] Drive: 109:93
+[2017-07-20 21:04:00,685] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:00,700] [1246] [DEBUG] "POST /mini_driver/drive?right=149&left=169 HTTP/1.1" 200 0
+[2017-07-20 21:04:00,701] [1246] [INFO] Drive: 169:149. Status 200
+[2017-07-20 21:04:00,701] [1246] [INFO] Drive: 169:149
+[2017-07-20 21:04:00,710] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:00,725] [1246] [DEBUG] "POST /mini_driver/drive?right=162&left=190 HTTP/1.1" 200 0
+[2017-07-20 21:04:00,726] [1246] [INFO] Drive: 190:162. Status 200
+[2017-07-20 21:04:00,726] [1246] [INFO] Drive: 190:162
+[2017-07-20 21:04:00,738] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:00,755] [1246] [DEBUG] "POST /mini_driver/drive?right=169&left=197 HTTP/1.1" 200 0
+[2017-07-20 21:04:00,756] [1246] [INFO] Drive: 197:169. Status 200
+[2017-07-20 21:04:00,756] [1246] [INFO] Drive: 197:169
+[2017-07-20 21:04:01,362] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:01,379] [1246] [DEBUG] "POST /mini_driver/drive?right=131&left=163 HTTP/1.1" 200 0
+[2017-07-20 21:04:01,381] [1246] [INFO] Drive: 163:131. Status 200
+[2017-07-20 21:04:01,381] [1246] [INFO] Drive: 163:131
+[2017-07-20 21:04:01,390] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:01,407] [1246] [DEBUG] "POST /mini_driver/drive?right=61&left=77 HTTP/1.1" 200 0
+[2017-07-20 21:04:01,409] [1246] [INFO] Drive: 77:61. Status 200
+[2017-07-20 21:04:01,409] [1246] [INFO] Drive: 77:61
+[2017-07-20 21:04:01,429] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:04:01,447] [1246] [DEBUG] "POST /mini_driver/drive?right=12&left=16 HTTP/1.1" 200 0
+[2017-07-20 21:04:01,449] [1246] [INFO] Drive: 16:12. Status 200
+[2017-07-20 21:04:01,449] [1246] [INFO] Drive: 16:12
+[2017-07-20 21:05:25,087] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:25,107] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:05:25,109] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:05:25,109] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:05:25,125] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:25,146] [1246] [DEBUG] "POST /mini_driver/drive?right=20&left=24 HTTP/1.1" 200 0
+[2017-07-20 21:05:25,147] [1246] [INFO] Drive: 24:20. Status 200
+[2017-07-20 21:05:25,147] [1246] [INFO] Drive: 24:20
+[2017-07-20 21:05:25,157] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:25,172] [1246] [DEBUG] "POST /mini_driver/drive?right=64&left=76 HTTP/1.1" 200 0
+[2017-07-20 21:05:25,173] [1246] [INFO] Drive: 76:64. Status 200
+[2017-07-20 21:05:25,174] [1246] [INFO] Drive: 76:64
+[2017-07-20 21:05:25,186] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:25,200] [1246] [DEBUG] "POST /mini_driver/drive?right=110&left=134 HTTP/1.1" 200 0
+[2017-07-20 21:05:25,201] [1246] [INFO] Drive: 134:110. Status 200
+[2017-07-20 21:05:25,201] [1246] [INFO] Drive: 134:110
+[2017-07-20 21:05:25,212] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:25,227] [1246] [DEBUG] "POST /mini_driver/drive?right=127&left=159 HTTP/1.1" 200 0
+[2017-07-20 21:05:25,228] [1246] [INFO] Drive: 159:127. Status 200
+[2017-07-20 21:05:25,228] [1246] [INFO] Drive: 159:127
+[2017-07-20 21:05:26,192] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,204] [1246] [DEBUG] "POST /mini_driver/drive?right=149&left=213 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,205] [1246] [INFO] Drive: 213:149. Status 200
+[2017-07-20 21:05:26,205] [1246] [INFO] Drive: 213:149
+[2017-07-20 21:05:26,213] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,225] [1246] [DEBUG] "POST /mini_driver/drive?right=129&left=189 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,226] [1246] [INFO] Drive: 189:129. Status 200
+[2017-07-20 21:05:26,226] [1246] [INFO] Drive: 189:129
+[2017-07-20 21:05:26,236] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,250] [1246] [DEBUG] "POST /mini_driver/drive?right=109&left=165 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,251] [1246] [INFO] Drive: 165:109. Status 200
+[2017-07-20 21:05:26,251] [1246] [INFO] Drive: 165:109
+[2017-07-20 21:05:26,265] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,277] [1246] [DEBUG] "POST /mini_driver/drive?right=88&left=136 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,278] [1246] [INFO] Drive: 136:88. Status 200
+[2017-07-20 21:05:26,278] [1246] [INFO] Drive: 136:88
+[2017-07-20 21:05:26,304] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,319] [1246] [DEBUG] "POST /mini_driver/drive?right=72&left=116 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,321] [1246] [INFO] Drive: 116:72. Status 200
+[2017-07-20 21:05:26,321] [1246] [INFO] Drive: 116:72
+[2017-07-20 21:05:26,330] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,342] [1246] [DEBUG] "POST /mini_driver/drive?right=56&left=96 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,343] [1246] [INFO] Drive: 96:56. Status 200
+[2017-07-20 21:05:26,343] [1246] [INFO] Drive: 96:56
+[2017-07-20 21:05:26,352] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,364] [1246] [DEBUG] "POST /mini_driver/drive?right=48&left=84 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,366] [1246] [INFO] Drive: 84:48. Status 200
+[2017-07-20 21:05:26,366] [1246] [INFO] Drive: 84:48
+[2017-07-20 21:05:26,375] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,388] [1246] [DEBUG] "POST /mini_driver/drive?right=35&left=68 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,388] [1246] [INFO] Drive: 68:35. Status 200
+[2017-07-20 21:05:26,389] [1246] [INFO] Drive: 68:35
+[2017-07-20 21:05:26,398] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,410] [1246] [DEBUG] "POST /mini_driver/drive?right=31&left=59 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,411] [1246] [INFO] Drive: 59:31. Status 200
+[2017-07-20 21:05:26,411] [1246] [INFO] Drive: 59:31
+[2017-07-20 21:05:26,435] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:26,448] [1246] [DEBUG] "POST /mini_driver/drive?right=14&left=42 HTTP/1.1" 200 0
+[2017-07-20 21:05:26,449] [1246] [INFO] Drive: 42:14. Status 200
+[2017-07-20 21:05:26,449] [1246] [INFO] Drive: 42:14
+[2017-07-20 21:05:27,319] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:27,331] [1246] [DEBUG] "POST /mini_driver/drive?right=16&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:05:27,331] [1246] [INFO] Drive: 0:16. Status 200
+[2017-07-20 21:05:27,331] [1246] [INFO] Drive: 0:16
+[2017-07-20 21:05:27,594] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:27,610] [1246] [DEBUG] "POST /mini_driver/drive?right=112&left=108 HTTP/1.1" 200 0
+[2017-07-20 21:05:27,611] [1246] [INFO] Drive: 108:112. Status 200
+[2017-07-20 21:05:27,611] [1246] [INFO] Drive: 108:112
+[2017-07-20 21:05:27,717] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:27,728] [1246] [DEBUG] "POST /mini_driver/drive?right=136&left=132 HTTP/1.1" 200 0
+[2017-07-20 21:05:27,729] [1246] [INFO] Drive: 132:136. Status 200
+[2017-07-20 21:05:27,729] [1246] [INFO] Drive: 132:136
+[2017-07-20 21:05:27,801] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:27,813] [1246] [DEBUG] "POST /mini_driver/drive?right=160&left=156 HTTP/1.1" 200 0
+[2017-07-20 21:05:27,814] [1246] [INFO] Drive: 156:160. Status 200
+[2017-07-20 21:05:27,814] [1246] [INFO] Drive: 156:160
+[2017-07-20 21:05:27,845] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:27,861] [1246] [DEBUG] "POST /mini_driver/drive?right=196&left=192 HTTP/1.1" 200 0
+[2017-07-20 21:05:27,862] [1246] [INFO] Drive: 192:196. Status 200
+[2017-07-20 21:05:27,863] [1246] [INFO] Drive: 192:196
+[2017-07-20 21:05:28,467] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:28,478] [1246] [DEBUG] "POST /mini_driver/drive?right=224&left=204 HTTP/1.1" 200 0
+[2017-07-20 21:05:28,478] [1246] [INFO] Drive: 204:224. Status 200
+[2017-07-20 21:05:28,479] [1246] [INFO] Drive: 204:224
+[2017-07-20 21:05:28,580] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:28,592] [1246] [DEBUG] "POST /mini_driver/drive?right=177&left=157 HTTP/1.1" 200 0
+[2017-07-20 21:05:28,592] [1246] [INFO] Drive: 157:177. Status 200
+[2017-07-20 21:05:28,592] [1246] [INFO] Drive: 157:177
+[2017-07-20 21:05:28,648] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:28,666] [1246] [DEBUG] "POST /mini_driver/drive?right=153&left=133 HTTP/1.1" 200 0
+[2017-07-20 21:05:28,667] [1246] [INFO] Drive: 133:153. Status 200
+[2017-07-20 21:05:28,667] [1246] [INFO] Drive: 133:153
+[2017-07-20 21:05:28,715] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:28,729] [1246] [DEBUG] "POST /mini_driver/drive?right=125&left=105 HTTP/1.1" 200 0
+[2017-07-20 21:05:28,730] [1246] [INFO] Drive: 105:125. Status 200
+[2017-07-20 21:05:28,730] [1246] [INFO] Drive: 105:125
+[2017-07-20 21:05:29,057] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:29,072] [1246] [DEBUG] "POST /mini_driver/drive?right=61&left=49 HTTP/1.1" 200 0
+[2017-07-20 21:05:29,073] [1246] [INFO] Drive: 49:61. Status 200
+[2017-07-20 21:05:29,073] [1246] [INFO] Drive: 49:61
+[2017-07-20 21:05:29,129] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:29,142] [1246] [DEBUG] "POST /mini_driver/drive?right=37&left=25 HTTP/1.1" 200 0
+[2017-07-20 21:05:29,143] [1246] [INFO] Drive: 25:37. Status 200
+[2017-07-20 21:05:29,143] [1246] [INFO] Drive: 25:37
+[2017-07-20 21:05:29,242] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:29,253] [1246] [DEBUG] "POST /mini_driver/drive?right=8&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:05:29,255] [1246] [INFO] Drive: 0:8. Status 200
+[2017-07-20 21:05:29,255] [1246] [INFO] Drive: 0:8
+[2017-07-20 21:05:29,300] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:29,312] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:05:29,313] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:05:29,313] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:05:30,184] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:30,197] [1246] [DEBUG] "POST /mini_driver/drive?right=6&left=22 HTTP/1.1" 200 0
+[2017-07-20 21:05:30,198] [1246] [INFO] Drive: 22:6. Status 200
+[2017-07-20 21:05:30,198] [1246] [INFO] Drive: 22:6
+[2017-07-20 21:05:30,247] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:30,265] [1246] [DEBUG] "POST /mini_driver/drive?right=23&left=39 HTTP/1.1" 200 0
+[2017-07-20 21:05:30,266] [1246] [INFO] Drive: 39:23. Status 200
+[2017-07-20 21:05:30,266] [1246] [INFO] Drive: 39:23
+[2017-07-20 21:05:30,276] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:30,287] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=44 HTTP/1.1" 200 0
+[2017-07-20 21:05:30,288] [1246] [INFO] Drive: 44:24. Status 200
+[2017-07-20 21:05:30,288] [1246] [INFO] Drive: 44:24
+[2017-07-20 21:05:30,448] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:30,464] [1246] [DEBUG] "POST /mini_driver/drive?right=63&left=87 HTTP/1.1" 200 0
+[2017-07-20 21:05:30,465] [1246] [INFO] Drive: 87:63. Status 200
+[2017-07-20 21:05:30,465] [1246] [INFO] Drive: 87:63
+[2017-07-20 21:05:30,472] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:30,489] [1246] [DEBUG] "POST /mini_driver/drive?right=67&left=91 HTTP/1.1" 200 0
+[2017-07-20 21:05:30,490] [1246] [INFO] Drive: 91:67. Status 200
+[2017-07-20 21:05:30,490] [1246] [INFO] Drive: 91:67
+[2017-07-20 21:05:30,633] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:05:30,653] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:05:30,655] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:05:30,655] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:09:48,937] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:48,968] [1246] [DEBUG] "POST /mini_driver/drive?right=25&left=37 HTTP/1.1" 200 0
+[2017-07-20 21:09:48,969] [1246] [INFO] Drive: 37:25. Status 200
+[2017-07-20 21:09:48,970] [1246] [INFO] Drive: 37:25
+[2017-07-20 21:09:48,986] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:48,998] [1246] [DEBUG] "POST /mini_driver/drive?right=46&left=62 HTTP/1.1" 200 0
+[2017-07-20 21:09:48,999] [1246] [INFO] Drive: 62:46. Status 200
+[2017-07-20 21:09:48,999] [1246] [INFO] Drive: 62:46
+[2017-07-20 21:09:50,462] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:50,477] [1246] [DEBUG] "POST /mini_driver/drive?right=69&left=85 HTTP/1.1" 200 0
+[2017-07-20 21:09:50,478] [1246] [INFO] Drive: 85:69. Status 200
+[2017-07-20 21:09:50,478] [1246] [INFO] Drive: 85:69
+[2017-07-20 21:09:51,345] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:51,361] [1246] [DEBUG] "POST /mini_driver/drive?right=94&left=118 HTTP/1.1" 200 0
+[2017-07-20 21:09:51,362] [1246] [INFO] Drive: 118:94. Status 200
+[2017-07-20 21:09:51,362] [1246] [INFO] Drive: 118:94
+[2017-07-20 21:09:53,135] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:53,153] [1246] [DEBUG] "POST /mini_driver/drive?right=102&left=126 HTTP/1.1" 200 0
+[2017-07-20 21:09:53,155] [1246] [INFO] Drive: 126:102. Status 200
+[2017-07-20 21:09:53,155] [1246] [INFO] Drive: 126:102
+[2017-07-20 21:09:53,171] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:53,185] [1246] [DEBUG] "POST /mini_driver/drive?right=114&left=142 HTTP/1.1" 200 0
+[2017-07-20 21:09:53,186] [1246] [INFO] Drive: 142:114. Status 200
+[2017-07-20 21:09:53,187] [1246] [INFO] Drive: 142:114
+[2017-07-20 21:09:54,468] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:54,487] [1246] [DEBUG] "POST /mini_driver/drive?right=199&left=240 HTTP/1.1" 200 0
+[2017-07-20 21:09:54,488] [1246] [INFO] Drive: 240:199. Status 200
+[2017-07-20 21:09:54,489] [1246] [INFO] Drive: 240:199
+[2017-07-20 21:09:55,244] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,259] [1246] [DEBUG] "POST /mini_driver/drive?right=159&left=231 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,260] [1246] [INFO] Drive: 231:159. Status 200
+[2017-07-20 21:09:55,260] [1246] [INFO] Drive: 231:159
+[2017-07-20 21:09:55,271] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,289] [1246] [DEBUG] "POST /mini_driver/drive?right=147&left=215 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,290] [1246] [INFO] Drive: 215:147. Status 200
+[2017-07-20 21:09:55,291] [1246] [INFO] Drive: 215:147
+[2017-07-20 21:09:55,416] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,428] [1246] [DEBUG] "POST /mini_driver/drive?right=103&left=151 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,428] [1246] [INFO] Drive: 151:103. Status 200
+[2017-07-20 21:09:55,429] [1246] [INFO] Drive: 151:103
+[2017-07-20 21:09:55,507] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,518] [1246] [DEBUG] "POST /mini_driver/drive?right=85&left=121 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,519] [1246] [INFO] Drive: 121:85. Status 200
+[2017-07-20 21:09:55,519] [1246] [INFO] Drive: 121:85
+[2017-07-20 21:09:55,653] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,664] [1246] [DEBUG] "POST /mini_driver/drive?right=62&left=82 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,665] [1246] [INFO] Drive: 82:62. Status 200
+[2017-07-20 21:09:55,665] [1246] [INFO] Drive: 82:62
+[2017-07-20 21:09:55,847] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,857] [1246] [DEBUG] "POST /mini_driver/drive?right=21&left=29 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,858] [1246] [INFO] Drive: 29:21. Status 200
+[2017-07-20 21:09:55,859] [1246] [INFO] Drive: 29:21
+[2017-07-20 21:09:55,947] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,957] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,958] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:09:55,958] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:09:55,969] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:55,980] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:09:55,981] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:09:55,981] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:09:57,328] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:57,347] [1246] [DEBUG] "POST /mini_driver/drive?right=12&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:09:57,349] [1246] [INFO] Drive: 0:12. Status 200
+[2017-07-20 21:09:57,349] [1246] [INFO] Drive: 0:12
+[2017-07-20 21:09:58,950] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:58,966] [1246] [DEBUG] "POST /mini_driver/drive?right=56&left=60 HTTP/1.1" 200 0
+[2017-07-20 21:09:58,967] [1246] [INFO] Drive: 60:56. Status 200
+[2017-07-20 21:09:58,967] [1246] [INFO] Drive: 60:56
+[2017-07-20 21:09:58,977] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:58,989] [1246] [DEBUG] "POST /mini_driver/drive?right=60&left=64 HTTP/1.1" 200 0
+[2017-07-20 21:09:58,990] [1246] [INFO] Drive: 64:60. Status 200
+[2017-07-20 21:09:58,990] [1246] [INFO] Drive: 64:60
+[2017-07-20 21:09:59,446] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:59,459] [1246] [DEBUG] "POST /mini_driver/drive?right=116&left=132 HTTP/1.1" 200 0
+[2017-07-20 21:09:59,460] [1246] [INFO] Drive: 132:116. Status 200
+[2017-07-20 21:09:59,460] [1246] [INFO] Drive: 132:116
+[2017-07-20 21:09:59,491] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:59,503] [1246] [DEBUG] "POST /mini_driver/drive?right=125&left=145 HTTP/1.1" 200 0
+[2017-07-20 21:09:59,504] [1246] [INFO] Drive: 145:125. Status 200
+[2017-07-20 21:09:59,504] [1246] [INFO] Drive: 145:125
+[2017-07-20 21:09:59,528] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:59,539] [1246] [DEBUG] "POST /mini_driver/drive?right=137&left=157 HTTP/1.1" 200 0
+[2017-07-20 21:09:59,540] [1246] [INFO] Drive: 157:137. Status 200
+[2017-07-20 21:09:59,540] [1246] [INFO] Drive: 157:137
+[2017-07-20 21:09:59,681] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:09:59,693] [1246] [DEBUG] "POST /mini_driver/drive?right=178&left=210 HTTP/1.1" 200 0
+[2017-07-20 21:09:59,694] [1246] [INFO] Drive: 210:178. Status 200
+[2017-07-20 21:09:59,694] [1246] [INFO] Drive: 210:178
+[2017-07-20 21:10:00,138] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:00,149] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:10:00,149] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:10:00,150] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:10:20,579] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:20,595] [1246] [DEBUG] "POST /mini_driver/drive?right=49&left=61 HTTP/1.1" 200 0
+[2017-07-20 21:10:20,596] [1246] [INFO] Drive: 61:49. Status 200
+[2017-07-20 21:10:20,596] [1246] [INFO] Drive: 61:49
+[2017-07-20 21:10:20,684] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:20,701] [1246] [DEBUG] "POST /mini_driver/drive?right=64&left=76 HTTP/1.1" 200 0
+[2017-07-20 21:10:20,703] [1246] [INFO] Drive: 76:64. Status 200
+[2017-07-20 21:10:20,703] [1246] [INFO] Drive: 76:64
+[2017-07-20 21:10:20,902] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:20,915] [1246] [DEBUG] "POST /mini_driver/drive?right=106&left=130 HTTP/1.1" 200 0
+[2017-07-20 21:10:20,916] [1246] [INFO] Drive: 130:106. Status 200
+[2017-07-20 21:10:20,916] [1246] [INFO] Drive: 130:106
+[2017-07-20 21:10:21,012] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:21,023] [1246] [DEBUG] "POST /mini_driver/drive?right=126&left=154 HTTP/1.1" 200 0
+[2017-07-20 21:10:21,024] [1246] [INFO] Drive: 154:126. Status 200
+[2017-07-20 21:10:21,024] [1246] [INFO] Drive: 154:126
+[2017-07-20 21:10:21,068] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:21,079] [1246] [DEBUG] "POST /mini_driver/drive?right=139&left=171 HTTP/1.1" 200 0
+[2017-07-20 21:10:21,080] [1246] [INFO] Drive: 171:139. Status 200
+[2017-07-20 21:10:21,080] [1246] [INFO] Drive: 171:139
+[2017-07-20 21:10:21,787] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:21,807] [1246] [DEBUG] "POST /mini_driver/drive?right=141&left=201 HTTP/1.1" 200 0
+[2017-07-20 21:10:21,808] [1246] [INFO] Drive: 201:141. Status 200
+[2017-07-20 21:10:21,809] [1246] [INFO] Drive: 201:141
+[2017-07-20 21:10:21,817] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:21,835] [1246] [DEBUG] "POST /mini_driver/drive?right=84&left=144 HTTP/1.1" 200 0
+[2017-07-20 21:10:21,836] [1246] [INFO] Drive: 144:84. Status 200
+[2017-07-20 21:10:21,836] [1246] [INFO] Drive: 144:84
+[2017-07-20 21:10:21,861] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:21,881] [1246] [DEBUG] "POST /mini_driver/drive?right=35&left=91 HTTP/1.1" 200 0
+[2017-07-20 21:10:21,882] [1246] [INFO] Drive: 91:35. Status 200
+[2017-07-20 21:10:21,882] [1246] [INFO] Drive: 91:35
+[2017-07-20 21:10:21,900] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:21,913] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:10:21,914] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:10:21,914] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:10:22,609] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:22,622] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:10:22,623] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:10:22,623] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:10:22,630] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:22,648] [1246] [DEBUG] "POST /mini_driver/drive?right=11&left=31 HTTP/1.1" 200 0
+[2017-07-20 21:10:22,649] [1246] [INFO] Drive: 31:11. Status 200
+[2017-07-20 21:10:22,650] [1246] [INFO] Drive: 31:11
+[2017-07-20 21:10:22,658] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:22,671] [1246] [DEBUG] "POST /mini_driver/drive?right=62&left=82 HTTP/1.1" 200 0
+[2017-07-20 21:10:22,672] [1246] [INFO] Drive: 82:62. Status 200
+[2017-07-20 21:10:22,672] [1246] [INFO] Drive: 82:62
+[2017-07-20 21:10:22,680] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:22,693] [1246] [DEBUG] "POST /mini_driver/drive?right=93&left=113 HTTP/1.1" 200 0
+[2017-07-20 21:10:22,694] [1246] [INFO] Drive: 113:93. Status 200
+[2017-07-20 21:10:22,694] [1246] [INFO] Drive: 113:93
+[2017-07-20 21:10:22,705] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:22,724] [1246] [DEBUG] "POST /mini_driver/drive?right=121&left=141 HTTP/1.1" 200 0
+[2017-07-20 21:10:22,724] [1246] [INFO] Drive: 141:121. Status 200
+[2017-07-20 21:10:22,725] [1246] [INFO] Drive: 141:121
+[2017-07-20 21:10:22,734] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:22,748] [1246] [DEBUG] "POST /mini_driver/drive?right=157&left=177 HTTP/1.1" 200 0
+[2017-07-20 21:10:22,750] [1246] [INFO] Drive: 177:157. Status 200
+[2017-07-20 21:10:22,750] [1246] [INFO] Drive: 177:157
+[2017-07-20 21:10:23,617] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:10:23,637] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:10:23,638] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:10:23,638] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:27:04,273] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:04,505] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:27:04,506] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:27:04,507] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:27:06,942] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:09,557] [1246] [DEBUG] "POST /mini_driver/drive?right=144&left=140 HTTP/1.1" 200 0
+[2017-07-20 21:27:09,559] [1246] [INFO] Drive: 140:144. Status 200
+[2017-07-20 21:27:09,559] [1246] [INFO] Drive: 140:144
+[2017-07-20 21:27:09,568] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:09,872] [1246] [DEBUG] "POST /mini_driver/drive?right=172&left=168 HTTP/1.1" 200 0
+[2017-07-20 21:27:09,874] [1246] [INFO] Drive: 168:172. Status 200
+[2017-07-20 21:27:09,874] [1246] [INFO] Drive: 168:172
+[2017-07-20 21:27:09,890] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:10,176] [1246] [DEBUG] "POST /mini_driver/drive?right=196&left=192 HTTP/1.1" 200 0
+[2017-07-20 21:27:10,178] [1246] [INFO] Drive: 192:196. Status 200
+[2017-07-20 21:27:10,179] [1246] [INFO] Drive: 192:196
+[2017-07-20 21:27:10,196] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:10,479] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=24 HTTP/1.1" 200 0
+[2017-07-20 21:27:10,481] [1246] [INFO] Drive: 24:24. Status 200
+[2017-07-20 21:27:10,482] [1246] [INFO] Drive: 24:24
+[2017-07-20 21:27:10,497] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:10,779] [1246] [DEBUG] "POST /mini_driver/drive?right=52&left=44 HTTP/1.1" 200 0
+[2017-07-20 21:27:10,781] [1246] [INFO] Drive: 44:52. Status 200
+[2017-07-20 21:27:10,781] [1246] [INFO] Drive: 44:52
+[2017-07-20 21:27:10,799] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:11,078] [1246] [DEBUG] "POST /mini_driver/drive?right=196&left=184 HTTP/1.1" 200 0
+[2017-07-20 21:27:11,079] [1246] [INFO] Drive: 184:196. Status 200
+[2017-07-20 21:27:11,079] [1246] [INFO] Drive: 184:196
+[2017-07-20 21:27:11,089] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:11,377] [1246] [DEBUG] "POST /mini_driver/drive?right=173&left=193 HTTP/1.1" 200 0
+[2017-07-20 21:27:11,379] [1246] [INFO] Drive: 193:173. Status 200
+[2017-07-20 21:27:11,379] [1246] [INFO] Drive: 193:173
+[2017-07-20 21:27:11,398] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:11,683] [1246] [DEBUG] "POST /mini_driver/drive?right=38&left=66 HTTP/1.1" 200 0
+[2017-07-20 21:27:11,685] [1246] [INFO] Drive: 66:38. Status 200
+[2017-07-20 21:27:11,686] [1246] [INFO] Drive: 66:38
+[2017-07-20 21:27:11,703] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:11,993] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:27:11,995] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:27:11,995] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:27:12,009] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:12,302] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:27:12,303] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:27:12,303] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:27:12,321] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:12,609] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=24 HTTP/1.1" 200 0
+[2017-07-20 21:27:12,611] [1246] [INFO] Drive: 24:24. Status 200
+[2017-07-20 21:27:12,612] [1246] [INFO] Drive: 24:24
+[2017-07-20 21:27:12,626] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:14,312] [1246] [DEBUG] "POST /mini_driver/drive?right=52&left=48 HTTP/1.1" 200 0
+[2017-07-20 21:27:14,315] [1246] [INFO] Drive: 48:52. Status 200
+[2017-07-20 21:27:14,315] [1246] [INFO] Drive: 48:52
+[2017-07-20 21:27:14,331] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:14,623] [1246] [DEBUG] "POST /mini_driver/drive?right=108&left=100 HTTP/1.1" 200 0
+[2017-07-20 21:27:14,624] [1246] [INFO] Drive: 100:108. Status 200
+[2017-07-20 21:27:14,625] [1246] [INFO] Drive: 100:108
+[2017-07-20 21:27:14,640] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:14,932] [1246] [DEBUG] "POST /mini_driver/drive?right=152&left=144 HTTP/1.1" 200 0
+[2017-07-20 21:27:14,935] [1246] [INFO] Drive: 144:152. Status 200
+[2017-07-20 21:27:14,935] [1246] [INFO] Drive: 144:152
+[2017-07-20 21:27:14,952] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:15,245] [1246] [DEBUG] "POST /mini_driver/drive?right=180&left=168 HTTP/1.1" 200 0
+[2017-07-20 21:27:15,246] [1246] [INFO] Drive: 168:180. Status 200
+[2017-07-20 21:27:15,247] [1246] [INFO] Drive: 168:180
+[2017-07-20 21:27:16,593] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:16,738] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:27:16,739] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:27:16,739] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:27:16,747] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:16,946] [1246] [DEBUG] "POST /mini_driver/drive?right=20&left=16 HTTP/1.1" 200 0
+[2017-07-20 21:27:16,948] [1246] [INFO] Drive: 16:20. Status 200
+[2017-07-20 21:27:16,948] [1246] [INFO] Drive: 16:20
+[2017-07-20 21:27:16,969] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:17,210] [1246] [DEBUG] "POST /mini_driver/drive?right=109&left=93 HTTP/1.1" 200 0
+[2017-07-20 21:27:17,212] [1246] [INFO] Drive: 93:109. Status 200
+[2017-07-20 21:27:17,212] [1246] [INFO] Drive: 93:109
+[2017-07-20 21:27:17,225] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:17,416] [1246] [DEBUG] "POST /mini_driver/drive?right=165&left=145 HTTP/1.1" 200 0
+[2017-07-20 21:27:17,418] [1246] [INFO] Drive: 145:165. Status 200
+[2017-07-20 21:27:17,418] [1246] [INFO] Drive: 145:165
+[2017-07-20 21:27:17,437] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:17,646] [1246] [DEBUG] "POST /mini_driver/drive?right=220&left=200 HTTP/1.1" 200 0
+[2017-07-20 21:27:17,648] [1246] [INFO] Drive: 200:220. Status 200
+[2017-07-20 21:27:17,649] [1246] [INFO] Drive: 200:220
+[2017-07-20 21:27:17,668] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:17,852] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=221 HTTP/1.1" 200 0
+[2017-07-20 21:27:17,853] [1246] [INFO] Drive: 221:240. Status 200
+[2017-07-20 21:27:17,854] [1246] [INFO] Drive: 221:240
+[2017-07-20 21:27:17,880] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:18,066] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:27:18,069] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:27:18,069] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:27:18,985] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:19,178] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:27:19,179] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:27:19,180] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:27:19,190] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:19,372] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:27:19,374] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:27:19,375] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:27:41,237] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:41,413] [1246] [DEBUG] "POST /mini_driver/drive?right=20&left=24 HTTP/1.1" 200 0
+[2017-07-20 21:27:41,414] [1246] [INFO] Drive: 24:20. Status 200
+[2017-07-20 21:27:41,414] [1246] [INFO] Drive: 24:20
+[2017-07-20 21:27:41,423] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:41,617] [1246] [DEBUG] "POST /mini_driver/drive?right=40&left=48 HTTP/1.1" 200 0
+[2017-07-20 21:27:41,619] [1246] [INFO] Drive: 48:40. Status 200
+[2017-07-20 21:27:41,619] [1246] [INFO] Drive: 48:40
+[2017-07-20 21:27:41,638] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:41,850] [1246] [DEBUG] "POST /mini_driver/drive?right=125&left=145 HTTP/1.1" 200 0
+[2017-07-20 21:27:41,852] [1246] [INFO] Drive: 145:125. Status 200
+[2017-07-20 21:27:41,852] [1246] [INFO] Drive: 145:125
+[2017-07-20 21:27:43,106] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:45,933] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:27:45,935] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:27:45,935] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:27:45,952] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:46,145] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:27:46,147] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:27:46,147] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:27:51,359] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:51,584] [1246] [DEBUG] "POST /mini_driver/drive?right=40&left=40 HTTP/1.1" 200 0
+[2017-07-20 21:27:51,585] [1246] [INFO] Drive: 40:40. Status 200
+[2017-07-20 21:27:51,586] [1246] [INFO] Drive: 40:40
+[2017-07-20 21:27:51,597] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:51,862] [1246] [DEBUG] "POST /mini_driver/drive?right=68&left=72 HTTP/1.1" 200 0
+[2017-07-20 21:27:51,864] [1246] [INFO] Drive: 72:68. Status 200
+[2017-07-20 21:27:51,865] [1246] [INFO] Drive: 72:68
+[2017-07-20 21:27:51,882] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:52,163] [1246] [DEBUG] "POST /mini_driver/drive?right=92&left=96 HTTP/1.1" 200 0
+[2017-07-20 21:27:52,165] [1246] [INFO] Drive: 96:92. Status 200
+[2017-07-20 21:27:52,165] [1246] [INFO] Drive: 96:92
+[2017-07-20 21:27:52,185] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:27:52,370] [1246] [DEBUG] "POST /mini_driver/drive?right=144&left=148 HTTP/1.1" 200 0
+[2017-07-20 21:27:52,372] [1246] [INFO] Drive: 148:144. Status 200
+[2017-07-20 21:27:52,372] [1246] [INFO] Drive: 148:144
+[2017-07-20 21:28:00,364] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:00,493] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:00,494] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:00,494] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:00,505] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:00,698] [1246] [DEBUG] "POST /mini_driver/drive?right=36&left=36 HTTP/1.1" 200 0
+[2017-07-20 21:28:00,700] [1246] [INFO] Drive: 36:36. Status 200
+[2017-07-20 21:28:00,700] [1246] [INFO] Drive: 36:36
+[2017-07-20 21:28:00,718] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:00,904] [1246] [DEBUG] "POST /mini_driver/drive?right=112&left=116 HTTP/1.1" 200 0
+[2017-07-20 21:28:00,905] [1246] [INFO] Drive: 116:112. Status 200
+[2017-07-20 21:28:00,905] [1246] [INFO] Drive: 116:112
+[2017-07-20 21:28:00,920] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:01,113] [1246] [DEBUG] "POST /mini_driver/drive?right=136&left=144 HTTP/1.1" 200 0
+[2017-07-20 21:28:01,115] [1246] [INFO] Drive: 144:136. Status 200
+[2017-07-20 21:28:01,115] [1246] [INFO] Drive: 144:136
+[2017-07-20 21:28:01,134] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:01,316] [1246] [DEBUG] "POST /mini_driver/drive?right=160&left=168 HTTP/1.1" 200 0
+[2017-07-20 21:28:01,318] [1246] [INFO] Drive: 168:160. Status 200
+[2017-07-20 21:28:01,318] [1246] [INFO] Drive: 168:160
+[2017-07-20 21:28:03,054] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:03,195] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:03,196] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:03,196] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:03,334] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:03,516] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:03,518] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:03,519] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:04,442] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:04,624] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:04,626] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:04,627] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:05,237] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:06,765] [1246] [DEBUG] "POST /mini_driver/drive?right=116&left=128 HTTP/1.1" 200 0
+[2017-07-20 21:28:06,768] [1246] [INFO] Drive: 128:116. Status 200
+[2017-07-20 21:28:06,770] [1246] [INFO] Drive: 128:116
+[2017-07-20 21:28:06,795] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:06,939] [1246] [DEBUG] "POST /mini_driver/drive?right=184&left=204 HTTP/1.1" 200 0
+[2017-07-20 21:28:06,941] [1246] [INFO] Drive: 204:184. Status 200
+[2017-07-20 21:28:06,942] [1246] [INFO] Drive: 204:184
+[2017-07-20 21:28:06,958] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:07,147] [1246] [DEBUG] "POST /mini_driver/drive?right=213&left=240 HTTP/1.1" 200 0
+[2017-07-20 21:28:07,149] [1246] [INFO] Drive: 240:213. Status 200
+[2017-07-20 21:28:07,149] [1246] [INFO] Drive: 240:213
+[2017-07-20 21:28:07,162] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:07,293] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:07,294] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:07,294] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:07,306] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:07,431] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:07,432] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:07,432] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:31,445] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:31,699] [1246] [DEBUG] "POST /mini_driver/drive?right=92&left=104 HTTP/1.1" 200 0
+[2017-07-20 21:28:31,701] [1246] [INFO] Drive: 104:92. Status 200
+[2017-07-20 21:28:31,702] [1246] [INFO] Drive: 104:92
+[2017-07-20 21:28:33,393] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:33,597] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:28:33,599] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:28:33,599] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:28:34,512] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:34,685] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:34,688] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:34,688] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:35,472] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:35,602] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:35,603] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:35,604] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:35,613] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:35,805] [1246] [DEBUG] "POST /mini_driver/drive?right=36&left=36 HTTP/1.1" 200 0
+[2017-07-20 21:28:35,807] [1246] [INFO] Drive: 36:36. Status 200
+[2017-07-20 21:28:35,808] [1246] [INFO] Drive: 36:36
+[2017-07-20 21:28:35,825] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:36,007] [1246] [DEBUG] "POST /mini_driver/drive?right=59&left=60 HTTP/1.1" 200 0
+[2017-07-20 21:28:36,009] [1246] [INFO] Drive: 60:59. Status 200
+[2017-07-20 21:28:36,009] [1246] [INFO] Drive: 60:59
+[2017-07-20 21:28:36,029] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:36,210] [1246] [DEBUG] "POST /mini_driver/drive?right=96&left=96 HTTP/1.1" 200 0
+[2017-07-20 21:28:36,212] [1246] [INFO] Drive: 96:96. Status 200
+[2017-07-20 21:28:36,213] [1246] [INFO] Drive: 96:96
+[2017-07-20 21:28:36,229] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:36,359] [1246] [DEBUG] "POST /mini_driver/drive?right=224&left=224 HTTP/1.1" 200 0
+[2017-07-20 21:28:36,361] [1246] [INFO] Drive: 224:224. Status 200
+[2017-07-20 21:28:36,361] [1246] [INFO] Drive: 224:224
+[2017-07-20 21:28:36,523] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:36,649] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:36,650] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:36,650] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:37,320] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:37,558] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:28:37,559] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:28:37,559] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:28:38,769] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:38,899] [1246] [DEBUG] "POST /mini_driver/drive?right=1&left=21 HTTP/1.1" 200 0
+[2017-07-20 21:28:38,900] [1246] [INFO] Drive: 21:1. Status 200
+[2017-07-20 21:28:38,900] [1246] [INFO] Drive: 21:1
+[2017-07-20 21:28:38,910] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:39,117] [1246] [DEBUG] "POST /mini_driver/drive?right=93&left=113 HTTP/1.1" 200 0
+[2017-07-20 21:28:39,118] [1246] [INFO] Drive: 113:93. Status 200
+[2017-07-20 21:28:39,118] [1246] [INFO] Drive: 113:93
+[2017-07-20 21:28:39,134] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:39,337] [1246] [DEBUG] "POST /mini_driver/drive?right=153&left=173 HTTP/1.1" 200 0
+[2017-07-20 21:28:39,339] [1246] [INFO] Drive: 173:153. Status 200
+[2017-07-20 21:28:39,339] [1246] [INFO] Drive: 173:153
+[2017-07-20 21:28:39,358] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:39,544] [1246] [DEBUG] "POST /mini_driver/drive?right=197&left=221 HTTP/1.1" 200 0
+[2017-07-20 21:28:39,546] [1246] [INFO] Drive: 221:197. Status 200
+[2017-07-20 21:28:39,546] [1246] [INFO] Drive: 221:197
+[2017-07-20 21:28:39,590] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:39,719] [1246] [DEBUG] "POST /mini_driver/drive?right=148&left=208 HTTP/1.1" 200 0
+[2017-07-20 21:28:39,720] [1246] [INFO] Drive: 208:148. Status 200
+[2017-07-20 21:28:39,720] [1246] [INFO] Drive: 208:148
+[2017-07-20 21:28:39,731] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:39,922] [1246] [DEBUG] "POST /mini_driver/drive?right=137&left=197 HTTP/1.1" 200 0
+[2017-07-20 21:28:39,924] [1246] [INFO] Drive: 197:137. Status 200
+[2017-07-20 21:28:39,924] [1246] [INFO] Drive: 197:137
+[2017-07-20 21:28:39,935] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:40,125] [1246] [DEBUG] "POST /mini_driver/drive?right=16&left=80 HTTP/1.1" 200 0
+[2017-07-20 21:28:40,127] [1246] [INFO] Drive: 80:16. Status 200
+[2017-07-20 21:28:40,127] [1246] [INFO] Drive: 80:16
+[2017-07-20 21:28:41,557] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:41,698] [1246] [DEBUG] "POST /mini_driver/drive?right=23&left=39 HTTP/1.1" 200 0
+[2017-07-20 21:28:41,699] [1246] [INFO] Drive: 39:23. Status 200
+[2017-07-20 21:28:41,700] [1246] [INFO] Drive: 39:23
+[2017-07-20 21:28:41,708] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:28:41,902] [1246] [DEBUG] "POST /mini_driver/drive?right=129&left=153 HTTP/1.1" 200 0
+[2017-07-20 21:28:41,903] [1246] [INFO] Drive: 153:129. Status 200
+[2017-07-20 21:28:41,903] [1246] [INFO] Drive: 153:129
+[2017-07-20 21:29:30,835] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:31,045] [1246] [DEBUG] "POST /mini_driver/drive?right=13&left=21 HTTP/1.1" 200 0
+[2017-07-20 21:29:31,046] [1246] [INFO] Drive: 21:13. Status 200
+[2017-07-20 21:29:31,047] [1246] [INFO] Drive: 21:13
+[2017-07-20 21:29:31,054] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:31,250] [1246] [DEBUG] "POST /mini_driver/drive?right=42&left=58 HTTP/1.1" 200 0
+[2017-07-20 21:29:31,251] [1246] [INFO] Drive: 58:42. Status 200
+[2017-07-20 21:29:31,251] [1246] [INFO] Drive: 58:42
+[2017-07-20 21:29:31,268] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:31,453] [1246] [DEBUG] "POST /mini_driver/drive?right=85&left=105 HTTP/1.1" 200 0
+[2017-07-20 21:29:31,454] [1246] [INFO] Drive: 105:85. Status 200
+[2017-07-20 21:29:31,454] [1246] [INFO] Drive: 105:85
+[2017-07-20 21:29:31,470] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:31,656] [1246] [DEBUG] "POST /mini_driver/drive?right=97&left=117 HTTP/1.1" 200 0
+[2017-07-20 21:29:31,658] [1246] [INFO] Drive: 117:97. Status 200
+[2017-07-20 21:29:31,659] [1246] [INFO] Drive: 117:97
+[2017-07-20 21:29:31,678] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:31,856] [1246] [DEBUG] "POST /mini_driver/drive?right=106&left=130 HTTP/1.1" 200 0
+[2017-07-20 21:29:31,859] [1246] [INFO] Drive: 130:106. Status 200
+[2017-07-20 21:29:31,859] [1246] [INFO] Drive: 130:106
+[2017-07-20 21:29:31,878] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:32,059] [1246] [DEBUG] "POST /mini_driver/drive?right=118&left=142 HTTP/1.1" 200 0
+[2017-07-20 21:29:32,061] [1246] [INFO] Drive: 142:118. Status 200
+[2017-07-20 21:29:32,061] [1246] [INFO] Drive: 142:118
+[2017-07-20 21:29:32,078] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:32,263] [1246] [DEBUG] "POST /mini_driver/drive?right=129&left=153 HTTP/1.1" 200 0
+[2017-07-20 21:29:32,265] [1246] [INFO] Drive: 153:129. Status 200
+[2017-07-20 21:29:32,266] [1246] [INFO] Drive: 153:129
+[2017-07-20 21:29:32,284] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:32,469] [1246] [DEBUG] "POST /mini_driver/drive?right=148&left=188 HTTP/1.1" 200 0
+[2017-07-20 21:29:32,471] [1246] [INFO] Drive: 188:148. Status 200
+[2017-07-20 21:29:32,471] [1246] [INFO] Drive: 188:148
+[2017-07-20 21:29:32,490] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:32,665] [1246] [DEBUG] "POST /mini_driver/drive?right=161&left=209 HTTP/1.1" 200 0
+[2017-07-20 21:29:32,667] [1246] [INFO] Drive: 209:161. Status 200
+[2017-07-20 21:29:32,668] [1246] [INFO] Drive: 209:161
+[2017-07-20 21:29:35,188] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:35,406] [1246] [DEBUG] "POST /mini_driver/drive?right=49&left=61 HTTP/1.1" 200 0
+[2017-07-20 21:29:35,407] [1246] [INFO] Drive: 61:49. Status 200
+[2017-07-20 21:29:35,407] [1246] [INFO] Drive: 61:49
+[2017-07-20 21:29:35,422] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:35,608] [1246] [DEBUG] "POST /mini_driver/drive?right=102&left=126 HTTP/1.1" 200 0
+[2017-07-20 21:29:35,610] [1246] [INFO] Drive: 126:102. Status 200
+[2017-07-20 21:29:35,611] [1246] [INFO] Drive: 126:102
+[2017-07-20 21:29:35,628] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:35,812] [1246] [DEBUG] "POST /mini_driver/drive?right=119&left=151 HTTP/1.1" 200 0
+[2017-07-20 21:29:35,815] [1246] [INFO] Drive: 151:119. Status 200
+[2017-07-20 21:29:35,816] [1246] [INFO] Drive: 151:119
+[2017-07-20 21:29:35,834] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:36,020] [1246] [DEBUG] "POST /mini_driver/drive?right=139&left=171 HTTP/1.1" 200 0
+[2017-07-20 21:29:36,022] [1246] [INFO] Drive: 171:139. Status 200
+[2017-07-20 21:29:36,022] [1246] [INFO] Drive: 171:139
+[2017-07-20 21:29:36,557] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:36,685] [1246] [DEBUG] "POST /mini_driver/drive?right=106&left=150 HTTP/1.1" 200 0
+[2017-07-20 21:29:36,686] [1246] [INFO] Drive: 150:106. Status 200
+[2017-07-20 21:29:36,686] [1246] [INFO] Drive: 150:106
+[2017-07-20 21:29:36,696] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:36,888] [1246] [DEBUG] "POST /mini_driver/drive?right=72&left=116 HTTP/1.1" 200 0
+[2017-07-20 21:29:36,889] [1246] [INFO] Drive: 116:72. Status 200
+[2017-07-20 21:29:36,889] [1246] [INFO] Drive: 116:72
+[2017-07-20 21:29:36,898] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:37,028] [1246] [DEBUG] "POST /mini_driver/drive?right=13&left=53 HTTP/1.1" 200 0
+[2017-07-20 21:29:37,031] [1246] [INFO] Drive: 53:13. Status 200
+[2017-07-20 21:29:37,031] [1246] [INFO] Drive: 53:13
+[2017-07-20 21:29:37,047] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:37,178] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=36 HTTP/1.1" 200 0
+[2017-07-20 21:29:37,180] [1246] [INFO] Drive: 36:0. Status 200
+[2017-07-20 21:29:37,180] [1246] [INFO] Drive: 36:0
+[2017-07-20 21:29:37,199] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:37,336] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:29:37,338] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:29:37,338] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:29:38,879] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:39,023] [1246] [DEBUG] "POST /mini_driver/drive?right=88&left=88 HTTP/1.1" 200 0
+[2017-07-20 21:29:39,024] [1246] [INFO] Drive: 88:88. Status 200
+[2017-07-20 21:29:39,024] [1246] [INFO] Drive: 88:88
+[2017-07-20 21:29:39,032] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:39,261] [1246] [DEBUG] "POST /mini_driver/drive?right=112&left=116 HTTP/1.1" 200 0
+[2017-07-20 21:29:39,262] [1246] [INFO] Drive: 116:112. Status 200
+[2017-07-20 21:29:39,263] [1246] [INFO] Drive: 116:112
+[2017-07-20 21:29:39,277] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:39,463] [1246] [DEBUG] "POST /mini_driver/drive?right=172&left=184 HTTP/1.1" 200 0
+[2017-07-20 21:29:39,465] [1246] [INFO] Drive: 184:172. Status 200
+[2017-07-20 21:29:39,465] [1246] [INFO] Drive: 184:172
+[2017-07-20 21:29:39,482] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:39,665] [1246] [DEBUG] "POST /mini_driver/drive?right=220&left=240 HTTP/1.1" 200 0
+[2017-07-20 21:29:39,667] [1246] [INFO] Drive: 240:220. Status 200
+[2017-07-20 21:29:39,667] [1246] [INFO] Drive: 240:220
+[2017-07-20 21:29:39,684] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:39,815] [1246] [DEBUG] "POST /mini_driver/drive?right=220&left=240 HTTP/1.1" 200 0
+[2017-07-20 21:29:39,817] [1246] [INFO] Drive: 240:220. Status 200
+[2017-07-20 21:29:39,817] [1246] [INFO] Drive: 240:220
+[2017-07-20 21:29:39,943] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:29:40,086] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:29:40,087] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:29:40,088] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:11,978] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:18,472] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:18,474] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:18,475] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:18,489] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:18,699] [1246] [DEBUG] "POST /mini_driver/drive?right=81&left=101 HTTP/1.1" 200 0
+[2017-07-20 21:31:18,701] [1246] [INFO] Drive: 101:81. Status 200
+[2017-07-20 21:31:18,701] [1246] [INFO] Drive: 101:81
+[2017-07-20 21:31:18,717] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:18,901] [1246] [DEBUG] "POST /mini_driver/drive?right=138&left=166 HTTP/1.1" 200 0
+[2017-07-20 21:31:18,903] [1246] [INFO] Drive: 166:138. Status 200
+[2017-07-20 21:31:18,903] [1246] [INFO] Drive: 166:138
+[2017-07-20 21:31:18,922] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:19,055] [1246] [DEBUG] "POST /mini_driver/drive?right=158&left=190 HTTP/1.1" 200 0
+[2017-07-20 21:31:19,056] [1246] [INFO] Drive: 190:158. Status 200
+[2017-07-20 21:31:19,056] [1246] [INFO] Drive: 190:158
+[2017-07-20 21:31:19,064] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:19,256] [1246] [DEBUG] "POST /mini_driver/drive?right=179&left=215 HTTP/1.1" 200 0
+[2017-07-20 21:31:19,257] [1246] [INFO] Drive: 215:179. Status 200
+[2017-07-20 21:31:19,257] [1246] [INFO] Drive: 215:179
+[2017-07-20 21:31:19,265] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:19,461] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:19,462] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:19,462] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:19,477] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:19,690] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:19,692] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:19,692] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:19,709] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:19,843] [1246] [DEBUG] "POST /mini_driver/drive?right=16&left=20 HTTP/1.1" 200 0
+[2017-07-20 21:31:19,845] [1246] [INFO] Drive: 20:16. Status 200
+[2017-07-20 21:31:19,845] [1246] [INFO] Drive: 20:16
+[2017-07-20 21:31:19,860] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:19,997] [1246] [DEBUG] "POST /mini_driver/drive?right=40&left=44 HTTP/1.1" 200 0
+[2017-07-20 21:31:20,000] [1246] [INFO] Drive: 44:40. Status 200
+[2017-07-20 21:31:20,000] [1246] [INFO] Drive: 44:40
+[2017-07-20 21:31:20,018] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:20,148] [1246] [DEBUG] "POST /mini_driver/drive?right=76&left=80 HTTP/1.1" 200 0
+[2017-07-20 21:31:20,150] [1246] [INFO] Drive: 80:76. Status 200
+[2017-07-20 21:31:20,150] [1246] [INFO] Drive: 80:76
+[2017-07-20 21:31:20,167] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:20,300] [1246] [DEBUG] "POST /mini_driver/drive?right=108&left=112 HTTP/1.1" 200 0
+[2017-07-20 21:31:20,302] [1246] [INFO] Drive: 112:108. Status 200
+[2017-07-20 21:31:20,302] [1246] [INFO] Drive: 112:108
+[2017-07-20 21:31:20,317] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:20,449] [1246] [DEBUG] "POST /mini_driver/drive?right=164&left=168 HTTP/1.1" 200 0
+[2017-07-20 21:31:20,451] [1246] [INFO] Drive: 168:164. Status 200
+[2017-07-20 21:31:20,452] [1246] [INFO] Drive: 168:164
+[2017-07-20 21:31:20,471] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:20,612] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:20,614] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:20,614] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:22,298] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:22,430] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:22,431] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:22,432] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:23,047] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:23,183] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:23,185] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:23,185] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:23,196] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:23,389] [1246] [DEBUG] "POST /mini_driver/drive?right=104&left=92 HTTP/1.1" 200 0
+[2017-07-20 21:31:23,391] [1246] [INFO] Drive: 92:104. Status 200
+[2017-07-20 21:31:23,392] [1246] [INFO] Drive: 92:104
+[2017-07-20 21:31:23,412] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:23,551] [1246] [DEBUG] "POST /mini_driver/drive?right=238&left=206 HTTP/1.1" 200 0
+[2017-07-20 21:31:23,553] [1246] [INFO] Drive: 206:238. Status 200
+[2017-07-20 21:31:23,553] [1246] [INFO] Drive: 206:238
+[2017-07-20 21:31:23,567] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:23,714] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=226 HTTP/1.1" 200 0
+[2017-07-20 21:31:23,716] [1246] [INFO] Drive: 226:240. Status 200
+[2017-07-20 21:31:23,716] [1246] [INFO] Drive: 226:240
+[2017-07-20 21:31:25,416] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:25,607] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:31:25,609] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:31:25,609] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:31:26,392] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:26,526] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:26,528] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:26,528] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:27,065] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:27,235] [1246] [DEBUG] "POST /mini_driver/drive?right=108&left=100 HTTP/1.1" 200 0
+[2017-07-20 21:31:27,236] [1246] [INFO] Drive: 100:108. Status 200
+[2017-07-20 21:31:27,236] [1246] [INFO] Drive: 100:108
+[2017-07-20 21:31:27,250] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:27,380] [1246] [DEBUG] "POST /mini_driver/drive?right=164&left=156 HTTP/1.1" 200 0
+[2017-07-20 21:31:27,382] [1246] [INFO] Drive: 156:164. Status 200
+[2017-07-20 21:31:27,382] [1246] [INFO] Drive: 156:164
+[2017-07-20 21:31:27,401] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:27,527] [1246] [DEBUG] "POST /mini_driver/drive?right=220&left=216 HTTP/1.1" 200 0
+[2017-07-20 21:31:27,529] [1246] [INFO] Drive: 216:220. Status 200
+[2017-07-20 21:31:27,529] [1246] [INFO] Drive: 216:220
+[2017-07-20 21:31:27,540] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:27,760] [1246] [DEBUG] "POST /mini_driver/drive?right=240&left=236 HTTP/1.1" 200 0
+[2017-07-20 21:31:27,762] [1246] [INFO] Drive: 236:240. Status 200
+[2017-07-20 21:31:27,762] [1246] [INFO] Drive: 236:240
+[2017-07-20 21:31:28,838] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:28,973] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:28,975] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:28,975] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:28,984] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:29,138] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:31:29,139] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:31:29,139] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:31:29,844] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:29,978] [1246] [DEBUG] "POST /mini_driver/drive?right=52&left=80 HTTP/1.1" 200 0
+[2017-07-20 21:31:29,978] [1246] [INFO] Drive: 80:52. Status 200
+[2017-07-20 21:31:29,979] [1246] [INFO] Drive: 80:52
+[2017-07-20 21:31:29,986] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:30,179] [1246] [DEBUG] "POST /mini_driver/drive?right=79&left=107 HTTP/1.1" 200 0
+[2017-07-20 21:31:30,180] [1246] [INFO] Drive: 107:79. Status 200
+[2017-07-20 21:31:30,180] [1246] [INFO] Drive: 107:79
+[2017-07-20 21:31:30,199] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:30,345] [1246] [DEBUG] "POST /mini_driver/drive?right=127&left=159 HTTP/1.1" 200 0
+[2017-07-20 21:31:30,347] [1246] [INFO] Drive: 159:127. Status 200
+[2017-07-20 21:31:30,347] [1246] [INFO] Drive: 159:127
+[2017-07-20 21:31:30,363] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:30,494] [1246] [DEBUG] "POST /mini_driver/drive?right=150&left=182 HTTP/1.1" 200 0
+[2017-07-20 21:31:30,496] [1246] [INFO] Drive: 182:150. Status 200
+[2017-07-20 21:31:30,496] [1246] [INFO] Drive: 182:150
+[2017-07-20 21:31:30,512] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:30,642] [1246] [DEBUG] "POST /mini_driver/drive?right=174&left=206 HTTP/1.1" 200 0
+[2017-07-20 21:31:30,644] [1246] [INFO] Drive: 206:174. Status 200
+[2017-07-20 21:31:30,644] [1246] [INFO] Drive: 206:174
+[2017-07-20 21:31:30,660] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:30,794] [1246] [DEBUG] "POST /mini_driver/drive?right=202&left=234 HTTP/1.1" 200 0
+[2017-07-20 21:31:30,796] [1246] [INFO] Drive: 234:202. Status 200
+[2017-07-20 21:31:30,796] [1246] [INFO] Drive: 234:202
+[2017-07-20 21:31:30,963] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:31,094] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:31,096] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:31,096] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:34,435] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:34,605] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:34,606] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:34,606] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:31:34,615] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:34,749] [1246] [DEBUG] "POST /mini_driver/drive?right=16&left=20 HTTP/1.1" 200 0
+[2017-07-20 21:31:34,750] [1246] [INFO] Drive: 20:16. Status 200
+[2017-07-20 21:31:34,750] [1246] [INFO] Drive: 20:16
+[2017-07-20 21:31:34,758] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:34,885] [1246] [DEBUG] "POST /mini_driver/drive?right=44&left=48 HTTP/1.1" 200 0
+[2017-07-20 21:31:34,886] [1246] [INFO] Drive: 48:44. Status 200
+[2017-07-20 21:31:34,886] [1246] [INFO] Drive: 48:44
+[2017-07-20 21:31:34,896] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:35,024] [1246] [DEBUG] "POST /mini_driver/drive?right=64&left=72 HTTP/1.1" 200 0
+[2017-07-20 21:31:35,027] [1246] [INFO] Drive: 72:64. Status 200
+[2017-07-20 21:31:35,027] [1246] [INFO] Drive: 72:64
+[2017-07-20 21:31:35,050] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:35,213] [1246] [DEBUG] "POST /mini_driver/drive?right=80&left=88 HTTP/1.1" 200 0
+[2017-07-20 21:31:35,215] [1246] [INFO] Drive: 88:80. Status 200
+[2017-07-20 21:31:35,215] [1246] [INFO] Drive: 88:80
+[2017-07-20 21:31:35,232] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:35,470] [1246] [DEBUG] "POST /mini_driver/drive?right=96&left=104 HTTP/1.1" 200 0
+[2017-07-20 21:31:35,471] [1246] [INFO] Drive: 104:96. Status 200
+[2017-07-20 21:31:35,472] [1246] [INFO] Drive: 104:96
+[2017-07-20 21:31:35,489] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:35,627] [1246] [DEBUG] "POST /mini_driver/drive?right=212&left=228 HTTP/1.1" 200 0
+[2017-07-20 21:31:35,629] [1246] [INFO] Drive: 228:212. Status 200
+[2017-07-20 21:31:35,629] [1246] [INFO] Drive: 228:212
+[2017-07-20 21:31:36,186] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:31:36,317] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:31:36,319] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:31:36,319] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:16,533] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:16,710] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:16,711] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:16,711] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:16,721] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:16,853] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=24 HTTP/1.1" 200 0
+[2017-07-20 21:32:16,853] [1246] [INFO] Drive: 24:24. Status 200
+[2017-07-20 21:32:16,854] [1246] [INFO] Drive: 24:24
+[2017-07-20 21:32:16,861] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:16,990] [1246] [DEBUG] "POST /mini_driver/drive?right=88&left=92 HTTP/1.1" 200 0
+[2017-07-20 21:32:16,991] [1246] [INFO] Drive: 92:88. Status 200
+[2017-07-20 21:32:16,991] [1246] [INFO] Drive: 92:88
+[2017-07-20 21:32:17,007] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:17,148] [1246] [DEBUG] "POST /mini_driver/drive?right=116&left=120 HTTP/1.1" 200 0
+[2017-07-20 21:32:17,150] [1246] [INFO] Drive: 120:116. Status 200
+[2017-07-20 21:32:17,151] [1246] [INFO] Drive: 120:116
+[2017-07-20 21:32:17,171] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:17,308] [1246] [DEBUG] "POST /mini_driver/drive?right=160&left=172 HTTP/1.1" 200 0
+[2017-07-20 21:32:17,310] [1246] [INFO] Drive: 172:160. Status 200
+[2017-07-20 21:32:17,311] [1246] [INFO] Drive: 172:160
+[2017-07-20 21:32:17,329] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:17,470] [1246] [DEBUG] "POST /mini_driver/drive?right=188&left=200 HTTP/1.1" 200 0
+[2017-07-20 21:32:17,473] [1246] [INFO] Drive: 200:188. Status 200
+[2017-07-20 21:32:17,473] [1246] [INFO] Drive: 200:188
+[2017-07-20 21:32:17,490] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:17,621] [1246] [DEBUG] "POST /mini_driver/drive?right=208&left=224 HTTP/1.1" 200 0
+[2017-07-20 21:32:17,623] [1246] [INFO] Drive: 224:208. Status 200
+[2017-07-20 21:32:17,623] [1246] [INFO] Drive: 224:208
+[2017-07-20 21:32:17,833] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:17,965] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:17,967] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:17,968] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:18,519] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:18,678] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:18,679] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:18,680] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:20,362] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:20,519] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=24 HTTP/1.1" 200 0
+[2017-07-20 21:32:20,519] [1246] [INFO] Drive: 24:24. Status 200
+[2017-07-20 21:32:20,520] [1246] [INFO] Drive: 24:24
+[2017-07-20 21:32:20,534] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:20,666] [1246] [DEBUG] "POST /mini_driver/drive?right=44&left=40 HTTP/1.1" 200 0
+[2017-07-20 21:32:20,667] [1246] [INFO] Drive: 40:44. Status 200
+[2017-07-20 21:32:20,668] [1246] [INFO] Drive: 40:44
+[2017-07-20 21:32:20,680] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:20,813] [1246] [DEBUG] "POST /mini_driver/drive?right=104&left=96 HTTP/1.1" 200 0
+[2017-07-20 21:32:20,815] [1246] [INFO] Drive: 96:104. Status 200
+[2017-07-20 21:32:20,816] [1246] [INFO] Drive: 96:104
+[2017-07-20 21:32:20,838] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:21,065] [1246] [DEBUG] "POST /mini_driver/drive?right=156&left=148 HTTP/1.1" 200 0
+[2017-07-20 21:32:21,067] [1246] [INFO] Drive: 148:156. Status 200
+[2017-07-20 21:32:21,067] [1246] [INFO] Drive: 148:156
+[2017-07-20 21:32:21,081] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:21,225] [1246] [DEBUG] "POST /mini_driver/drive?right=208&left=204 HTTP/1.1" 200 0
+[2017-07-20 21:32:21,227] [1246] [INFO] Drive: 204:208. Status 200
+[2017-07-20 21:32:21,228] [1246] [INFO] Drive: 204:208
+[2017-07-20 21:32:22,096] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:22,231] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:22,233] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:22,233] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:23,283] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:23,438] [1246] [DEBUG] "POST /mini_driver/drive?right=44&left=48 HTTP/1.1" 200 0
+[2017-07-20 21:32:23,439] [1246] [INFO] Drive: 48:44. Status 200
+[2017-07-20 21:32:23,439] [1246] [INFO] Drive: 48:44
+[2017-07-20 21:32:23,465] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:23,596] [1246] [DEBUG] "POST /mini_driver/drive?right=60&left=68 HTTP/1.1" 200 0
+[2017-07-20 21:32:23,598] [1246] [INFO] Drive: 68:60. Status 200
+[2017-07-20 21:32:23,598] [1246] [INFO] Drive: 68:60
+[2017-07-20 21:32:23,615] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:23,745] [1246] [DEBUG] "POST /mini_driver/drive?right=64&left=72 HTTP/1.1" 200 0
+[2017-07-20 21:32:23,746] [1246] [INFO] Drive: 72:64. Status 200
+[2017-07-20 21:32:23,747] [1246] [INFO] Drive: 72:64
+[2017-07-20 21:32:23,763] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:23,953] [1246] [DEBUG] "POST /mini_driver/drive?right=76&left=88 HTTP/1.1" 200 0
+[2017-07-20 21:32:23,954] [1246] [INFO] Drive: 88:76. Status 200
+[2017-07-20 21:32:23,954] [1246] [INFO] Drive: 88:76
+[2017-07-20 21:32:23,963] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:24,103] [1246] [DEBUG] "POST /mini_driver/drive?right=106&left=134 HTTP/1.1" 200 0
+[2017-07-20 21:32:24,104] [1246] [INFO] Drive: 134:106. Status 200
+[2017-07-20 21:32:24,104] [1246] [INFO] Drive: 134:106
+[2017-07-20 21:32:24,113] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:24,254] [1246] [DEBUG] "POST /mini_driver/drive?right=135&left=171 HTTP/1.1" 200 0
+[2017-07-20 21:32:24,255] [1246] [INFO] Drive: 171:135. Status 200
+[2017-07-20 21:32:24,255] [1246] [INFO] Drive: 171:135
+[2017-07-20 21:32:24,265] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:24,473] [1246] [DEBUG] "POST /mini_driver/drive?right=149&left=193 HTTP/1.1" 200 0
+[2017-07-20 21:32:24,476] [1246] [INFO] Drive: 193:149. Status 200
+[2017-07-20 21:32:24,477] [1246] [INFO] Drive: 193:149
+[2017-07-20 21:32:24,500] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:24,657] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:24,659] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:24,659] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:27,180] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:27,534] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:27,535] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:27,536] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:29,477] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:29,668] [1246] [DEBUG] "POST /mini_driver/drive?right=13&left=21 HTTP/1.1" 200 0
+[2017-07-20 21:32:29,669] [1246] [INFO] Drive: 21:13. Status 200
+[2017-07-20 21:32:29,669] [1246] [INFO] Drive: 21:13
+[2017-07-20 21:32:29,679] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:29,808] [1246] [DEBUG] "POST /mini_driver/drive?right=29&left=41 HTTP/1.1" 200 0
+[2017-07-20 21:32:29,809] [1246] [INFO] Drive: 41:29. Status 200
+[2017-07-20 21:32:29,810] [1246] [INFO] Drive: 41:29
+[2017-07-20 21:32:29,819] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:30,009] [1246] [DEBUG] "POST /mini_driver/drive?right=46&left=62 HTTP/1.1" 200 0
+[2017-07-20 21:32:30,010] [1246] [INFO] Drive: 62:46. Status 200
+[2017-07-20 21:32:30,011] [1246] [INFO] Drive: 62:46
+[2017-07-20 21:32:30,020] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:30,154] [1246] [DEBUG] "POST /mini_driver/drive?right=62&left=82 HTTP/1.1" 200 0
+[2017-07-20 21:32:30,156] [1246] [INFO] Drive: 82:62. Status 200
+[2017-07-20 21:32:30,156] [1246] [INFO] Drive: 82:62
+[2017-07-20 21:32:30,176] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:30,324] [1246] [DEBUG] "POST /mini_driver/drive?right=86&left=110 HTTP/1.1" 200 0
+[2017-07-20 21:32:30,326] [1246] [INFO] Drive: 110:86. Status 200
+[2017-07-20 21:32:30,326] [1246] [INFO] Drive: 110:86
+[2017-07-20 21:32:30,345] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:30,490] [1246] [DEBUG] "POST /mini_driver/drive?right=106&left=134 HTTP/1.1" 200 0
+[2017-07-20 21:32:30,492] [1246] [INFO] Drive: 134:106. Status 200
+[2017-07-20 21:32:30,492] [1246] [INFO] Drive: 134:106
+[2017-07-20 21:32:30,506] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:30,634] [1246] [DEBUG] "POST /mini_driver/drive?right=131&left=167 HTTP/1.1" 200 0
+[2017-07-20 21:32:30,635] [1246] [INFO] Drive: 167:131. Status 200
+[2017-07-20 21:32:30,636] [1246] [INFO] Drive: 167:131
+[2017-07-20 21:32:30,646] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:30,809] [1246] [DEBUG] "POST /mini_driver/drive?right=169&left=217 HTTP/1.1" 200 0
+[2017-07-20 21:32:30,811] [1246] [INFO] Drive: 217:169. Status 200
+[2017-07-20 21:32:30,811] [1246] [INFO] Drive: 217:169
+[2017-07-20 21:32:31,148] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:31,498] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:31,500] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:31,501] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:35,341] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:35,490] [1246] [DEBUG] "POST /mini_driver/drive?right=17&left=25 HTTP/1.1" 200 0
+[2017-07-20 21:32:35,490] [1246] [INFO] Drive: 25:17. Status 200
+[2017-07-20 21:32:35,491] [1246] [INFO] Drive: 25:17
+[2017-07-20 21:32:35,500] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:35,627] [1246] [DEBUG] "POST /mini_driver/drive?right=57&left=69 HTTP/1.1" 200 0
+[2017-07-20 21:32:35,628] [1246] [INFO] Drive: 69:57. Status 200
+[2017-07-20 21:32:35,628] [1246] [INFO] Drive: 69:57
+[2017-07-20 21:32:35,636] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:35,796] [1246] [DEBUG] "POST /mini_driver/drive?right=73&left=89 HTTP/1.1" 200 0
+[2017-07-20 21:32:35,797] [1246] [INFO] Drive: 89:73. Status 200
+[2017-07-20 21:32:35,797] [1246] [INFO] Drive: 89:73
+[2017-07-20 21:32:35,807] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:36,034] [1246] [DEBUG] "POST /mini_driver/drive?right=90&left=114 HTTP/1.1" 200 0
+[2017-07-20 21:32:36,036] [1246] [INFO] Drive: 114:90. Status 200
+[2017-07-20 21:32:36,036] [1246] [INFO] Drive: 114:90
+[2017-07-20 21:32:36,044] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:36,263] [1246] [DEBUG] "POST /mini_driver/drive?right=103&left=131 HTTP/1.1" 200 0
+[2017-07-20 21:32:36,265] [1246] [INFO] Drive: 131:103. Status 200
+[2017-07-20 21:32:36,266] [1246] [INFO] Drive: 131:103
+[2017-07-20 21:32:36,278] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:36,415] [1246] [DEBUG] "POST /mini_driver/drive?right=116&left=152 HTTP/1.1" 200 0
+[2017-07-20 21:32:36,417] [1246] [INFO] Drive: 152:116. Status 200
+[2017-07-20 21:32:36,417] [1246] [INFO] Drive: 152:116
+[2017-07-20 21:32:36,431] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:36,574] [1246] [DEBUG] "POST /mini_driver/drive?right=170&left=222 HTTP/1.1" 200 0
+[2017-07-20 21:32:36,576] [1246] [INFO] Drive: 222:170. Status 200
+[2017-07-20 21:32:36,577] [1246] [INFO] Drive: 222:170
+[2017-07-20 21:32:36,592] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:36,727] [1246] [DEBUG] "POST /mini_driver/drive?right=174&left=226 HTTP/1.1" 200 0
+[2017-07-20 21:32:36,729] [1246] [INFO] Drive: 226:174. Status 200
+[2017-07-20 21:32:36,730] [1246] [INFO] Drive: 226:174
+[2017-07-20 21:32:39,873] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:40,041] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:40,043] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:40,044] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:40,520] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:40,664] [1246] [DEBUG] "POST /mini_driver/drive?right=41&left=53 HTTP/1.1" 200 0
+[2017-07-20 21:32:40,666] [1246] [INFO] Drive: 53:41. Status 200
+[2017-07-20 21:32:40,666] [1246] [INFO] Drive: 53:41
+[2017-07-20 21:32:40,802] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:40,931] [1246] [DEBUG] "POST /mini_driver/drive?right=49&left=61 HTTP/1.1" 200 0
+[2017-07-20 21:32:40,934] [1246] [INFO] Drive: 61:49. Status 200
+[2017-07-20 21:32:40,934] [1246] [INFO] Drive: 61:49
+[2017-07-20 21:32:41,706] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:41,835] [1246] [DEBUG] "POST /mini_driver/drive?right=114&left=142 HTTP/1.1" 200 0
+[2017-07-20 21:32:41,836] [1246] [INFO] Drive: 142:114. Status 200
+[2017-07-20 21:32:41,837] [1246] [INFO] Drive: 142:114
+[2017-07-20 21:32:42,135] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:42,291] [1246] [DEBUG] "POST /mini_driver/drive?right=154&left=186 HTTP/1.1" 200 0
+[2017-07-20 21:32:42,292] [1246] [INFO] Drive: 186:154. Status 200
+[2017-07-20 21:32:42,292] [1246] [INFO] Drive: 186:154
+[2017-07-20 21:32:42,308] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:42,444] [1246] [DEBUG] "POST /mini_driver/drive?right=166&left=198 HTTP/1.1" 200 0
+[2017-07-20 21:32:42,445] [1246] [INFO] Drive: 198:166. Status 200
+[2017-07-20 21:32:42,446] [1246] [INFO] Drive: 198:166
+[2017-07-20 21:32:42,460] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:42,605] [1246] [DEBUG] "POST /mini_driver/drive?right=171&left=207 HTTP/1.1" 200 0
+[2017-07-20 21:32:42,606] [1246] [INFO] Drive: 207:171. Status 200
+[2017-07-20 21:32:42,607] [1246] [INFO] Drive: 207:171
+[2017-07-20 21:32:42,621] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:42,751] [1246] [DEBUG] "POST /mini_driver/drive?right=187&left=227 HTTP/1.1" 200 0
+[2017-07-20 21:32:42,753] [1246] [INFO] Drive: 227:187. Status 200
+[2017-07-20 21:32:42,754] [1246] [INFO] Drive: 227:187
+[2017-07-20 21:32:42,773] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:42,908] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:42,910] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:42,910] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:48,253] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:48,393] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:32:48,395] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:32:48,395] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:32:51,002] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:51,141] [1246] [DEBUG] "POST /mini_driver/drive?right=104&left=112 HTTP/1.1" 200 0
+[2017-07-20 21:32:51,142] [1246] [INFO] Drive: 112:104. Status 200
+[2017-07-20 21:32:51,143] [1246] [INFO] Drive: 112:104
+[2017-07-20 21:32:51,493] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:51,642] [1246] [DEBUG] "POST /mini_driver/drive?right=128&left=136 HTTP/1.1" 200 0
+[2017-07-20 21:32:51,644] [1246] [INFO] Drive: 136:128. Status 200
+[2017-07-20 21:32:51,644] [1246] [INFO] Drive: 136:128
+[2017-07-20 21:32:51,658] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:54,835] [1246] [DEBUG] "POST /mini_driver/drive?right=136&left=144 HTTP/1.1" 200 0
+[2017-07-20 21:32:54,837] [1246] [INFO] Drive: 144:136. Status 200
+[2017-07-20 21:32:54,837] [1246] [INFO] Drive: 144:136
+[2017-07-20 21:32:54,856] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:55,002] [1246] [DEBUG] "POST /mini_driver/drive?right=152&left=160 HTTP/1.1" 200 0
+[2017-07-20 21:32:55,004] [1246] [INFO] Drive: 160:152. Status 200
+[2017-07-20 21:32:55,004] [1246] [INFO] Drive: 160:152
+[2017-07-20 21:32:55,020] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:55,216] [1246] [DEBUG] "POST /mini_driver/drive?right=184&left=192 HTTP/1.1" 200 0
+[2017-07-20 21:32:55,218] [1246] [INFO] Drive: 192:184. Status 200
+[2017-07-20 21:32:55,219] [1246] [INFO] Drive: 192:184
+[2017-07-20 21:32:55,240] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:32:55,373] [1246] [DEBUG] "POST /mini_driver/drive?right=232&left=240 HTTP/1.1" 200 0
+[2017-07-20 21:32:55,375] [1246] [INFO] Drive: 240:232. Status 200
+[2017-07-20 21:32:55,375] [1246] [INFO] Drive: 240:232
+[2017-07-20 21:34:07,090] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:07,252] [1246] [DEBUG] "POST /mini_driver/drive?right=48&left=48 HTTP/1.1" 200 0
+[2017-07-20 21:34:07,253] [1246] [INFO] Drive: 48:48. Status 200
+[2017-07-20 21:34:07,254] [1246] [INFO] Drive: 48:48
+[2017-07-20 21:34:07,296] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:07,438] [1246] [DEBUG] "POST /mini_driver/drive?right=100&left=100 HTTP/1.1" 200 0
+[2017-07-20 21:34:07,438] [1246] [INFO] Drive: 100:100. Status 200
+[2017-07-20 21:34:07,439] [1246] [INFO] Drive: 100:100
+[2017-07-20 21:34:07,449] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:07,624] [1246] [DEBUG] "POST /mini_driver/drive?right=116&left=120 HTTP/1.1" 200 0
+[2017-07-20 21:34:07,625] [1246] [INFO] Drive: 120:116. Status 200
+[2017-07-20 21:34:07,625] [1246] [INFO] Drive: 120:116
+[2017-07-20 21:34:07,639] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:07,769] [1246] [DEBUG] "POST /mini_driver/drive?right=120&left=124 HTTP/1.1" 200 0
+[2017-07-20 21:34:07,771] [1246] [INFO] Drive: 124:120. Status 200
+[2017-07-20 21:34:07,771] [1246] [INFO] Drive: 124:120
+[2017-07-20 21:34:07,783] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:07,915] [1246] [DEBUG] "POST /mini_driver/drive?right=156&left=164 HTTP/1.1" 200 0
+[2017-07-20 21:34:07,917] [1246] [INFO] Drive: 164:156. Status 200
+[2017-07-20 21:34:07,917] [1246] [INFO] Drive: 164:156
+[2017-07-20 21:34:07,926] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:08,070] [1246] [DEBUG] "POST /mini_driver/drive?right=164&left=172 HTTP/1.1" 200 0
+[2017-07-20 21:34:08,071] [1246] [INFO] Drive: 172:164. Status 200
+[2017-07-20 21:34:08,072] [1246] [INFO] Drive: 172:164
+[2017-07-20 21:34:08,080] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:08,317] [1246] [DEBUG] "POST /mini_driver/drive?right=204&left=224 HTTP/1.1" 200 0
+[2017-07-20 21:34:08,319] [1246] [INFO] Drive: 224:204. Status 200
+[2017-07-20 21:34:08,320] [1246] [INFO] Drive: 224:204
+[2017-07-20 21:34:09,558] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:09,711] [1246] [DEBUG] "POST /mini_driver/drive?right=72&left=68 HTTP/1.1" 200 0
+[2017-07-20 21:34:09,712] [1246] [INFO] Drive: 68:72. Status 200
+[2017-07-20 21:34:09,712] [1246] [INFO] Drive: 68:72
+[2017-07-20 21:34:09,721] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:09,850] [1246] [DEBUG] "POST /mini_driver/drive?right=92&left=84 HTTP/1.1" 200 0
+[2017-07-20 21:34:09,851] [1246] [INFO] Drive: 84:92. Status 200
+[2017-07-20 21:34:09,851] [1246] [INFO] Drive: 84:92
+[2017-07-20 21:34:09,859] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:09,994] [1246] [DEBUG] "POST /mini_driver/drive?right=100&left=92 HTTP/1.1" 200 0
+[2017-07-20 21:34:09,995] [1246] [INFO] Drive: 92:100. Status 200
+[2017-07-20 21:34:09,995] [1246] [INFO] Drive: 92:100
+[2017-07-20 21:34:10,005] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:10,207] [1246] [DEBUG] "POST /mini_driver/drive?right=164&left=156 HTTP/1.1" 200 0
+[2017-07-20 21:34:10,209] [1246] [INFO] Drive: 156:164. Status 200
+[2017-07-20 21:34:10,210] [1246] [INFO] Drive: 156:164
+[2017-07-20 21:34:10,226] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:10,421] [1246] [DEBUG] "POST /mini_driver/drive?right=176&left=168 HTTP/1.1" 200 0
+[2017-07-20 21:34:10,423] [1246] [INFO] Drive: 168:176. Status 200
+[2017-07-20 21:34:10,424] [1246] [INFO] Drive: 168:176
+[2017-07-20 21:34:10,441] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:10,580] [1246] [DEBUG] "POST /mini_driver/drive?right=188&left=180 HTTP/1.1" 200 0
+[2017-07-20 21:34:10,581] [1246] [INFO] Drive: 180:188. Status 200
+[2017-07-20 21:34:10,581] [1246] [INFO] Drive: 180:188
+[2017-07-20 21:34:10,594] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:10,735] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:34:10,737] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:34:10,737] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:34:37,569] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:37,706] [1246] [DEBUG] "POST /mini_driver/drive?right=40&left=48 HTTP/1.1" 200 0
+[2017-07-20 21:34:37,708] [1246] [INFO] Drive: 48:40. Status 200
+[2017-07-20 21:34:37,709] [1246] [INFO] Drive: 48:40
+[2017-07-20 21:34:37,722] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:37,856] [1246] [DEBUG] "POST /mini_driver/drive?right=68&left=80 HTTP/1.1" 200 0
+[2017-07-20 21:34:37,858] [1246] [INFO] Drive: 80:68. Status 200
+[2017-07-20 21:34:37,858] [1246] [INFO] Drive: 80:68
+[2017-07-20 21:34:37,875] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:38,065] [1246] [DEBUG] "POST /mini_driver/drive?right=77&left=93 HTTP/1.1" 200 0
+[2017-07-20 21:34:38,067] [1246] [INFO] Drive: 93:77. Status 200
+[2017-07-20 21:34:38,068] [1246] [INFO] Drive: 93:77
+[2017-07-20 21:34:38,463] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:38,594] [1246] [DEBUG] "POST /mini_driver/drive?right=89&left=105 HTTP/1.1" 200 0
+[2017-07-20 21:34:38,596] [1246] [INFO] Drive: 105:89. Status 200
+[2017-07-20 21:34:38,597] [1246] [INFO] Drive: 105:89
+[2017-07-20 21:34:38,610] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:38,742] [1246] [DEBUG] "POST /mini_driver/drive?right=101&left=117 HTTP/1.1" 200 0
+[2017-07-20 21:34:38,744] [1246] [INFO] Drive: 117:101. Status 200
+[2017-07-20 21:34:38,744] [1246] [INFO] Drive: 117:101
+[2017-07-20 21:34:43,787] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:44,062] [1246] [DEBUG] "POST /mini_driver/drive?right=72&left=84 HTTP/1.1" 200 0
+[2017-07-20 21:34:44,063] [1246] [INFO] Drive: 84:72. Status 200
+[2017-07-20 21:34:44,063] [1246] [INFO] Drive: 84:72
+[2017-07-20 21:34:44,070] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:44,202] [1246] [DEBUG] "POST /mini_driver/drive?right=40&left=44 HTTP/1.1" 200 0
+[2017-07-20 21:34:44,205] [1246] [INFO] Drive: 44:40. Status 200
+[2017-07-20 21:34:44,205] [1246] [INFO] Drive: 44:40
+[2017-07-20 21:34:44,218] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:44,375] [1246] [DEBUG] "POST /mini_driver/drive?right=28&left=32 HTTP/1.1" 200 0
+[2017-07-20 21:34:44,377] [1246] [INFO] Drive: 32:28. Status 200
+[2017-07-20 21:34:44,377] [1246] [INFO] Drive: 32:28
+[2017-07-20 21:34:44,391] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:44,591] [1246] [DEBUG] "POST /mini_driver/drive?right=8&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:34:44,594] [1246] [INFO] Drive: 0:8. Status 200
+[2017-07-20 21:34:44,594] [1246] [INFO] Drive: 0:8
+[2017-07-20 21:34:46,778] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:46,919] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:34:46,920] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:34:46,920] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:34:46,928] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:47,066] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:34:47,067] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:34:47,067] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:34:53,358] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:53,681] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:34:53,682] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:34:53,682] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:34:53,692] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:53,946] [1246] [DEBUG] "POST /mini_driver/drive?right=96&left=96 HTTP/1.1" 200 0
+[2017-07-20 21:34:53,948] [1246] [INFO] Drive: 96:96. Status 200
+[2017-07-20 21:34:53,948] [1246] [INFO] Drive: 96:96
+[2017-07-20 21:34:53,963] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:54,123] [1246] [DEBUG] "POST /mini_driver/drive?right=204&left=204 HTTP/1.1" 200 0
+[2017-07-20 21:34:54,125] [1246] [INFO] Drive: 204:204. Status 200
+[2017-07-20 21:34:54,125] [1246] [INFO] Drive: 204:204
+[2017-07-20 21:34:54,142] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:54,367] [1246] [DEBUG] "POST /mini_driver/drive?right=235&left=236 HTTP/1.1" 200 0
+[2017-07-20 21:34:54,369] [1246] [INFO] Drive: 236:235. Status 200
+[2017-07-20 21:34:54,369] [1246] [INFO] Drive: 236:235
+[2017-07-20 21:34:57,521] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:57,679] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:34:57,680] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:34:57,680] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:34:57,693] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:57,828] [1246] [DEBUG] "POST /mini_driver/drive?right=84&left=84 HTTP/1.1" 200 0
+[2017-07-20 21:34:57,830] [1246] [INFO] Drive: 84:84. Status 200
+[2017-07-20 21:34:57,830] [1246] [INFO] Drive: 84:84
+[2017-07-20 21:34:57,842] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:57,970] [1246] [DEBUG] "POST /mini_driver/drive?right=160&left=164 HTTP/1.1" 200 0
+[2017-07-20 21:34:57,972] [1246] [INFO] Drive: 164:160. Status 200
+[2017-07-20 21:34:57,972] [1246] [INFO] Drive: 164:160
+[2017-07-20 21:34:57,986] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:58,133] [1246] [DEBUG] "POST /mini_driver/drive?right=184&left=188 HTTP/1.1" 200 0
+[2017-07-20 21:34:58,135] [1246] [INFO] Drive: 188:184. Status 200
+[2017-07-20 21:34:58,135] [1246] [INFO] Drive: 188:184
+[2017-07-20 21:34:58,144] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:58,274] [1246] [DEBUG] "POST /mini_driver/drive?right=220&left=228 HTTP/1.1" 200 0
+[2017-07-20 21:34:58,276] [1246] [INFO] Drive: 228:220. Status 200
+[2017-07-20 21:34:58,277] [1246] [INFO] Drive: 228:220
+[2017-07-20 21:34:59,117] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:34:59,293] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:34:59,295] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:34:59,295] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:38:41,151] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:41,371] [1246] [DEBUG] "POST /mini_driver/drive?right=84&left=76 HTTP/1.1" 200 0
+[2017-07-20 21:38:41,372] [1246] [INFO] Drive: 76:84. Status 200
+[2017-07-20 21:38:41,372] [1246] [INFO] Drive: 76:84
+[2017-07-20 21:38:41,381] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:41,529] [1246] [DEBUG] "POST /mini_driver/drive?right=148&left=136 HTTP/1.1" 200 0
+[2017-07-20 21:38:41,531] [1246] [INFO] Drive: 136:148. Status 200
+[2017-07-20 21:38:41,532] [1246] [INFO] Drive: 136:148
+[2017-07-20 21:38:41,545] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:41,734] [1246] [DEBUG] "POST /mini_driver/drive?right=196&left=184 HTTP/1.1" 200 0
+[2017-07-20 21:38:41,736] [1246] [INFO] Drive: 184:196. Status 200
+[2017-07-20 21:38:41,736] [1246] [INFO] Drive: 184:196
+[2017-07-20 21:38:42,888] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:43,079] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:38:43,081] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:38:43,082] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:38:46,420] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:46,564] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:38:46,566] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:38:46,566] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:38:48,169] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:48,307] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:38:48,309] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:38:48,309] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:38:48,361] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:48,559] [1246] [DEBUG] "POST /mini_driver/drive?right=123&left=124 HTTP/1.1" 200 0
+[2017-07-20 21:38:48,560] [1246] [INFO] Drive: 124:123. Status 200
+[2017-07-20 21:38:48,560] [1246] [INFO] Drive: 124:123
+[2017-07-20 21:38:48,572] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:48,702] [1246] [DEBUG] "POST /mini_driver/drive?right=172&left=172 HTTP/1.1" 200 0
+[2017-07-20 21:38:48,704] [1246] [INFO] Drive: 172:172. Status 200
+[2017-07-20 21:38:48,704] [1246] [INFO] Drive: 172:172
+[2017-07-20 21:38:48,719] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:48,868] [1246] [DEBUG] "POST /mini_driver/drive?right=220&left=224 HTTP/1.1" 200 0
+[2017-07-20 21:38:48,870] [1246] [INFO] Drive: 224:220. Status 200
+[2017-07-20 21:38:48,870] [1246] [INFO] Drive: 224:220
+[2017-07-20 21:38:49,369] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:49,509] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:38:49,512] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:38:49,512] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:38:54,936] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:55,091] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:38:55,093] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:38:55,093] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:38:55,107] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:55,333] [1246] [DEBUG] "POST /mini_driver/drive?right=28&left=28 HTTP/1.1" 200 0
+[2017-07-20 21:38:55,334] [1246] [INFO] Drive: 28:28. Status 200
+[2017-07-20 21:38:55,334] [1246] [INFO] Drive: 28:28
+[2017-07-20 21:38:55,342] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:55,528] [1246] [DEBUG] "POST /mini_driver/drive?right=128&left=124 HTTP/1.1" 200 0
+[2017-07-20 21:38:55,530] [1246] [INFO] Drive: 124:128. Status 200
+[2017-07-20 21:38:55,530] [1246] [INFO] Drive: 124:128
+[2017-07-20 21:38:56,504] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:56,710] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:38:56,713] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:38:56,713] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:38:58,606] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:58,760] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=32 HTTP/1.1" 200 0
+[2017-07-20 21:38:58,761] [1246] [INFO] Drive: 32:24. Status 200
+[2017-07-20 21:38:58,761] [1246] [INFO] Drive: 32:24
+[2017-07-20 21:38:58,773] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:58,929] [1246] [DEBUG] "POST /mini_driver/drive?right=53&left=65 HTTP/1.1" 200 0
+[2017-07-20 21:38:58,932] [1246] [INFO] Drive: 65:53. Status 200
+[2017-07-20 21:38:58,932] [1246] [INFO] Drive: 65:53
+[2017-07-20 21:38:58,949] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:59,128] [1246] [DEBUG] "POST /mini_driver/drive?right=81&left=101 HTTP/1.1" 200 0
+[2017-07-20 21:38:59,130] [1246] [INFO] Drive: 101:81. Status 200
+[2017-07-20 21:38:59,130] [1246] [INFO] Drive: 101:81
+[2017-07-20 21:38:59,152] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:59,385] [1246] [DEBUG] "POST /mini_driver/drive?right=102&left=126 HTTP/1.1" 200 0
+[2017-07-20 21:38:59,387] [1246] [INFO] Drive: 126:102. Status 200
+[2017-07-20 21:38:59,387] [1246] [INFO] Drive: 126:102
+[2017-07-20 21:38:59,402] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:59,582] [1246] [DEBUG] "POST /mini_driver/drive?right=122&left=150 HTTP/1.1" 200 0
+[2017-07-20 21:38:59,583] [1246] [INFO] Drive: 150:122. Status 200
+[2017-07-20 21:38:59,583] [1246] [INFO] Drive: 150:122
+[2017-07-20 21:38:59,602] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:38:59,789] [1246] [DEBUG] "POST /mini_driver/drive?right=179&left=219 HTTP/1.1" 200 0
+[2017-07-20 21:38:59,791] [1246] [INFO] Drive: 219:179. Status 200
+[2017-07-20 21:38:59,792] [1246] [INFO] Drive: 219:179
+[2017-07-20 21:38:59,809] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:00,020] [1246] [DEBUG] "POST /mini_driver/drive?right=181&left=240 HTTP/1.1" 200 0
+[2017-07-20 21:39:00,022] [1246] [INFO] Drive: 240:181. Status 200
+[2017-07-20 21:39:00,022] [1246] [INFO] Drive: 240:181
+[2017-07-20 21:39:56,099] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:56,234] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=20 HTTP/1.1" 200 0
+[2017-07-20 21:39:56,235] [1246] [INFO] Drive: 20:24. Status 200
+[2017-07-20 21:39:56,235] [1246] [INFO] Drive: 20:24
+[2017-07-20 21:39:56,244] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:56,432] [1246] [DEBUG] "POST /mini_driver/drive?right=44&left=40 HTTP/1.1" 200 0
+[2017-07-20 21:39:56,434] [1246] [INFO] Drive: 40:44. Status 200
+[2017-07-20 21:39:56,435] [1246] [INFO] Drive: 40:44
+[2017-07-20 21:39:56,461] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:56,663] [1246] [DEBUG] "POST /mini_driver/drive?right=52&left=48 HTTP/1.1" 200 0
+[2017-07-20 21:39:56,666] [1246] [INFO] Drive: 48:52. Status 200
+[2017-07-20 21:39:56,666] [1246] [INFO] Drive: 48:52
+[2017-07-20 21:39:56,684] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:56,929] [1246] [DEBUG] "POST /mini_driver/drive?right=68&left=64 HTTP/1.1" 200 0
+[2017-07-20 21:39:56,931] [1246] [INFO] Drive: 64:68. Status 200
+[2017-07-20 21:39:56,931] [1246] [INFO] Drive: 64:68
+[2017-07-20 21:39:56,946] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:57,251] [1246] [DEBUG] "POST /mini_driver/drive?right=80&left=76 HTTP/1.1" 200 0
+[2017-07-20 21:39:57,253] [1246] [INFO] Drive: 76:80. Status 200
+[2017-07-20 21:39:57,253] [1246] [INFO] Drive: 76:80
+[2017-07-20 21:39:57,266] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:57,455] [1246] [DEBUG] "POST /mini_driver/drive?right=112&left=108 HTTP/1.1" 200 0
+[2017-07-20 21:39:57,457] [1246] [INFO] Drive: 108:112. Status 200
+[2017-07-20 21:39:57,457] [1246] [INFO] Drive: 108:112
+[2017-07-20 21:39:57,466] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:57,653] [1246] [DEBUG] "POST /mini_driver/drive?right=124&left=116 HTTP/1.1" 200 0
+[2017-07-20 21:39:57,655] [1246] [INFO] Drive: 116:124. Status 200
+[2017-07-20 21:39:57,655] [1246] [INFO] Drive: 116:124
+[2017-07-20 21:39:57,665] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:39:57,873] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:39:57,875] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:39:57,875] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:40:44,785] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:40:44,963] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=20 HTTP/1.1" 200 0
+[2017-07-20 21:40:44,964] [1246] [INFO] Drive: 20:24. Status 200
+[2017-07-20 21:40:44,965] [1246] [INFO] Drive: 20:24
+[2017-07-20 21:40:44,975] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:40:45,134] [1246] [DEBUG] "POST /mini_driver/drive?right=132&left=124 HTTP/1.1" 200 0
+[2017-07-20 21:40:45,136] [1246] [INFO] Drive: 124:132. Status 200
+[2017-07-20 21:40:45,136] [1246] [INFO] Drive: 124:132
+[2017-07-20 21:40:45,153] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:40:45,654] [1246] [DEBUG] "POST /mini_driver/drive?right=180&left=172 HTTP/1.1" 200 0
+[2017-07-20 21:40:45,656] [1246] [INFO] Drive: 172:180. Status 200
+[2017-07-20 21:40:45,656] [1246] [INFO] Drive: 172:180
+[2017-07-20 21:40:45,675] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:40:48,873] [1246] [DEBUG] "POST /mini_driver/drive?right=204&left=200 HTTP/1.1" 200 0
+[2017-07-20 21:40:48,875] [1246] [INFO] Drive: 200:204. Status 200
+[2017-07-20 21:40:48,876] [1246] [INFO] Drive: 200:204
+[2017-07-20 21:40:54,641] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:40:54,824] [1246] [DEBUG] "POST /mini_driver/drive?right=32&left=36 HTTP/1.1" 200 0
+[2017-07-20 21:40:54,825] [1246] [INFO] Drive: 36:32. Status 200
+[2017-07-20 21:40:54,825] [1246] [INFO] Drive: 36:32
+[2017-07-20 21:40:55,612] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:40:55,779] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:40:55,781] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:40:55,781] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:40:59,983] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:00,178] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:41:00,180] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:41:00,180] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:41:00,882] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:01,075] [1246] [DEBUG] "POST /mini_driver/drive?right=48&left=52 HTTP/1.1" 200 0
+[2017-07-20 21:41:01,076] [1246] [INFO] Drive: 52:48. Status 200
+[2017-07-20 21:41:01,076] [1246] [INFO] Drive: 52:48
+[2017-07-20 21:41:01,097] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:01,307] [1246] [DEBUG] "POST /mini_driver/drive?right=129&left=149 HTTP/1.1" 200 0
+[2017-07-20 21:41:01,308] [1246] [INFO] Drive: 149:129. Status 200
+[2017-07-20 21:41:01,308] [1246] [INFO] Drive: 149:129
+[2017-07-20 21:41:01,320] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:01,511] [1246] [DEBUG] "POST /mini_driver/drive?right=149&left=173 HTTP/1.1" 200 0
+[2017-07-20 21:41:01,513] [1246] [INFO] Drive: 173:149. Status 200
+[2017-07-20 21:41:01,513] [1246] [INFO] Drive: 173:149
+[2017-07-20 21:41:01,528] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:01,709] [1246] [DEBUG] "POST /mini_driver/drive?right=154&left=182 HTTP/1.1" 200 0
+[2017-07-20 21:41:01,710] [1246] [INFO] Drive: 182:154. Status 200
+[2017-07-20 21:41:01,710] [1246] [INFO] Drive: 182:154
+[2017-07-20 21:41:01,726] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:02,016] [1246] [DEBUG] "POST /mini_driver/drive?right=166&left=194 HTTP/1.1" 200 0
+[2017-07-20 21:41:02,017] [1246] [INFO] Drive: 194:166. Status 200
+[2017-07-20 21:41:02,017] [1246] [INFO] Drive: 194:166
+[2017-07-20 21:41:16,335] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:17,271] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:41:17,273] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:41:17,274] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:41:17,292] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:41:17,631] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:41:17,633] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:41:17,634] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:42:29,897] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:42:30,055] [1246] [DEBUG] "POST /mini_driver/drive?right=92&left=88 HTTP/1.1" 200 0
+[2017-07-20 21:42:30,056] [1246] [INFO] Drive: 88:92. Status 200
+[2017-07-20 21:42:30,056] [1246] [INFO] Drive: 88:92
+[2017-07-20 21:42:30,796] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:42:30,934] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:42:30,936] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:42:30,937] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:42:32,057] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:42:32,194] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:42:32,195] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:42:32,195] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:03,907] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:04,106] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:04,107] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:04,108] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:04,120] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:04,285] [1246] [DEBUG] "POST /mini_driver/drive?right=62&left=82 HTTP/1.1" 200 0
+[2017-07-20 21:43:04,288] [1246] [INFO] Drive: 82:62. Status 200
+[2017-07-20 21:43:04,288] [1246] [INFO] Drive: 82:62
+[2017-07-20 21:43:04,304] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:04,459] [1246] [DEBUG] "POST /mini_driver/drive?right=86&left=110 HTTP/1.1" 200 0
+[2017-07-20 21:43:04,461] [1246] [INFO] Drive: 110:86. Status 200
+[2017-07-20 21:43:04,462] [1246] [INFO] Drive: 110:86
+[2017-07-20 21:43:04,478] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:04,637] [1246] [DEBUG] "POST /mini_driver/drive?right=129&left=173 HTTP/1.1" 200 0
+[2017-07-20 21:43:04,640] [1246] [INFO] Drive: 173:129. Status 200
+[2017-07-20 21:43:04,640] [1246] [INFO] Drive: 173:129
+[2017-07-20 21:43:06,639] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:07,649] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:07,650] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:07,650] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:07,658] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:10,541] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:10,543] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:10,544] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:10,562] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:10,707] [1246] [DEBUG] "POST /mini_driver/drive?right=31&left=32 HTTP/1.1" 200 0
+[2017-07-20 21:43:10,709] [1246] [INFO] Drive: 32:31. Status 200
+[2017-07-20 21:43:10,709] [1246] [INFO] Drive: 32:31
+[2017-07-20 21:43:10,729] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:10,960] [1246] [DEBUG] "POST /mini_driver/drive?right=56&left=56 HTTP/1.1" 200 0
+[2017-07-20 21:43:10,962] [1246] [INFO] Drive: 56:56. Status 200
+[2017-07-20 21:43:10,962] [1246] [INFO] Drive: 56:56
+[2017-07-20 21:43:10,976] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:11,185] [1246] [DEBUG] "POST /mini_driver/drive?right=104&left=104 HTTP/1.1" 200 0
+[2017-07-20 21:43:11,187] [1246] [INFO] Drive: 104:104. Status 200
+[2017-07-20 21:43:11,187] [1246] [INFO] Drive: 104:104
+[2017-07-20 21:43:11,202] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:15,436] [1246] [DEBUG] "POST /mini_driver/drive?right=156&left=164 HTTP/1.1" 200 0
+[2017-07-20 21:43:15,437] [1246] [INFO] Drive: 164:156. Status 200
+[2017-07-20 21:43:15,438] [1246] [INFO] Drive: 164:156
+[2017-07-20 21:43:15,461] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:15,645] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:15,647] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:15,647] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:15,873] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:16,100] [1246] [DEBUG] "POST /mini_driver/drive?right=133&left=153 HTTP/1.1" 200 0
+[2017-07-20 21:43:16,101] [1246] [INFO] Drive: 153:133. Status 200
+[2017-07-20 21:43:16,102] [1246] [INFO] Drive: 153:133
+[2017-07-20 21:43:16,118] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:16,345] [1246] [DEBUG] "POST /mini_driver/drive?right=145&left=169 HTTP/1.1" 200 0
+[2017-07-20 21:43:16,347] [1246] [INFO] Drive: 169:145. Status 200
+[2017-07-20 21:43:16,347] [1246] [INFO] Drive: 169:145
+[2017-07-20 21:43:16,366] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:16,919] [1246] [DEBUG] "POST /mini_driver/drive?right=149&left=173 HTTP/1.1" 200 0
+[2017-07-20 21:43:16,921] [1246] [INFO] Drive: 173:149. Status 200
+[2017-07-20 21:43:16,922] [1246] [INFO] Drive: 173:149
+[2017-07-20 21:43:16,943] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:17,213] [1246] [DEBUG] "POST /mini_driver/drive?right=162&left=194 HTTP/1.1" 200 0
+[2017-07-20 21:43:17,215] [1246] [INFO] Drive: 194:162. Status 200
+[2017-07-20 21:43:17,215] [1246] [INFO] Drive: 194:162
+[2017-07-20 21:43:17,230] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:17,473] [1246] [DEBUG] "POST /mini_driver/drive?right=166&left=198 HTTP/1.1" 200 0
+[2017-07-20 21:43:17,474] [1246] [INFO] Drive: 198:166. Status 200
+[2017-07-20 21:43:17,474] [1246] [INFO] Drive: 198:166
+[2017-07-20 21:43:17,488] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:17,699] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:17,700] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:17,701] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:17,713] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:17,913] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:17,914] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:17,914] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:17,928] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:18,127] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:18,129] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:18,130] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:18,148] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:18,422] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:43:18,423] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:43:18,423] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:43:28,016] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:28,156] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:28,157] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:28,157] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:44,878] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:45,015] [1246] [DEBUG] "POST /mini_driver/drive?right=112&left=116 HTTP/1.1" 200 0
+[2017-07-20 21:43:45,016] [1246] [INFO] Drive: 116:112. Status 200
+[2017-07-20 21:43:45,016] [1246] [INFO] Drive: 116:112
+[2017-07-20 21:43:45,028] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:45,224] [1246] [DEBUG] "POST /mini_driver/drive?right=136&left=140 HTTP/1.1" 200 0
+[2017-07-20 21:43:45,226] [1246] [INFO] Drive: 140:136. Status 200
+[2017-07-20 21:43:45,226] [1246] [INFO] Drive: 140:136
+[2017-07-20 21:43:46,286] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:46,538] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:43:46,541] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:43:46,541] [1246] [INFO] Drive: -100:-100
+[2017-07-20 21:43:47,959] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:48,147] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:48,148] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:48,148] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:48,158] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:48,362] [1246] [DEBUG] "POST /mini_driver/drive?right=109&left=129 HTTP/1.1" 200 0
+[2017-07-20 21:43:48,365] [1246] [INFO] Drive: 129:109. Status 200
+[2017-07-20 21:43:48,365] [1246] [INFO] Drive: 129:109
+[2017-07-20 21:43:48,382] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:48,582] [1246] [DEBUG] "POST /mini_driver/drive?right=142&left=170 HTTP/1.1" 200 0
+[2017-07-20 21:43:48,583] [1246] [INFO] Drive: 170:142. Status 200
+[2017-07-20 21:43:48,583] [1246] [INFO] Drive: 170:142
+[2017-07-20 21:43:51,240] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:51,369] [1246] [DEBUG] "POST /mini_driver/drive?right=2&left=30 HTTP/1.1" 200 0
+[2017-07-20 21:43:51,370] [1246] [INFO] Drive: 30:2. Status 200
+[2017-07-20 21:43:51,371] [1246] [INFO] Drive: 30:2
+[2017-07-20 21:43:51,380] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:51,613] [1246] [DEBUG] "POST /mini_driver/drive?right=24&left=52 HTTP/1.1" 200 0
+[2017-07-20 21:43:51,614] [1246] [INFO] Drive: 52:24. Status 200
+[2017-07-20 21:43:51,615] [1246] [INFO] Drive: 52:24
+[2017-07-20 21:43:51,629] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:51,826] [1246] [DEBUG] "POST /mini_driver/drive?right=50&left=82 HTTP/1.1" 200 0
+[2017-07-20 21:43:51,828] [1246] [INFO] Drive: 82:50. Status 200
+[2017-07-20 21:43:51,828] [1246] [INFO] Drive: 82:50
+[2017-07-20 21:43:51,852] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:52,042] [1246] [DEBUG] "POST /mini_driver/drive?right=128&left=164 HTTP/1.1" 200 0
+[2017-07-20 21:43:52,043] [1246] [INFO] Drive: 164:128. Status 200
+[2017-07-20 21:43:52,044] [1246] [INFO] Drive: 164:128
+[2017-07-20 21:43:52,055] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:52,248] [1246] [DEBUG] "POST /mini_driver/drive?right=144&left=184 HTTP/1.1" 200 0
+[2017-07-20 21:43:52,249] [1246] [INFO] Drive: 184:144. Status 200
+[2017-07-20 21:43:52,250] [1246] [INFO] Drive: 184:144
+[2017-07-20 21:43:52,262] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:52,444] [1246] [DEBUG] "POST /mini_driver/drive?right=148&left=188 HTTP/1.1" 200 0
+[2017-07-20 21:43:52,446] [1246] [INFO] Drive: 188:148. Status 200
+[2017-07-20 21:43:52,447] [1246] [INFO] Drive: 188:148
+[2017-07-20 21:43:52,587] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:52,856] [1246] [DEBUG] "POST /mini_driver/drive?right=115&left=163 HTTP/1.1" 200 0
+[2017-07-20 21:43:52,857] [1246] [INFO] Drive: 163:115. Status 200
+[2017-07-20 21:43:52,858] [1246] [INFO] Drive: 163:115
+[2017-07-20 21:43:52,870] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:53,084] [1246] [DEBUG] "POST /mini_driver/drive?right=50&left=102 HTTP/1.1" 200 0
+[2017-07-20 21:43:53,086] [1246] [INFO] Drive: 102:50. Status 200
+[2017-07-20 21:43:53,087] [1246] [INFO] Drive: 102:50
+[2017-07-20 21:43:55,274] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:55,469] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:55,471] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:55,471] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:56,286] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:56,605] [1246] [DEBUG] "POST /mini_driver/drive?right=138&left=186 HTTP/1.1" 200 0
+[2017-07-20 21:43:56,607] [1246] [INFO] Drive: 186:138. Status 200
+[2017-07-20 21:43:56,608] [1246] [INFO] Drive: 186:138
+[2017-07-20 21:43:56,623] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:56,817] [1246] [DEBUG] "POST /mini_driver/drive?right=171&left=227 HTTP/1.1" 200 0
+[2017-07-20 21:43:56,820] [1246] [INFO] Drive: 227:171. Status 200
+[2017-07-20 21:43:56,820] [1246] [INFO] Drive: 227:171
+[2017-07-20 21:43:57,223] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:57,428] [1246] [DEBUG] "POST /mini_driver/drive?right=0&left=0 HTTP/1.1" 200 0
+[2017-07-20 21:43:57,430] [1246] [INFO] Drive: 0:0. Status 200
+[2017-07-20 21:43:57,431] [1246] [INFO] Drive: 0:0
+[2017-07-20 21:43:58,083] [1246] [INFO] Starting new HTTPS connection (1): localhost
+[2017-07-20 21:43:58,289] [1246] [DEBUG] "POST /mini_driver/drive?right=-100&left=-100 HTTP/1.1" 200 0
+[2017-07-20 21:43:58,291] [1246] [INFO] Drive: -100:-100. Status 200
+[2017-07-20 21:43:58,291] [1246] [INFO] Drive: -100:-100
