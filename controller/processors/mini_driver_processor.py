@@ -8,7 +8,7 @@ import logging
 # Input:       'device:device_specific_data;'
 # Led:         '0:{state};' on - 1, off - 0
 # Motor:       '1:{left_speed}:{right_speed};'
-class MiniDriver:
+class MiniDriverProcessor:
 
     logger = logging.getLogger('Mini driver')
     handler = logging.StreamHandler()

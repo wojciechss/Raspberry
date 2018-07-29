@@ -11,7 +11,7 @@ import logging
 # Servo:         '2;{device}:{position}' pan - 0, tilt - 1
 # Accelerometer: '3;'
 # Ktir:          '4;'
-class Nano:
+class NanoProcessor:
 
     logger = logging.getLogger('Nano')
     portName = '/dev/nanoBoard'
