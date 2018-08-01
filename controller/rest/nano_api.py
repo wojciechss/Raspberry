@@ -6,6 +6,7 @@ import logging
 class NanoApiBase(object):
     def __init__(self, nano):
         self.logger = logging.getLogger('Nano')
+        self.logger.setLevel(logging.WARNING)
         self.nano = nano
 
 

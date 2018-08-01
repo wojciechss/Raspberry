@@ -7,6 +7,7 @@ from processors.mini_driver_processor import MiniDriverProcessor
 class MiniDriverApiBase(object):
     def __init__(self, mini_driver):
         self.logger = logging.getLogger('Mini driver')
+        self.logger.setLevel(logging.WARNING)
         self.mini_driver = mini_driver
 
 
