@@ -4,8 +4,7 @@ import sys
 import falcon
 import logging
 
-from rest.mini_driver_api import MiniDriverApiFactory
-from rest.nano_api import NanoApiFactory
+from rest.api_factory import ApiFactory
 
 logger = logging.getLogger('Mini driver service')
 handler = logging.StreamHandler()
@@ -18,5 +17,4 @@ logging.basicConfig(stream=sys.stdout,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
 api = falcon.API()
-MiniDriverApiFactory.create(api)
-NanoApiFactory.create(api)
+ApiFactory().create(api)

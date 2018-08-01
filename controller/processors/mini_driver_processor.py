@@ -2,7 +2,6 @@
 
 import time
 import serial
-import logging
 
 
 # Input:       'device:device_specific_data;'
@@ -10,21 +9,16 @@ import logging
 # Motor:       '1:{left_speed}:{right_speed};'
 class MiniDriverProcessor:
 
-    logger = logging.getLogger('Mini driver')
-    handler = logging.StreamHandler()
-    handler.setLevel(logging.WARNING)
-    logger.addHandler(handler)
-    logger.handlers.extend(logging.getLogger("gunicorn.error").handlers)
-
     portName = '/dev/miniDriver'
 
-    def connect(self):
+    def __init__(self):
         self.ser = serial.Serial(
             port=self.portName,
             baudrate=9600,
             timeout=5
         )
-        self.__wait_for_connection()
+
+    def connect(self):
         self._blink_led()
 
     def led_on(self):
@@ -51,8 +45,3 @@ class MiniDriverProcessor:
         self.led_on()
         time.sleep(0.5)
         self.led_off()
-
-    def __wait_for_connection(self):
-        self.logger.info('Waiting')
-        time.sleep(10)
-        self.logger.info('Connected')

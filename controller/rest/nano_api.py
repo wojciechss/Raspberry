@@ -3,9 +3,6 @@ import falcon
 import logging
 
 
-from processors.nano_processor import NanoProcessor
-
-
 class NanoApiBase(object):
     def __init__(self, nano):
         self.logger = logging.getLogger('Nano')
@@ -90,18 +87,3 @@ class ReadKtir(NanoApiBase):
         data = dict(data=ktir_data)
         resp.status = falcon.HTTP_200
         resp.body = json.dumps(data)
-
-
-class NanoApiFactory(object):
-
-    @staticmethod
-    def create(api):
-        nano = NanoProcessor()
-        #nano.connect()
-        api.add_route('/nano/led_on', LedOn(nano))
-        api.add_route('/nano/led_off', LedOff(nano))
-        api.add_route('/nano/pan', SetPanPosition(nano))
-        api.add_route('/nano/tilt', SetTiltPosition(nano))
-        api.add_route('/nano/ultrasonic', ReadDistance(nano))
-        api.add_route('/nano/accelerometer', ReadAccelerometer(nano))
-        api.add_route('/nano/ktir', ReadKtir(nano))

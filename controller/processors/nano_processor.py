@@ -2,7 +2,6 @@
 
 import time
 import serial
-import logging
 
 
 # Input:         'device:device_specific_data;'
@@ -13,16 +12,16 @@ import logging
 # Ktir:          '4;'
 class NanoProcessor:
 
-    logger = logging.getLogger('Nano')
     portName = '/dev/nanoBoard'
 
-    def connect(self):
+    def __init__(self):
         self.ser = serial.Serial(
             port=self.portName,
             baudrate=9600,
             timeout=5
         )
-        self.__wait_for_connection()
+
+    def connect(self):
         self._blink_led()
         self.set_pan_position(160)
         self.set_tilt_position(100)
@@ -77,15 +76,10 @@ class NanoProcessor:
         time.sleep(0.5)
         self.led_off()
 
-    def __wait_for_connection(self):
-        self.logger.info('Waiting')
-        time.sleep(10)
-        self.logger.info('Connected')
-
     @classmethod
-    def __parse_int(cls, input):
+    def __parse_int(cls, input_val):
         try:
-            return int(input)
+            return int(input_val)
         except ValueError:
             pass
 

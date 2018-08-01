@@ -40,14 +40,3 @@ class Drive(MiniDriverApiBase):
         self.mini_driver.drive(left, right)
         self.logger.info('Drive: ' + left + ':' + right)
         resp.status = falcon.HTTP_200
-
-
-class MiniDriverApiFactory(object):
-
-    @staticmethod
-    def create(api):
-        mini_driver = MiniDriverProcessor()
-        mini_driver.connect()
-        api.add_route('/mini_driver/led_on', LedOn(mini_driver))
-        api.add_route('/mini_driver/led_off', LedOff(mini_driver))
-        api.add_route('/mini_driver/drive', Drive(mini_driver))
