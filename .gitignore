@@ -58,3 +58,28 @@ install_manifest.txt
 **/bower_components/
 **/node_modules/
 
+# Pygradle
+*.egg
+*.egg-info/
+*.pyc
+*.pyo
+*.sublime-*
+.coverage
+.env
+.gradle/
+.idea/
+.tox*
+.venv*
+/*/*pinned.txt
+/*/MANIFEST
+/*/activate
+/*/build/
+/*/coverage.xml
+/*/dist/
+/*/htmlcov/
+/build/
+/config/
+/dist/
+/gradle
+/ligradle/
+TEST-*.xml

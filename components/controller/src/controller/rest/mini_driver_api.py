@@ -1,8 +1,6 @@
 import falcon
 import logging
 
-from processors.mini_driver_processor import MiniDriverProcessor
-
 
 class MiniDriverApiBase(object):
     def __init__(self, mini_driver):
