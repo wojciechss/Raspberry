@@ -8,3 +8,8 @@ buildscript {
         classpath "gradle.plugin.com.linkedin.pygradle:pygradle-plugin:0.7.18"
     }
 }
+
+allprojects {
+    version = new File("${rootDir}/VERSION.txt").text
+    project.version = project.hasProperty('version') ? project.version : version
+}
