@@ -4,7 +4,7 @@ import sys
 import falcon
 import logging
 
-from rest.api_factory import ApiFactory
+from rest_falcon.api_factory import ApiFactory
 
 logger = logging.getLogger('Mini driver service')
 handler = logging.StreamHandler()

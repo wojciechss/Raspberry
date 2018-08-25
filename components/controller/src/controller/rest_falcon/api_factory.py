@@ -2,7 +2,7 @@ import time
 import logging
 from processors.nano_processor import NanoProcessor
 from processors.mini_driver_processor import MiniDriverProcessor
-from rest import nano_api, mini_driver_api
+from rest_falcon import nano_api, mini_driver_api
 
 
 class ApiFactory(object):
