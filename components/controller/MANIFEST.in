@@ -1,0 +1,3 @@
+include pinned.txt
+include version.ini
+recursive-exclude test *

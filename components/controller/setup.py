@@ -1,19 +1,3 @@
-#
-# Copyright 2016 LinkedIn Corp.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
 from __future__ import print_function
 
 import os
@@ -21,6 +5,7 @@ import sys
 import pkg_resources
 import platform
 
+from configparser import ConfigParser
 from setuptools import setup, find_packages, Command
 from setuptools.command.install_egg_info import install_egg_info as _install_egg_info
 from setuptools.dist import Distribution
@@ -86,12 +71,14 @@ class install_egg_info(_install_egg_info):  # noqa
 class GradleDistribution(Distribution, object):
 
     PINNED_TXT = 'pinned.txt'
+    VERSION_INI = 'version.ini'
 
     excluded_platform_packages = {}
 
     def __init__(self, attrs):
-        attrs['name'] = os.getenv('PYGRADLE_PROJECT_NAME')
-        attrs['version'] = os.getenv('PYGRADLE_PROJECT_VERSION')
+        reader = MetadataReader(self.VERSION_INI)
+        attrs['name'] = os.getenv('PYGRADLE_PROJECT_NAME', reader.get('name'))
+        attrs['version'] = os.getenv('PYGRADLE_PROJECT_VERSION', reader.get('version'))
         attrs['install_requires'] = list(self.load_pinned_deps())
         super(GradleDistribution, self).__init__(attrs)
 
@@ -137,9 +124,22 @@ class GradleDistribution(Distribution, object):
         except IOError:
             raise StopIteration
 
+
+class MetadataReader(object):
+
+    METADATA = 'metadata'
+
+    def __init__(self, filename):
+        self.config = ConfigParser()
+        self.config.read(filename)
+
+    def get(self, key):
+        return self.config.get(self.METADATA, key)
+
+
 setup(
     distclass=GradleDistribution,
     package_dir={'': 'src'},
     packages=find_packages('src'),
-    include_package_data=True,
+    include_package_data=True
 )

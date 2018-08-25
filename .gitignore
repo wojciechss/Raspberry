@@ -71,6 +71,7 @@ install_manifest.txt
 .tox*
 .venv*
 /*/*pinned.txt
+/*/*version.ini
 /*/MANIFEST
 /*/activate
 /*/build/
