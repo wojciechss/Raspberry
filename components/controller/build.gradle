@@ -21,6 +21,9 @@ repositories {
 
 dependencies {
     python 'pypi:requests:2.19.1'
+    python 'pypi:gunicorn:19.9.0'
+    python 'pypi:falcon:1.4.1'
+    python 'pypi:pyserial:3.4'
     test 'pypi:mock:2.0.0'
     test 'pypi:pbr:3.1.1'
 }

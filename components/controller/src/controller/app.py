@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
 import sys
-import falcon
 import logging
 
-from rest_falcon.api_factory import ApiFactory
+from controller.runner import Runner
 
 logger = logging.getLogger('Mini driver service')
 handler = logging.StreamHandler()
@@ -16,5 +15,4 @@ logging.basicConfig(stream=sys.stdout,
                     level=logging.DEBUG,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
-api = falcon.API()
-ApiFactory().create(api)
+Runner().run()
