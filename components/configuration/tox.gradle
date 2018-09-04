@@ -1,0 +1,16 @@
+apply plugin:'base'
+
+task buildTox(type: Exec) {
+    commandLine 'tox', '-e', 'build'
+}
+
+task testTox(type: Exec) {
+    commandLine 'tox', '-e', 'flake8,py35'
+}
+
+task coverage(type: Exec) {
+    commandLine 'tox', '-e', 'flake8,py35,coverage-report'
+}
+
+assemble.dependsOn buildTox
+build.dependsOn testTox

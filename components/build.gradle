@@ -1,14 +1,9 @@
 buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "gradle.plugin.com.linkedin.pygradle:pygradle-plugin:0.7.18"
+    ext {
+        configurationDir = "$project.rootDir/configuration"
     }
 }
 
 allprojects {
-    project.version = project.hasProperty('build') ? project['build'] : '0.1-SNAPSHOT'
+    project.version = project.hasProperty('build') ? "$project.build" : '0.1-SNAPSHOT'
 }
