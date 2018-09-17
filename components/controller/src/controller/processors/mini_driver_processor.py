@@ -28,7 +28,7 @@ class MiniDriverProcessor:
         self._write('0:0;')
 
     def drive(self, left_speed, right_speed):
-        data = '1' + ':' + str(left_speed) + ':' + str(right_speed) + ';'
+        data = '1:{}:{};'.format(str(left_speed), str(right_speed))
         self._write(data)
 
     def _write(self, data):
