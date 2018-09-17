@@ -42,11 +42,11 @@ class NanoProcessor:
         return 0
 
     def set_pan_position(self, position):
-        data = '2:0:' + str(position) + ';'
+        data = '2:0:{};'.format(str(position))
         self._write(data)
 
     def set_tilt_position(self, position):
-        data = '2:1:' + str(position) + ';'
+        data = '2:1:{};'.format(str(position))
         self._write(data)
 
     def get_accelerometer_data_request(self):
