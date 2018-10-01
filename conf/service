@@ -34,7 +34,7 @@ case "$1" in
         echo "Already started"
     else
         echo "Starting $name"
-        if [ -v {logs_dir} ]; then
+        if [ -v ${logs_dir} ]; then
             rm -rf ${logs_dir}
             mkdir ${logs_dir}
             mkdir ${logs_dir}/run
