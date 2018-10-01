@@ -2,6 +2,7 @@
 
 import sys
 import logging
+import falcon
 
 from controller.runner import Runner
 
@@ -15,4 +16,5 @@ logging.basicConfig(stream=sys.stdout,
                     level=logging.DEBUG,
                     format='[%(asctime)s] [%(process)s] [%(levelname)s] [%(name)s] %(message)s')
 
-Runner().run()
+api = falcon.API()
+Runner(api).run()

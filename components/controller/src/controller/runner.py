@@ -1,6 +1,5 @@
 import time
 import logging
-import falcon
 from controller.processors.nano_processor import NanoProcessor
 from controller.processors.mini_driver_processor import MiniDriverProcessor
 from controller.rest import nano_api, mini_driver_api
@@ -8,8 +7,8 @@ from controller.rest import nano_api, mini_driver_api
 
 class Runner(object):
 
-    def __init__(self):
-        self.api = falcon.API()
+    def __init__(self, api):
+        self.api = api
         self.logger = logging.getLogger('Api factory')
 
     def run(self):

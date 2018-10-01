@@ -2,4 +2,4 @@
 
 echo 'Create services'
 
-./conf/create_service.sh controller controller
+./conf/create_service.sh controller

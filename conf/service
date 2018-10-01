@@ -10,14 +10,14 @@
 ### END INIT INFO
 
 
-dir="{DIR}/{SERVICE_PATH}"
-cmd="./run.sh"
+serviceName={SERVICE_NAME}
+cmd="cmd="gunicorn controller.app:api --bind=127.0.0.1:5000""
 user="{USER}"
 
 name=`basename $0`
-pid_file="$dir/run/$name.pid"
-stdout_log="$dir/log/$name.log"
-stderr_log="$dir/log/$name.err"
+pid_file="/var/log/${serviceName}/run/$name.pid"
+stdout_log="/var/log/${serviceName}/$name.log"
+stderr_log="/var/log/${serviceName}/$name.err"
 
 get_pid() {
     cat "$pid_file"
@@ -33,9 +33,6 @@ case "$1" in
         echo "Already started"
     else
         echo "Starting $name"
-        mkdir "$dir/log"
-        mkdir "$dir/run"
-        cd "$dir"
         if [ -z "$user" ]; then
             sudo $cmd >> "$stdout_log" 2>> "$stderr_log" &
         else
