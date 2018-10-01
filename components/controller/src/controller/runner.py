@@ -12,13 +12,15 @@ class Runner(object):
         self.logger = logging.getLogger('Api factory')
 
     def run(self):
-        self._create_mini()
-        self._create_nano()
-        self._wait_for_connection()
-
-    def _create_nano(self):
         nano = NanoProcessor()
+        mini_driver = MiniDriverProcessor()
+        self._create_nano(nano)
+        self._create_mini(mini_driver)
+        self._wait_for_connection()
         nano.connect()
+        mini_driver.connect()
+
+    def _create_nano(self, nano):
         self.api.add_route('/nano/led_on', nano_api.LedOn(nano))
         self.api.add_route('/nano/led_off', nano_api.LedOff(nano))
         self.api.add_route('/nano/pan', nano_api.SetPanPosition(nano))
@@ -27,9 +29,7 @@ class Runner(object):
         self.api.add_route('/nano/accelerometer', nano_api.ReadAccelerometer(nano))
         self.api.add_route('/nano/ktir', nano_api.ReadKtir(nano))
 
-    def _create_mini(self):
-        mini_driver = MiniDriverProcessor()
-        mini_driver.connect()
+    def _create_mini(self, mini_driver):
         self.api.add_route('/mini_driver/led_on', mini_driver_api.LedOn(mini_driver))
         self.api.add_route('/mini_driver/led_off', mini_driver_api.LedOff(mini_driver))
         self.api.add_route('/mini_driver/drive', mini_driver_api.Drive(mini_driver))

@@ -13,7 +13,7 @@
 
 name=`basename $0`
 
-cmd="gunicorn controller.app:api --bind=127.0.0.1:5000"
+cmd="gunicorn controller.app:api --bind=127.0.0.1:5000 --timeout=36000"
 
 logs_dir=/var/log/${name}
 pid_file="${logs_dir}/run/$name.pid"
@@ -34,8 +34,9 @@ case "$1" in
         echo "Already started"
     else
         echo "Starting $name"
-        if [ -v ${logs_dir} ]; then
-            rm -rf ${logs_dir}
+        if [ -n ${logs_dir} ]
+        then
+            sudo rm -rf ${logs_dir}
             mkdir ${logs_dir}
             mkdir ${logs_dir}/run
         fi
