@@ -1,6 +1,9 @@
 #!/bin/sh
+
+name=`basename $0`
+
 ### BEGIN INIT INFO
-# Provides:          {SERVICE_NAME}
+# Provides:          ${name}
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
@@ -9,15 +12,12 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
+cmd="gunicorn controller.app:api --bind=127.0.0.1:5000"
 
-serviceName={SERVICE_NAME}
-cmd="cmd="gunicorn controller.app:api --bind=127.0.0.1:5000""
-user="{USER}"
-
-name=`basename $0`
-pid_file="/var/log/${serviceName}/run/$name.pid"
-stdout_log="/var/log/${serviceName}/$name.log"
-stderr_log="/var/log/${serviceName}/$name.err"
+logs_dir=/var/log/${name}
+pid_file="${logs_dir}/run/$name.pid"
+stdout_log="${logs_dir}/$name.log"
+stderr_log="${logs_dir}/$name.err"
 
 get_pid() {
     cat "$pid_file"
@@ -33,11 +33,13 @@ case "$1" in
         echo "Already started"
     else
         echo "Starting $name"
-        if [ -z "$user" ]; then
-            sudo $cmd >> "$stdout_log" 2>> "$stderr_log" &
-        else
-            sudo -u "$user" $cmd >> "$stdout_log" 2>> "$stderr_log" &
+        if [ -v {logs_dir} ]; then
+            rm -rf ${logs_dir}
+            mkdir ${logs_dir}
+            mkdir ${logs_dir}/run
         fi
+
+        $cmd >> "$stdout_log" 2>> "$stderr_log"
         echo $! > "$pid_file"
         if ! is_running; then
             echo "Unable to start, see $stdout_log and $stderr_log"
